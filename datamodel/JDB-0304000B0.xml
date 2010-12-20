@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:PowerTransformer rdf:ID="PMS-PowerTransformer@PMSID#/PowerTransformer">
+<!--cimadd-->
+<cim:PowerTransformer.transfCoolingType>LQFS#</cim:PowerTransformer.transfCoolingType><!--冷却方式-->
+<cim:PowerTransformer.TransformerModel rdf:resource="#PMS-TransformerModel@PMSID#/PowerTransformer"/><!--关联绝缘水平-->
+<cim:PowerTransformer.TransformerAsset rdf:resource="#PMS-TransformerAsset@PMSID#/PowerTransformer"/><!--关联用途-->
+<cim:PowerTransformer.transformerType>JYJZ#</cim:PowerTransformer.transformerType><!--绝缘介质-->
+<cim:PowerSystemResource.remarks>BZ#</cim:PowerSystemResource.remarks><!--备注-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@SCSBH#/EquipmentLocation"/><!--关联上层设备号-->
+<cim:PowerSystemResource.dispatchNo>YXBH#</cim:PowerSystemResource.dispatchNo><!--运行编号-->
+<cim:Naming.name>SBMC#</cim:Naming.name><!--设备名称-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->
+<cim:PowerSystemResource.unitName>JGDY#</cim:PowerSystemResource.unitName><!--间隔单元-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Storage@CKPMSID#/Storage"/><!--关联仓库名称-->
+</cim:PowerTransformer>
+<!--cimoutsideadd-->
+
+<cim:TransformerModel rdf:ID="PMS-TransformerModel@PMSID#/PowerTransformer"> 
+<cim:AssetModel.weightTotal>ZZ#</cim:AssetModel.weightTotal><!--总重-->
+<cim:ElectricalAssetModel.ratedMVA>EDRL#</cim:ElectricalAssetModel.ratedMVA><!--额定容量-->
+<cim:ElectricalAssetModel.bil>JYSP#</cim:ElectricalAssetModel.bil><!--绝缘水平-->
+<cim:Naming.name>SBXH#</cim:Naming.name><!--设备型号-->
+<cim:ElectricalAssetModel.ratedVolts>EDDY#</cim:ElectricalAssetModel.ratedVolts><!--额定电压-->
+<cim:ElectricalAssetModel.numberPhases>SXHDX#</cim:ElectricalAssetModel.numberPhases><!--相数-->
+</cim:TransformerModel>
+
+<cim:TransformerAsset rdf:ID="PMS-TransformerAsset@PMSID#/PowerTransformer">
+<cim:TransformerAsset.idlingLoss>KZSH#</cim:TransformerAsset.idlingLoss><!--空载损耗-->
+<cim:TransformerAsset.copperLoss>DLSH#</cim:TransformerAsset.copperLoss><!--短路损耗-->
+<cim:TransformerAsset.voltRatio>DYB#</cim:TransformerAsset.voltRatio><!--电压比-->
+<cim:TransformerAsset.lineGroup>LJZBH#</cim:TransformerAsset.lineGroup><!--联接组标号-->
+<cim:Asset.assetUsage>BYQYT#</cim:Asset.assetUsage><!--用途-->
+<!--cimassetadd-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-WKQXH/PowerTransformer"/><!--关联温控器型号-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-WKQCJ/PowerTransformer"/><!--关联温控器厂家-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-FJXH/PowerTransformer"/><!--关联风机型号-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-FJCM/PowerTransformer"/><!--关联风机厂名-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-QSZ/PowerTransformer"/><!--关联器身重-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-YZ/PowerTransformer"/><!--关联油重-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-YCD/PowerTransformer"/><!--关联油产地-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JDBZXDEDDL/PowerTransformer"/><!--关联接地变中性点额定电流-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JDBZXDLJSB/PowerTransformer"/><!--关联接地变中性点连接设备-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-FZSH/PowerTransformer"/><!--关联负载损耗-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-LXZK/PowerTransformer"/><!--关联零序阻抗-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-KZDL/PowerTransformer"/><!--关联空载电流-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DYFS/PowerTransformer"/><!--关联调压方式-->
+<cim:Asset.serialNumber>GDZCBM#</cim:Asset.serialNumber><!--固定资产编码-->
+<cim:Asset.currentStatus>YXZT#</cim:Asset.currentStatus><!--设备状态-->
+<cim:Asset.antipollutionGrade>FWDJ#</cim:Asset.antipollutionGrade><!--防污等级-->
+<cim:Asset.installationEnviron>SYHJ#</cim:Asset.installationEnviron><!--使用环境-->
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.manufacturedDate>CCRQ#</cim:Asset.manufacturedDate><!--出厂日期-->
+<cim:Asset.codeName>CPDH#</cim:Asset.codeName><!--产品代号-->
+<cim:Asset.utc>CCBH#</cim:Asset.utc><!--出厂编号-->
+<cim:Asset.factory>SCCJ#</cim:Asset.factory><!--生产厂家-->
+<cim:Asset.manufacturedCountry>ZZGJ#</cim:Asset.manufacturedCountry><!--制造国家-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.phases>XB#</cim:Asset.phases><!--相别-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo>
+</cim:TransformerAsset>
+
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+<cim:Property rdf:ID="PMS-Property@PMSID#-WKQXH/PowerTransformer"><!--温控器型号-->
+<cim:Naming.name>温控器型号</cim:Naming.name>
+<cim:Property.propertyType>WKQXH</cim:Property.propertyType>
+<cim:Property.propertyValue>WKQXH#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-WKQCJ/PowerTransformer"><!--温控器厂家-->
+<cim:Naming.name>温控器厂家</cim:Naming.name>
+<cim:Property.propertyType>WKQCJ</cim:Property.propertyType>
+<cim:Property.propertyValue>WKQCJ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-FJXH/PowerTransformer"><!--风机型号-->
+<cim:Naming.name>风机型号</cim:Naming.name>
+<cim:Property.propertyType>FJXH</cim:Property.propertyType>
+<cim:Property.propertyValue>FJXH#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-FJCM/PowerTransformer"><!--风机厂名-->
+<cim:Naming.name>风机厂名</cim:Naming.name>
+<cim:Property.propertyType>FJCM</cim:Property.propertyType>
+<cim:Property.propertyValue>FJCM#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-QSZ/PowerTransformer"><!--器身重-->
+<cim:Naming.name>器身重</cim:Naming.name>
+<cim:Property.propertyType>QSZ</cim:Property.propertyType>
+<cim:Property.propertyValue>QSZ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-YZ/PowerTransformer"><!--油重-->
+<cim:Naming.name>油重</cim:Naming.name>
+<cim:Property.propertyType>YZ</cim:Property.propertyType>
+<cim:Property.propertyValue>YZ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-YCD/PowerTransformer"><!--油产地-->
+<cim:Naming.name>油产地</cim:Naming.name>
+<cim:Property.propertyType>YCD</cim:Property.propertyType>
+<cim:Property.propertyValue>BYQYCD#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JDBZXDEDDL/PowerTransformer"><!--接地变中性点额定电流-->
+<cim:Naming.name>接地变中性点额定电流</cim:Naming.name>
+<cim:Property.propertyType>JDBZXDEDDL</cim:Property.propertyType>
+<cim:Property.propertyValue>JDBZXDEDDL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JDBZXDLJSB/PowerTransformer"><!--接地变中性点连接设备-->
+<cim:Naming.name>接地变中性点连接设备</cim:Naming.name>
+<cim:Property.propertyType>JDBZXDLJSB</cim:Property.propertyType>
+<cim:Property.propertyValue>JDBZXDLJSB#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-FZSH/PowerTransformer"><!--负载损耗-->
+<cim:Naming.name>负载损耗</cim:Naming.name>
+<cim:Property.propertyType>FZSH</cim:Property.propertyType>
+<cim:Property.propertyValue>FZSH#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-LXZK/PowerTransformer"><!--零序阻抗-->
+<cim:Naming.name>零序阻抗</cim:Naming.name>
+<cim:Property.propertyType>LXZK</cim:Property.propertyType>
+<cim:Property.propertyValue>LXZK#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-KZDL/PowerTransformer"><!--空载电流-->
+<cim:Naming.name>空载电流</cim:Naming.name>
+<cim:Property.propertyType>KZDL</cim:Property.propertyType>
+<cim:Property.propertyValue>KZDL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DYFS/PowerTransformer"><!--调压方式-->
+<cim:Naming.name>调压方式</cim:Naming.name>
+<cim:Property.propertyType>DYFS</cim:Property.propertyType>
+<cim:Property.propertyValue>TYFS#</cim:Property.propertyValue>
+</cim:Property>
+</rdf:RDF>

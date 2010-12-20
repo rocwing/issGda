@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:Storage rdf:ID="PMS-Storage@PMSID#/Storage">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/Storage"/>
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->
+<cim:Storage.address>CKDD#</cim:Storage.address><!--仓库地点-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+</cim:Storage>
+
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/Storage">
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--管理单位-->
+</cim:Asset>
+</rdf:RDF>
