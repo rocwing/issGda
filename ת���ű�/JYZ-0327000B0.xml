@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:Equipment rdf:ID="PMS-Equipment@PMSID#/Equipment">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/Equipment"/>
+<!--cimadd-->
+<cim:PowerSystemResource.remarks>BZ#</cim:PowerSystemResource.remarks><!--备注-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@SCSBH#/EquipmentLocation"/><!--关联上层设备号-->
+<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@PMSID#/Equipment"/><!--关联相数-->
+<cim:Naming.name>SBMC#</cim:Naming.name><!--设备名称-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->
+<cim:PowerSystemResource.dispatchNo>YXBH#</cim:PowerSystemResource.dispatchNo><!--运行编号-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Storage@CKPMSID#/Storage"/><!--关联仓库名称-->
+</cim:Equipment>
+
+<cim:ElectricalAssetModel  rdf:ID="PMS-ElectricalAssetModel@PMSID#/Equipment">
+<cim:Naming.name>SBXH#</cim:Naming.name><!--设备型号-->
+<cim:ElectricalAssetModel.numberPhases>SXHDX#</cim:ElectricalAssetModel.numberPhases><!--相数-->
+<cim:ElectricalAssetModel.leakageDistance >PDBJ#</cim:ElectricalAssetModel.leakageDistance ><!--爬电比距-->
+</cim:ElectricalAssetModel>
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/Equipment">
+<!--cimassetadd-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JGGD/Equipment"/><!--关联结构高度(mm)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-MCPS/Equipment"/><!--关联每串片数(片)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-CS/Equipment"/><!--关联串(支)数-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JXLL/Equipment"/><!--关联机械拉力-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JXWJ/Equipment"/><!--关联机械弯距-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JXNJ/Equipment"/><!--关联机械扭距-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-GHJL/Equipment"/><!--关联干弧距离-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-CLFL/Equipment"/><!--关联材料分类-->
+<cim:Asset.assetType>JGXS#</cim:Asset.assetType><!--类型-->
+<cim:Asset.serialNumber>GDZCBM#</cim:Asset.serialNumber><!--固定资产编码-->
+<cim:Asset.currentStatus>YXZT#</cim:Asset.currentStatus><!--设备状态-->
+<cim:Asset.antipollutionGrade>FWDJ#</cim:Asset.antipollutionGrade><!--防污等级-->
+<cim:Asset.installationEnviron>SYHJ#</cim:Asset.installationEnviron><!--使用环境-->
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.manufacturedDate>CCRQ#</cim:Asset.manufacturedDate><!--出厂日期-->
+<cim:Asset.codeName>CPDH#</cim:Asset.codeName><!--产品代号-->
+<cim:Asset.utc>CCBH#</cim:Asset.utc><!--出厂编号-->
+<cim:Asset.factory>SCCJ#</cim:Asset.factory><!--生产厂家-->
+<cim:Asset.manufacturedCountry>ZZGJ#</cim:Asset.manufacturedCountry><!--制造国家-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.phases>XB#</cim:Asset.phases><!--相别-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo>
+</cim:Asset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+<cim:Property rdf:ID="PMS-Property@PMSID#-JGGD/Equipment"><!--结构高度(mm)-->
+<cim:Naming.name>结构高度(mm)</cim:Naming.name>
+<cim:Property.propertyType>JGGD</cim:Property.propertyType>
+<cim:Property.propertyValue>JGGD#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-MCPS/Equipment"><!--每串片数(片)-->
+<cim:Naming.name>每串片数(片)</cim:Naming.name>
+<cim:Property.propertyType>MCPS</cim:Property.propertyType>
+<cim:Property.propertyValue>MCPS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-CS/Equipment"><!--串(支)数-->
+<cim:Naming.name>串(支)数</cim:Naming.name>
+<cim:Property.propertyType>CS</cim:Property.propertyType>
+<cim:Property.propertyValue>CS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JXLL/Equipment"><!--机械拉力-->
+<cim:Naming.name>机械拉力</cim:Naming.name>
+<cim:Property.propertyType>JXLL</cim:Property.propertyType>
+<cim:Property.propertyValue>JXLL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JXWJ/Equipment"><!--机械弯距-->
+<cim:Naming.name>机械弯距</cim:Naming.name>
+<cim:Property.propertyType>JXWJ</cim:Property.propertyType>
+<cim:Property.propertyValue>JXWJ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JXNJ/Equipment"><!--机械扭距-->
+<cim:Naming.name>机械扭距</cim:Naming.name>
+<cim:Property.propertyType>JXNJ</cim:Property.propertyType>
+<cim:Property.propertyValue>JJNJ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-GHJL/Equipment"><!--干弧距离-->
+<cim:Naming.name>干弧距离</cim:Naming.name>
+<cim:Property.propertyType>GHJL</cim:Property.propertyType>
+<cim:Property.propertyValue>GHJL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-CLFL/Equipment"><!--材料分类-->
+<cim:Naming.name>材料分类</cim:Naming.name>
+<cim:Property.propertyType>CLFL</cim:Property.propertyType>
+<cim:Property.propertyValue>CLFL#</cim:Property.propertyValue>
+</cim:Property>
+</rdf:RDF>

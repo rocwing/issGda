@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:StaticVarCompensator rdf:ID="PMS-StaticVarCompensator@PMSID#/StaticVarCompensator">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/StaticVarCompensator"/>
+<!--cimadd-->
+<cim:PowerSystemResource.remarks>BZ#</cim:PowerSystemResource.remarks><!--备注-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@SCSBH#/EquipmentLocation"/><!--关联上层设备号-->
+<cim:PowerSystemResource.dispatchNo>YXBH#</cim:PowerSystemResource.dispatchNo><!--运行编号-->
+<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@PMSID#/StaticVarCompensator"/><!--关联相数-->
+<cim:Naming.name>SBMC#</cim:Naming.name><!--设备名称-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->	
+<cim:PowerSystemResource.unitName>JGDY#</cim:PowerSystemResource.unitName><!--间隔单元-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Storage@CKPMSID#/Storage"/><!--关联仓库名称-->
+</cim:StaticVarCompensator>
+<!--cimoutsideadd-->
+
+<cim:ElectricalAssetModel  rdf:ID="PMS-ElectricalAssetModel@PMSID#/StaticVarCompensator">
+<cim:Naming.name>SBXH#</cim:Naming.name><!--设备型号-->
+<cim:ElectricalAssetModel.ratedVolts>EDDY#</cim:ElectricalAssetModel.ratedVolts><!--额定电压-->
+<cim:ElectricalAssetModel.ratedAmps>EDDL#</cim:ElectricalAssetModel.ratedAmps><!--额定电流-->
+<cim:ElectricalAssetModel.numberPhases>SXHDX#</cim:ElectricalAssetModel.numberPhases><!--相数-->
+<cim:ElectricalAssetModel.insulateMedium>JYJZ#</cim:ElectricalAssetModel.insulateMedium><!--绝缘介质-->
+</cim:ElectricalAssetModel>
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/StaticVarCompensator">
+<!--cimassetadd-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DRZ/StaticVarCompensator"/><!--关联电容值-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DRQSZMX/StaticVarCompensator"/><!--关联电容器所在母线-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DTRL/StaticVarCompensator"/><!--关联单台容量-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JXFS/StaticVarCompensator"/><!--关联接线方式-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DRQZNBBHFS/StaticVarCompensator"/><!--关联电容器组内部保护方式-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-TS/StaticVarCompensator"/><!--关联台数-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-AZFS/StaticVarCompensator"/><!--关联安装方式-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DTBHFS/StaticVarCompensator"/><!--单台保护方式-->
+<cim:Asset.serialNumber>GDZCBM#</cim:Asset.serialNumber><!--固定资产编码-->
+<cim:Asset.currentStatus>YXZT#</cim:Asset.currentStatus><!--设备状态-->
+<cim:Asset.antipollutionGrade>FWDJ#</cim:Asset.antipollutionGrade><!--防污等级-->
+<cim:Asset.installationEnviron>SYHJ#</cim:Asset.installationEnviron><!--使用环境-->
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.manufacturedDate>CCRQ#</cim:Asset.manufacturedDate><!--出厂日期-->
+<cim:Asset.codeName>CPDH#</cim:Asset.codeName><!--产品代号-->
+<cim:Asset.utc>CCBH#</cim:Asset.utc><!--出厂编号-->
+<cim:Asset.factory>SCCJ#</cim:Asset.factory><!--生产厂家-->
+<cim:Asset.manufacturedCountry>ZZGJ#</cim:Asset.manufacturedCountry><!--制造国家-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.phases>XB#</cim:Asset.phases><!--相别-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo>
+</cim:Asset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+<cim:Property rdf:ID="PMS-Property@PMSID#-DRQSZMX/StaticVarCompensator"><!--电容器所在母线-->
+<cim:Naming.name>电容器所在母线</cim:Naming.name>
+<cim:Property.propertyType>DRQSZMX</cim:Property.propertyType>
+<cim:Property.propertyValue>DRQSZMX#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DTRL/StaticVarCompensator"><!--单台容量-->
+<cim:Naming.name>单台容量</cim:Naming.name>
+<cim:Property.propertyType>DTRL</cim:Property.propertyType>
+<cim:Property.propertyValue>DTRL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JXFS/StaticVarCompensator"><!--接线方式-->
+<cim:Naming.name>接线方式</cim:Naming.name>
+<cim:Property.propertyType>JXFS</cim:Property.propertyType>
+<cim:Property.propertyValue>JXFS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DRQZNBBHFS/StaticVarCompensator"><!--电容器组内部保护方式-->
+<cim:Naming.name>电容器组内部保护方式</cim:Naming.name>
+<cim:Property.propertyType>DRQZNBBHFS</cim:Property.propertyType>
+<cim:Property.propertyValue>DRQNBBHFS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DRZ/StaticVarCompensator"><!--电容值-->
+<cim:Naming.name>电容值</cim:Naming.name>
+<cim:Property.propertyType>DRZ</cim:Property.propertyType>
+<cim:Property.propertyValue>DRZ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-FDXQYCDY/StaticVarCompensator"><!--放电线圈/一次电压(kV)-->
+<cim:Naming.name>放电线圈/一次电压(kV)</cim:Naming.name>
+<cim:Property.propertyType>FDXQYCDY</cim:Property.propertyType>
+<cim:Property.propertyValue>FDXQYCDY#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-TS/StaticVarCompensator"><!--台数-->
+<cim:Naming.name>台数</cim:Naming.name>
+<cim:Property.propertyType>TS</cim:Property.propertyType>
+<cim:Property.propertyValue>TS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-AZFS/StaticVarCompensator"><!--安装方式-->
+<cim:Naming.name>安装方式</cim:Naming.name>
+<cim:Property.propertyType>AZFS</cim:Property.propertyType>
+<cim:Property.propertyValue>AZFS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DTBHFS/StaticVarCompensator"><!--单台保护方式-->
+<cim:Naming.name>单台保护方式</cim:Naming.name>
+<cim:Property.propertyType>DTBHFS</cim:Property.propertyType>
+<cim:Property.propertyValue>DTBHFS#</cim:Property.propertyValue>
+</cim:Property>
+</rdf:RDF>
