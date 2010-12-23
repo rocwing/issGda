@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:EquipmentLocation rdf:ID="PMS-EquipmentLocation@PMSID#/EquipmentLocation">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/EquipmentLocation"/>
+<!--cimadd-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联位置类型-->
+<cim:PowerSystemResource.dispatchNo>YXBH#</cim:PowerSystemResource.dispatchNo><!--运行编号-->
+<cim:EquipmentLocation.ChildType rdf:resource="#PMS-PSRType@SBLXID#"/><!--关联子设备类型-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-Bay@SCSBH#/Bay"/><!--关联上层设备号,即间隔单元-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Naming.name>SCMC#</cim:Naming.name><!--运行位置双重名称-->
+</cim:EquipmentLocation>
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/EquipmentLocation">
+<!--cimassetadd-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+</cim:Asset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+</rdf:RDF>

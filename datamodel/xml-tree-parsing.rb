@@ -2,10 +2,10 @@ require 'rexml/document'
 include REXML
 require 'win32ole'
 excel = WIN32OLE::new('excel.Application')
-workbook = excel.Workbooks.Open('E:\iESBtest\saxonhe9-3-0-1j\assetmodel\BDYCSB\pms_breaker.xls')
+workbook = excel.Workbooks.Open('D:\datamodel\pms_gis.xls')
 worksheet = workbook.Worksheets(1)
 worksheet.Select
-file1 = File.new("breakertest.xslt","w+")
+file1 = File.new("pms_gis.xslt","w+")
 
 #doc1 = Document.new "<v_breaker/>"
 doc1 = Document.new
@@ -21,7 +21,7 @@ equip.add_element "TABLE_NAME"
 
 no = equip.add_element "NO"
 #no.add_element "xsl:value-of", {"select"=>"substring(cim:Breaker/cim:PowerSystemResource.Asset/@rdf:resource,12,5)" }
-no.add_text "'<xsl:value-of select=\"substring(cim:Breaker/@rdf:ID,13,17)\"/>'"
+no.add_text "'<xsl:value-of select=\"substring(cim:BusbarSection/cim:PowerSystemResource.Asset/@rdf:resource,12,17)\"/>'"
 substation_no = equip.add_element "SUBSTATIONNO"
 substation_no.add_text "'<xsl:value-of select=\"substring(cim:Breaker/cim:Equipment.MemberOf_EquipmentContainer/@rdf:resource,17,17)\"/>'"
 parentpsr = equip.add_element "PARENTPSR"
@@ -37,7 +37,7 @@ while worksheet.Range("a#{line}").value
 	puts worksheet.Range("a#{line}").value
     row_name = worksheet.Range("a#{line}").value
     row_name_exist = true
-file = File.new('DLQ-0305000B0.xml')
+file = File.new('ZHDQ-0321000B0.xml')
 doc = Document.new(file)
 #file = File.new(Dir.pwd+"/BDYCSB/"+entry)
 
@@ -166,6 +166,7 @@ puts "-----------------------------------------------------------------------"
 =end
 #doc1.write
 #file1.puts doc1.write
+excel.Quit
 fmt = Formatters::Pretty.new
 fmt.write(doc1,file1)
 puts doc1.to_s 

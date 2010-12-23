@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:Bay rdf:ID="PMS-Bay@PMSID#/Bay">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/Bay"/>
+<!--cimadd-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联间隔单元的设备类型-->
+<cim:PowerSystemResource.dispatchNo>JGBH#</cim:PowerSystemResource.dispatchNo><!--单元编号-->
+<cim:Naming.name>JGMC#</cim:Naming.name><!--单元名称-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-Substation@SCSBH#/Substation"/><!--关联上层设备号-->
+<cim:Bay.MemberOf_Substation rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Bay.bayType>JGDYLX#</cim:Bay.bayType><!--单元类型-->
+</cim:Bay>
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/Bay">
+<!--cimassetadd-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo><!--工程编号-->
+</cim:Asset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+</rdf:RDF>

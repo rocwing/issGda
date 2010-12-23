@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:CT rdf:ID="PMS-CT@PMSID#/CT">
+<cim:CT.CTAsset rdf:resource="#PMS-CTAsset@PMSID#/CT"/>
+<!--cimadd-->
+<cim:ConductingEquipment.heatTime>RWDDLSJ#</cim:ConductingEquipment.heatTime><!--热稳定电流时间-->
+<cim:ConductingEquipment.dynamicCurrent>DWDDL#</cim:ConductingEquipment.dynamicCurrent><!--动稳定电流-->
+<cim:CT.ctRunningRatio>YXBB#</cim:CT.ctRunningRatio><!--运行变比-->
+<cim:CT.ctRatedRatio>EDDLB#</cim:CT.ctRatedRatio><!--运行变比-->	
+<cim:PowerSystemResource.coEquipmentNumber>ZHDQMC#</cim:PowerSystemResource.coEquipmentNumber><!--组合式设备编号-->
+<cim:PowerSystemResource.ifCoEquipment>ZHSBLX#</cim:PowerSystemResource.ifCoEquipment><!--组合设备类型-->
+<cim:PowerSystemResource.remarks>BZ#</cim:PowerSystemResource.remarks><!--备注-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@SCSBH#/EquipmentLocation"/><!--关联上层设备号-->
+<cim:PowerSystemResource.dispatchNo>YXBH#</cim:PowerSystemResource.dispatchNo><!--运行编号-->
+<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@PMSID#/CT"/><!--关联相数-->
+<cim:Naming.name>SBMC#</cim:Naming.name><!--设备名称-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->
+<cim:PowerSystemResource.unitName>JGDY#</cim:PowerSystemResource.unitName><!--间隔单元-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@SUBPMSID#/Substation"/><!--关联变电站名称-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Storage@CKPMSID#/Storage"/><!--关联仓库名称-->
+</cim:CT>
+
+<cim:ElectricalAssetModel  rdf:ID="PMS-ElectricalAssetModel@PMSID#/CT">
+<cim:Naming.name>SBXH#</cim:Naming.name><!--设备型号-->
+<cim:ElectricalAssetModel.ratedVolts>EDDY#</cim:ElectricalAssetModel.ratedVolts><!--额定电压-->
+<cim:ElectricalAssetModel.numberPhases>SXHDX#</cim:ElectricalAssetModel.numberPhases><!--相数-->
+<cim:ElectricalAssetModel.insulateMedium>JYJZ#</cim:ElectricalAssetModel.insulateMedium><!--绝缘介质-->
+<cim:ElectricalAssetModel.weightTotal>ZZ#</cim:ElectricalAssetModel.weightTotal><!--总重-->
+<cim:ElectricalAssetModel.bil>JYSP#</cim:ElectricalAssetModel.bil><!--绝缘水平-->
+<cim:ElectricalAssetModel.leakageDistance>CTPDBJ#</cim:ElectricalAssetModel.leakageDistance><!--爬电比距-->
+</cim:ElectricalAssetModel>
+
+<cim:CTAsset rdf:ID="PMS-CTAsset@PMSID#/CT">
+<!--cimassetadd-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DRL/CT"/><!--关联电容量-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-YCJ/CT"/><!--关联油厂家-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-YZ/CT"/><!--关联油重-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-YBBAXS/CT"/><!--关联仪表保安系数-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SF6QTZXYXYL/CT"/><!--关联SF6气体最小运行压力-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SF6QTYSYL/CT"/><!--关联SF6气体运输压力-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SF6QTEDYL/CT"/><!--关联SF6气体额定压力-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-ECRZSLBH/CT"/><!--关联二次绕组数量(保护)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-ECRZZSL/CT"/><!--关联二次绕组总数量-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-LXRWDDL/CT"/><!--关联连续热稳定电流-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-ZGGZDY/CT"/><!--关联最高工作电压-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JYLX/CT"/><!--关联绝缘类型-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SFWLX/CT"/><!--关联是否为零序CT-->
+<cim:Asset.serialNumber>GDZCBM#</cim:Asset.serialNumber><!--固定资产编码-->
+<cim:Asset.currentStatus>YXZT#</cim:Asset.currentStatus><!--设备状态-->
+<cim:Asset.antipollutionGrade>FWDJ#</cim:Asset.antipollutionGrade><!--防污等级-->
+<cim:Asset.installationEnviron>SYHJ#</cim:Asset.installationEnviron><!--使用环境-->
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.manufacturedDate>CCRQ#</cim:Asset.manufacturedDate><!--出厂日期-->
+<cim:Asset.codeName>CPDH#</cim:Asset.codeName><!--产品代号-->
+<cim:Asset.utc>CCBH#</cim:Asset.utc><!--出厂编号-->
+<cim:Asset.factory>SCCJ#</cim:Asset.factory><!--生产厂家-->
+<cim:Asset.manufacturedCountry>ZZGJ#</cim:Asset.manufacturedCountry><!--制造国家-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.phases>XB#</cim:Asset.phases><!--相别-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo>
+</cim:CTAsset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+<cim:Property rdf:ID="PMS-Property@PMSID#-JYJZZL/CT"><!--绝缘介质重量-->
+<cim:Naming.name>绝缘介质重量</cim:Naming.name>
+<cim:Property.propertyType>JYJZZL</cim:Property.propertyType>
+<cim:Property.propertyValue>JYJZZL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-SF6QTZXYXYL/CT"><!--SF6气体最小运行压力-->
+<cim:Naming.name>SF6气体最小运行压力</cim:Naming.name>
+<cim:Property.propertyType>SF6QTZXYXYL</cim:Property.propertyType>
+<cim:Property.propertyValue>SF6QTZXYXYL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-SF6QTYSYL/CT"><!--SF6气体运输压力-->
+<cim:Naming.name>SF6气体运输压力</cim:Naming.name>
+<cim:Property.propertyType>SF6QTYSYL</cim:Property.propertyType>
+<cim:Property.propertyValue>SF6QTYSYL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-SF6QTEDYL/CT"><!--SF6气体额定压力-->
+<cim:Naming.name>SF6气体额定压力</cim:Naming.name>
+<cim:Property.propertyType>SF6QTEDYL</cim:Property.propertyType>
+<cim:Property.propertyValue>SF6QTEDYL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-ECRZSLBH/CT"><!--二次绕组数量(保护)-->
+<cim:Naming.name>二次绕组数量(保护)</cim:Naming.name>
+<cim:Property.propertyType>ECRZSL(BH)</cim:Property.propertyType>
+<cim:Property.propertyValue>ECRZSLBH#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-ECRZSLJL/CT"><!--二次绕组数量(计量)-->
+<cim:Naming.name>二次绕组数量(计量)</cim:Naming.name>
+<cim:Property.propertyType>ECRZSL(JL)</cim:Property.propertyType>
+<cim:Property.propertyValue>ECRZSLJL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-ECRZZSL/CT"><!--二次绕组总数量-->
+<cim:Naming.name>二次绕组总数量</cim:Naming.name>
+<cim:Property.propertyType>ECRZZSL</cim:Property.propertyType>
+<cim:Property.propertyValue>ECRZZSL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-LXRWDDL/CT"><!--连续热稳定电流-->
+<cim:Naming.name>连续热稳定电流</cim:Naming.name>
+<cim:Property.propertyType>LXRWDDL</cim:Property.propertyType>
+<cim:Property.propertyValue>LXRWDDL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-ZGGZDY/CT"><!--最高工作电压-->
+<cim:Naming.name>最高工作电压</cim:Naming.name>
+<cim:Property.propertyType>ZGGZDY</cim:Property.propertyType>
+<cim:Property.propertyValue>ZGGZDY#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-JYLX/CT"><!--绝缘类型-->
+<cim:Naming.name>绝缘类型</cim:Naming.name>
+<cim:Property.propertyType>JYLX</cim:Property.propertyType>
+<cim:Property.propertyValue>JYLX#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-DRL/CT"><!--电容量-->
+<cim:Naming.name>电容量</cim:Naming.name>
+<cim:Property.propertyType>DRL</cim:Property.propertyType>
+<cim:Property.propertyValue>DRL#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-YCJ/CT"><!--油厂家-->
+<cim:Naming.name>油厂家</cim:Naming.name>
+<cim:Property.propertyType>YCJ</cim:Property.propertyType>
+<cim:Property.propertyValue>YCJ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-YZ/CT"><!--油重-->
+<cim:Naming.name>油重</cim:Naming.name>
+<cim:Property.propertyType>YZ</cim:Property.propertyType>
+<cim:Property.propertyValue>YZ#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-YBBAXS/CT"><!--仪表保安系数-->
+<cim:Naming.name>仪表保安系数</cim:Naming.name>
+<cim:Property.propertyType>YBBAXS</cim:Property.propertyType>
+<cim:Property.propertyValue>YBBAXS#</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@PMSID#-SFWLX/CT"><!--是否为零序CT-->
+<cim:Naming.name>是否为零序CT</cim:Naming.name>
+<cim:Property.propertyType>SFWLX</cim:Property.propertyType>
+<cim:Property.propertyValue>SFWLX#</cim:Property.propertyValue>
+</cim:Property>
+</rdf:RDF>
