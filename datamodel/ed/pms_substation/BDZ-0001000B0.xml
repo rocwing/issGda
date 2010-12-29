@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#">
+<cim:Substation rdf:ID="PMS-Substation@PMSID#/Substation">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@PMSID#/Substation"/>
+<!--cimadd-->
+<cim:PowerSystemResource.locCode>GNWZ#</cim:PowerSystemResource.locCode><!--功能位置-->
+<cim:PowerSystemResource.remarks>BZ#</cim:PowerSystemResource.remarks><!--备注-->
+<cim:Substation.teleNumber>LXDH#</cim:Substation.teleNumber><!--联系电话-->
+<cim:Substation.buldingArea>JZMJ#</cim:Substation.buldingArea><!--建筑面积-->
+<cim:Substation.occupyingArea>ZDMJ#</cim:Substation.occupyingArea><!--占地面积-->
+<cim:Substation.subAddress>ZZ#</cim:Substation.subAddress><!--站址-->
+<cim:Substation.subType>BDZXZ#</cim:Substation.subType><!--变电站或开关站-->
+<cim:PowerSystemResource.filthGrade>WHDJ#</cim:PowerSystemResource.filthGrade><!--污秽等级-->
+<cim:Substation.pivotSubstation>SFSLZ#</cim:Substation.pivotSubstation><!--是否枢纽站-->
+<cim:Substation.fixingMode>BZFS#</cim:Substation.fixingMode><!--布置方式-->
+<cim:Substation.workingMode>ZBFS#</cim:Substation.workingMode><!--值班方式-->
+<cim:Substation.district>SZXZQY#</cim:Substation.district><!--所在行政区域-->
+<cim:PowerSystemResource.dispatchNo>BDZBM#</cim:PowerSystemResource.dispatchNo><!--变电站编码-->
+<cim:Naming.name>BDZZJ#</cim:Naming.name><!--变电站名称-->
+<cim:PowerSystemResource.runingCrew>YXBM#</cim:PowerSystemResource.runingCrew><!--运行维护班组名称-->
+<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@CIMNODE#"/><!--关联设备类型-->
+</cim:Substation>
+<!--cimassetadd-->
+<cim:Asset rdf:ID="PMS-Asset@PMSID#/Substation">		
+<cim:Asset.plantTransferDate>TYRQ#</cim:Asset.plantTransferDate><!--投运日期-->
+<cim:Asset.voltGrade>DYDJ#</cim:Asset.voltGrade><!--电压等级-->
+<cim:Asset.Organisations rdf:resource="#PMS-Organisation@assetOrganisation#"/><!--资产归属二级单位-->
+<cim:Asset.projectNo>GCBH#</cim:Asset.projectNo><!--关联工程编号-->
+<cim:Asset.endDate>TUIYRQ#</cim:Asset.endDate><!--退运日期-->
+</cim:Asset>
+<!--cimassertoutsideadd-->
+<!--cimproperty-->
+</rdf:RDF>
