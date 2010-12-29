@@ -3,31 +3,27 @@
   <xsl:template match="/rdf:RDF">
     <EQUIP>
       <TABLE_NAME>
-         pms_zbq
+         pms_jdw
       </TABLE_NAME>
       <NO>
         '<xsl:value-of
-        select="substring(cim:ConductingEquipment/cim:PowerSystemResource.Asset/@rdf:resource,12,17)"/>'
+        select="substring(cim:Ground/cim:PowerSystemResource.Asset/@rdf:resource,12,17)"/>'
       </NO>
-      <ITEM>
-       <Property name="SUBSTATIONNO">
-        '<xsl:for-each select='cim:ConductingEquipment/cim:Equipment.MemberOf_EquipmentContainer'>
+      <SUBSTATIONNO>
+        <xsl:for-each select='cim:Ground/cim:Equipment.MemberOf_EquipmentContainer'>
         <xsl:if test='substring(@rdf:resource,6,3)=&apos;Sub&apos;'>
-          <xsl:value-of select='substring(@rdf:resource,17,17)'/>
+          '<xsl:value-of select='substring(@rdf:resource,17,17)'/>'
         </xsl:if>
-         </xsl:for-each>'
-       </Property>
-      </ITEM>
-      <ITEM>
-       <Property name="PARENTPSR">
+      </xsl:for-each>
+      </SUBSTATIONNO>
+      <PARENTPSR>
         '<xsl:value-of
-        select="substring(cim:ConductingEquipment/cim:PowerSystemResource.ParentPSR/@rdf:resource,24,17)"/>'
-       </Property>
-      </ITEM>
+        select="substring(cim:Ground/cim:PowerSystemResource.ParentPSR/@rdf:resource,24,17)"/>'
+      </PARENTPSR>
       <ITEM>
         <Property name="PSRTYPE">
           '<xsl:value-of
-          select="substring(cim:ConductingEquipment/cim:PowerSystemResource.PSRType/@rdf:resource,14,9)"/>'
+          select="substring(cim:Ground/cim:PowerSystemResource.PSRType/@rdf:resource,14,9)"/>'
         </Property>
       </ITEM>
       <ITEM>
@@ -39,7 +35,7 @@
       <ITEM>
         <Property name="NAME">
           '<xsl:value-of
-          select="cim:ConductingEquipment/cim:Naming.name"/>'
+          select="cim:Ground/cim:Naming.name"/>'
         </Property>
       </ITEM>
       <ITEM>
@@ -61,18 +57,6 @@
         </Property>
       </ITEM>
       <ITEM>
-        <Property name="RATEDAMPS">
-          '<xsl:value-of
-          select="cim:ElectricalAssetModel/cim:ElectricalAssetModel.ratedAmps"/>'
-        </Property>
-      </ITEM>
-      <ITEM>
-        <Property name="FREQUENCY">
-          '<xsl:value-of
-          select="cim:ElectricalAssetModel/cim:ElectricalAssetModel.frequency"/>'
-        </Property>
-      </ITEM>
-      <ITEM>
         <Property name="NUMBERPHASES">
           '<xsl:value-of
           select="cim:ElectricalAssetModel/cim:ElectricalAssetModel.numberPhases"/>'
@@ -87,7 +71,7 @@
       <ITEM>
         <Property name="DISPATCHNO">
           '<xsl:value-of
-          select="cim:ConductingEquipment/cim:PowerSystemResource.dispatchNo"/>'
+          select="cim:Ground/cim:PowerSystemResource.dispatchNo"/>'
         </Property>
       </ITEM>
       <ITEM>
@@ -153,29 +137,11 @@
       <ITEM>
         <Property name="REMARKS">
           '<xsl:value-of
-          select="cim:ConductingEquipment/cim:PowerSystemResource.remarks"/>'
-        </Property>
-      </ITEM>
-      <ITEM>
-        <Property name="HEATTIME">
-          '<xsl:value-of
-          select="cim:ConductingEquipment/cim:ConductingEquipment.heatTime"/>'
-        </Property>
-      </ITEM>
-      <ITEM>
-        <Property name="HEATCURRENT">
-          '<xsl:value-of
-          select="cim:ConductingEquipment/cim:ConductingEquipment.heatCurrent"/>'
-        </Property>
-      </ITEM>
-      <ITEM>
-        <Property name="DYNAMICCURRENT">
-          '<xsl:value-of
-          select="cim:ConductingEquipment/cim:ConductingEquipment.dynamicCurrent"/>'
+          select="cim:Ground/cim:PowerSystemResource.remarks"/>'
         </Property>
       </ITEM>
       <xsl:for-each select="cim:Property">
-        <xsl:if test="string(cim:Property.propertyType) eq 'AZFS'">
+        <xsl:if test="string(cim:Property.propertyType) eq 'ZDWCZ'">
           <ITEM>
             <Property>
               <xsl:attribute name="name">
@@ -188,7 +154,7 @@
         </xsl:if>
       </xsl:for-each>
       <xsl:for-each select="cim:Property">
-        <xsl:if test="string(cim:Property.propertyType) eq 'EDDG'">
+        <xsl:if test="string(cim:Property.propertyType) eq 'ZWJM'">
           <ITEM>
             <Property>
               <xsl:attribute name="name">
@@ -201,7 +167,33 @@
         </xsl:if>
       </xsl:for-each>
       <xsl:for-each select="cim:Property">
-        <xsl:if test="string(cim:Property.propertyType) eq 'ZSPL'">
+        <xsl:if test="string(cim:Property.propertyType) eq 'JDYXXCZ'">
+          <ITEM>
+            <Property>
+              <xsl:attribute name="name">
+                <xsl:value-of select="cim:Property.propertyType"/>
+              </xsl:attribute>
+              '<xsl:value-of
+              select="cim:Property.propertyValue"/>'
+            </Property>
+          </ITEM>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:for-each select="cim:Property">
+        <xsl:if test="string(cim:Property.propertyType) eq 'JDYXXZXJM'">
+          <ITEM>
+            <Property>
+              <xsl:attribute name="name">
+                <xsl:value-of select="cim:Property.propertyType"/>
+              </xsl:attribute>
+              '<xsl:value-of
+              select="cim:Property.propertyValue"/>'
+            </Property>
+          </ITEM>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:for-each select="cim:Property">
+        <xsl:if test="string(cim:Property.propertyType) eq 'JDDZ'">
           <ITEM>
             <Property>
               <xsl:attribute name="name">

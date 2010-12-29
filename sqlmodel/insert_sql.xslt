@@ -4,8 +4,8 @@
 	
 	<xsl:template match="/">
 	     INSERT INTO <xsl:value-of select="EQUIP/TABLE_NAME"/>(
-	         NO,SUBSTATIONNO,PARENTPSR<xsl:for-each select="EQUIP/ITEM">,<xsl:value-of select="Property/@name"/></xsl:for-each>
+	         NO<xsl:for-each select="EQUIP/ITEM">,<xsl:value-of select="Property/@name"/></xsl:for-each>
 	     )
-	     VALUES(<xsl:value-of select="EQUIP/NO"/>,<xsl:value-of select="EQUIP/SUBSTATIONNO"/>,<xsl:value-of select="EQUIP/PARENTPSR"/><xsl:for-each select="EQUIP/ITEM">,<xsl:value-of select="Property"/></xsl:for-each>)
+	     VALUES(<xsl:value-of select="EQUIP/NO"/><xsl:for-each select="EQUIP/ITEM">,<xsl:value-of select="Property"/></xsl:for-each>)
 	</xsl:template>
 </xsl:stylesheet>

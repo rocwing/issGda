@@ -3,7 +3,7 @@
 	<xsl:output method="text" encoding="GBK" indent="yes"/>
 	<xsl:template match="/">
 	UPDATE <xsl:value-of select="EQUIP/TABLE_NAME"/> SET
-	       SUBSTATIONNO=<xsl:value-of select="EQUIP/SUBSTATIONNO"/>,PARENTPSR=<xsl:value-of select="EQUIP/PARENTPSR"/><xsl:for-each select="EQUIP/ITEM"><xsl:if test="not(Property='')">,<xsl:value-of select="Property/@name"/>=<xsl:value-of select="Property"/>
+	       NO=<xsl:value-of select="EQUIP/NO"/><xsl:for-each select="EQUIP/ITEM"><xsl:if test="not(Property='')">,<xsl:value-of select="Property/@name"/>=<xsl:value-of select="Property"/>
        		</xsl:if>
            </xsl:for-each>WHERE NO=<xsl:value-of select="EQUIP/NO"/>
 	</xsl:template>

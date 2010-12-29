@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Asset rdf:ID="PMS-Asset@02M10000000326353/Bay">
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-Bay@02M10000000326353/Bay"/>
+		<cim:Asset.plantTransferDate>2000-06-16 00:00:00</cim:Asset.plantTransferDate>
+	</cim:Asset>
+	<cim:Bay rdf:ID="PMS-Bay@02M10000000326353/Bay">
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0001000B2"/>
+		<cim:Naming.name>260出线单元</cim:Naming.name>
+		<cim:Bay.MemberOf_Substation rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+		<cim:Bay.bayType>出线单元</cim:Bay.bayType>
+		<cim:PowerSystemResource.dispatchNo>260</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1042</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M10000000326353/Bay"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-EquipmentLocation@02M2CQ00010011429/EquipmentLocation"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-EquipmentLocation@02M2CQ00010074246/EquipmentLocation"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-EquipmentLocation@02M2CQ00010033739/EquipmentLocation"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-EquipmentLocation@02M2CQ00010055653/EquipmentLocation"/>
+	</cim:Bay>
+</rdf:RDF>

@@ -9,18 +9,14 @@
         '<xsl:value-of
         select="substring(cim:EquipmentLocation/cim:PowerSystemResource.Asset/@rdf:resource,12,17)"/>'
       </NO>
-      <ITEM>
-        <Property name="SUBSTATION">
+      <SUBSTATION>
         '<xsl:value-of
         select="substring(cim:EquipmentLocation/cim:Equipment.MemberOf_EquipmentContainer/@rdf:resource,17,17)"/>'
-      </Property>
-      </ITEM>
-      <ITEM>
-        <Property name="BAY">
+      </SUBSTATION>
+      <BAY>
         '<xsl:value-of
         select="substring(cim:EquipmentLocation/cim:PowerSystemResource.ParentPSR/@rdf:resource,10,17)"/>'
-      </Property>
-      </ITEM>
+      </BAY>
       <ITEM>
         <Property name="PSRTYPE">
           '<xsl:value-of

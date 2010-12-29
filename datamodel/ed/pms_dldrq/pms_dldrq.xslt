@@ -9,17 +9,21 @@
         '<xsl:value-of
         select="substring(cim:StaticVarCompensator/cim:PowerSystemResource.Asset/@rdf:resource,12,17)"/>'
       </NO>
-      <SUBSTATIONNO>
-        <xsl:for-each select='cim:StaticVarCompensator/cim:Equipment.MemberOf_EquipmentContainer'>
+      <ITEM>
+        <Property name="SUBSTATIONNO">
+        '<xsl:for-each select='cim:StaticVarCompensator/cim:Equipment.MemberOf_EquipmentContainer'>
         <xsl:if test='substring(@rdf:resource,6,3)=&apos;Sub&apos;'>
-          '<xsl:value-of select='substring(@rdf:resource,17,17)'/>'
+          <xsl:value-of select='substring(@rdf:resource,17,17)'/>
         </xsl:if>
-      </xsl:for-each>
-      </SUBSTATIONNO>
-      <PARENTPSR>
+      </xsl:for-each>'
+      </Property>
+      </ITEM>
+      <ITEM>
+        <Property name="PARENTPSR">
         '<xsl:value-of
         select="substring(cim:Breaker/cim:PowerSystemResource.ParentPSR/@rdf:resource,24,17)"/>'
-      </PARENTPSR>
+      </Property>
+      </ITEM>
       <ITEM>
         <Property name="PSRTYPE">
           '<xsl:value-of

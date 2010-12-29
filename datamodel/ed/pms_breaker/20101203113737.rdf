@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-DKXLBJ/Breaker">
+		<cim:Naming.name>断口泄漏比距</cim:Naming.name>
+		<cim:Property.propertyValue>3.1</cim:Property.propertyValue>
+		<cim:Property.propertyType>DKXLBJ</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:SwitchAssetModel rdf:ID="PMS-SwitchAssetModel@02M10000000768597/Breaker">
+		<cim:Naming.name>VB2</cim:Naming.name>
+		<cim:SwitchAssetModel.operatorForm>弹簧</cim:SwitchAssetModel.operatorForm>
+		<cim:SwitchAssetModel.Switch rdf:resource="#PMS-Breaker@02M10000000768597/Breaker"/>
+		<cim:ElectricalAssetModel.numberPhases>三相</cim:ElectricalAssetModel.numberPhases>
+		<cim:SwitchAssetModel.interruptingRating>25</cim:SwitchAssetModel.interruptingRating>
+		<cim:ElectricalAssetModel.ratedVolts>12</cim:ElectricalAssetModel.ratedVolts>
+		<cim:ElectricalAssetModel.ratedAmps>1252</cim:ElectricalAssetModel.ratedAmps>
+	</cim:SwitchAssetModel>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-KGQMJCJ/Breaker">
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-SF6QTEDYL/Breaker">
+		<cim:Naming.name>SF6气体额定压力</cim:Naming.name>
+		<cim:Property.propertyType>SF6QTEDYL</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-FZHLEDDYDY/Breaker">
+		<cim:Naming.name>辅助回路额定电源电压</cim:Naming.name>
+		<cim:Property.propertyValue>220</cim:Property.propertyValue>
+		<cim:Property.propertyType>FZHLEDDYDY</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-EDDLDLKDCS/Breaker">
+		<cim:Naming.name>额定短路电流开断次数</cim:Naming.name>
+		<cim:Property.propertyValue>50</cim:Property.propertyValue>
+		<cim:Property.propertyType>EDDLDLKDCS</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Asset rdf:ID="PMS-Asset@02M10000000768597/Breaker">
+		<cim:Asset.phases>ABC相</cim:Asset.phases>
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.installationEnviron>户内式</cim:Asset.installationEnviron>
+		<cim:Asset.manufacturedDate>2008-08-01 00:00:00</cim:Asset.manufacturedDate>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-DKXLBJ/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-ZDRL/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-MXHLDZXZJJ/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-MHJZ/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-YH/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-FZHLEDDYDY/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-SF6QTEDYL/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-YCJ/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-JGXS/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-EDDLDLKDCS/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-MXHLDZXZCC/Breaker"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000768597-DDXLBJ/Breaker"/>
+		<cim:Asset.manufacturedCountry>中国</cim:Asset.manufacturedCountry>
+		<cim:Asset.utc>C0806050</cim:Asset.utc>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-Breaker@02M10000000768597/Breaker"/>
+		<cim:Asset.factory>上海通用电气广电有限公司</cim:Asset.factory>
+		<cim:Asset.plantTransferDate>2009-05-21 19:07:44</cim:Asset.plantTransferDate>
+		<cim:Asset.currentStatus>在运</cim:Asset.currentStatus>
+	</cim:Asset>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-ZDRL/Breaker">
+		<cim:Naming.name>遮断容量</cim:Naming.name>
+		<cim:Property.propertyType>ZDRL</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-JGXS/Breaker">
+		<cim:Naming.name>结构型式</cim:Naming.name>
+		<cim:Property.propertyValue>其他</cim:Property.propertyValue>
+		<cim:Property.propertyType>JGXS</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-MXHLDZXZJJ/Breaker">
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-DDXLBJ/Breaker">
+		<cim:Naming.name>对地泄漏比距</cim:Naming.name>
+		<cim:Property.propertyValue>3</cim:Property.propertyValue>
+		<cim:Property.propertyType>DDXLBJ</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-YCJ/Breaker">
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-KGQMJXH/Breaker">
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-MXHLDZXZCC/Breaker">
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-BJCSKYJYXSJ/Breaker">
+	</cim:Property>
+	<cim:Breaker rdf:ID="PMS-Breaker@02M10000000768597/Breaker">
+		<cim:PowerSystemResource.unitName>220出线单元</cim:PowerSystemResource.unitName>
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@02M2CQ00010011405/EquipmentLocation"/>
+		<cim:Switch.SwitchAssetModel rdf:resource="#PMS-SwitchAssetModel@02M10000000768597/Breaker"/>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0305000B0"/>
+		<cim:Naming.name>220断路器</cim:Naming.name>
+		<cim:ConductingEquipment.dynamicCurrent>63</cim:ConductingEquipment.dynamicCurrent>
+		<cim:PowerSystemResource.assetProperty>省（直辖市、自治区）公司</cim:PowerSystemResource.assetProperty>
+		<cim:PowerSystemResource.remarks>［定级］：1
+————————————————————
+ABC</cim:PowerSystemResource.remarks>
+		<cim:PowerSystemResource.coEquipmentNumber>02M10000000767798</cim:PowerSystemResource.coEquipmentNumber>
+		<cim:PowerSystemResource.dispatchNo>220断路器</cim:PowerSystemResource.dispatchNo>
+		<cim:ConductingEquipment.heatCurrent>25</cim:ConductingEquipment.heatCurrent>
+		<cim:PowerSystemResource.ifCoEquipment>开关柜</cim:PowerSystemResource.ifCoEquipment>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1018-0002</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+	</cim:Breaker>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-CZJGEDCZDY/Breaker">
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-MHJZ/Breaker">
+		<cim:Naming.name>灭弧介质</cim:Naming.name>
+		<cim:Property.propertyValue>真空</cim:Property.propertyValue>
+		<cim:Property.propertyType>MHJZ</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000768597-YH/Breaker">
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000768597/Breaker"/>
+	</cim:Property>
+</rdf:RDF>

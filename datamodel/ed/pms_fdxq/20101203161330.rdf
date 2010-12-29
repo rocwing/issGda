@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-SH/ConductingEquipment">
+		<cim:Naming.name>损耗</cim:Naming.name>
+		<cim:Property.propertyType>SH</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-EDECFHXQ1/ConductingEquipment">
+		<cim:Naming.name>额定二次负荷(线圈1)</cim:Naming.name>
+		<cim:Property.propertyType>EDECFHXQ1</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-ZQJCXQ2/ConductingEquipment">
+		<cim:Naming.name>准确级次(线圈2)</cim:Naming.name>
+		<cim:Property.propertyType>ZQJCXQ2</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:ElectricalAssetModel rdf:ID="PMS-ElectricalAssetModel@02M10000000130949/ConductingEquipment">
+		<cim:ElectricalAssetModel.ratedCapacity>3400</cim:ElectricalAssetModel.ratedCapacity>
+		<cim:Naming.name>FDG12/√3/3.4-1W</cim:Naming.name>
+		<cim:ElectricalAssetModel.sealAll>是</cim:ElectricalAssetModel.sealAll>
+		<cim:ElectricalAssetModel.numberPhases>单相</cim:ElectricalAssetModel.numberPhases>
+		<cim:ElectricalAssetModel.ratedVolts>12/√3</cim:ElectricalAssetModel.ratedVolts>
+		<cim:Document.PowerSystemResources rdf:resource="#PMS-ConductingEquipment@02M10000000130949/ConductingEquipment"/>
+	</cim:ElectricalAssetModel>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-EDECDYXQ2/ConductingEquipment">
+		<cim:Naming.name>额定二次电压(线圈2)</cim:Naming.name>
+		<cim:Property.propertyType>EDECDYXQ2</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Asset rdf:ID="PMS-Asset@02M10000000130949/ConductingEquipment">
+		<cim:Asset.phases>B相</cim:Asset.phases>
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.installationEnviron>户内式</cim:Asset.installationEnviron>
+		<cim:Asset.manufacturedDate>2003-07-01 00:00:00</cim:Asset.manufacturedDate>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-ZQJCXQ1/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-EDECFHXQ1/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-QSZ/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-EDECDYXQ1/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-EDECFHXQ2/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-EDECDYXQ2/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-SH/ConductingEquipment"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000130949-ZQJCXQ2/ConductingEquipment"/>
+		<cim:Asset.manufacturedCountry>中国</cim:Asset.manufacturedCountry>
+		<cim:Asset.utc>0604121</cim:Asset.utc>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-ConductingEquipment@02M10000000130949/ConductingEquipment"/>
+		<cim:Asset.assetType>油浸</cim:Asset.assetType>
+		<cim:Asset.factory>温州市凯泰特种电器有限公司</cim:Asset.factory>
+		<cim:Asset.plantTransferDate>2006-06-01 00:00:00</cim:Asset.plantTransferDate>
+		<cim:Asset.currentStatus>在运</cim:Asset.currentStatus>
+		<cim:Asset.antipollutionGrade>d级</cim:Asset.antipollutionGrade>
+	</cim:Asset>
+	<cim:ConductingEquipment rdf:ID="PMS-ConductingEquipment@02M10000000130949/ConductingEquipment">
+		<cim:PowerSystemResource.unitName>212电容器单元</cim:PowerSystemResource.unitName>
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@02M2CQ00010050674/EquipmentLocation"/>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0325000B0"/>
+		<cim:Naming.name>212B相放电线圈</cim:Naming.name>
+		<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@02M10000000130949/ConductingEquipment"/>
+		<cim:PowerSystemResource.assetProperty>省（直辖市、自治区）公司</cim:PowerSystemResource.assetProperty>
+		<cim:PowerSystemResource.remarks>［定级］：1
+————————————————————
+B
+</cim:PowerSystemResource.remarks>
+		<cim:PowerSystemResource.dispatchNo>212放电线圈</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1010-0004</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+	</cim:ConductingEquipment>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-QSZ/ConductingEquipment">
+		<cim:Naming.name>器身重</cim:Naming.name>
+		<cim:Property.propertyValue>50</cim:Property.propertyValue>
+		<cim:Property.propertyType>QSZ</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-EDECDYXQ1/ConductingEquipment">
+		<cim:Naming.name>额定二次电压(线圈1)</cim:Naming.name>
+		<cim:Property.propertyType>EDECDYXQ1</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-ZQJCXQ1/ConductingEquipment">
+		<cim:Naming.name>准确级次(线圈1)</cim:Naming.name>
+		<cim:Property.propertyType>ZQJCXQ1</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000130949-EDECFHXQ2/ConductingEquipment">
+		<cim:Naming.name>额定二次负荷(线圈2)</cim:Naming.name>
+		<cim:Property.propertyType>EDECFHXQ2</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	</cim:Property>
+</rdf:RDF>

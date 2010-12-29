@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:ElectricalAssetModel rdf:ID="PMS-ElectricalAssetModel@02M10000000126581/BusbarSection">
+		<cim:Naming.name>LMY-100×10</cim:Naming.name>
+		<cim:ElectricalAssetModel.numberPhases>三相</cim:ElectricalAssetModel.numberPhases>
+		<cim:ElectricalAssetModel.ratedVolts>13</cim:ElectricalAssetModel.ratedVolts>
+		<cim:Document.PowerSystemResources rdf:resource="#PMS-BusbarSection@02M10000000126581/BusbarSection"/>
+	</cim:ElectricalAssetModel>
+	<cim:BusbarSection rdf:ID="PMS-BusbarSection@02M10000000126581/BusbarSection">
+		<cim:Naming.name>10-5#母线</cim:Naming.name>
+		<cim:BusbarSection.sealMode>封闭式</cim:BusbarSection.sealMode>
+		<cim:BusbarSection.busbarMaterial>铜</cim:BusbarSection.busbarMaterial>
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@02M2CQ00010006913/EquipmentLocation"/>
+		<cim:PowerSystemResource.assetProperty>省（直辖市、自治区）公司</cim:PowerSystemResource.assetProperty>
+		<cim:BusbarSection.length>15</cim:BusbarSection.length>
+		<cim:PowerSystemResource.unitName>10-5#母线单元</cim:PowerSystemResource.unitName>
+		<cim:PowerSystemResource.ifCoEquipment>否</cim:PowerSystemResource.ifCoEquipment>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1007-0007</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.dispatchNo>10-5#母线</cim:PowerSystemResource.dispatchNo>
+		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+		<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@02M10000000126581/BusbarSection"/>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M10000000126581/BusbarSection"/>
+		<cim:PowerSystemResource.remarks>［定级］：1
+————————————————————
+ABC
+出厂编号找不到数据</cim:PowerSystemResource.remarks>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0311000B0"/>
+		<cim:BusbarSection.sectionSpec>100*10</cim:BusbarSection.sectionSpec>
+	</cim:BusbarSection>
+	<cim:Asset rdf:ID="PMS-Asset@02M10000000126581/BusbarSection">
+		<cim:Asset.phases>ABC相</cim:Asset.phases>
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.installationEnviron>户内式</cim:Asset.installationEnviron>
+		<cim:Asset.manufacturedDate>2008-08-01 00:00:00</cim:Asset.manufacturedDate>
+		<cim:Asset.manufacturedCountry>中国</cim:Asset.manufacturedCountry>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-BusbarSection@02M10000000126581/BusbarSection"/>
+		<cim:Asset.assetType>矩形</cim:Asset.assetType>
+		<cim:Asset.factory>上海通用电气广电有限公司</cim:Asset.factory>
+		<cim:Asset.plantTransferDate>2009-06-20 00:00:00</cim:Asset.plantTransferDate>
+		<cim:Asset.currentStatus>在运</cim:Asset.currentStatus>
+		<cim:Asset.antipollutionGrade>d级</cim:Asset.antipollutionGrade>
+	</cim:Asset>
+</rdf:RDF>

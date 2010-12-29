@@ -9,13 +9,15 @@
         '<xsl:value-of
         select="substring(cim:Bay/cim:PowerSystemResource.Asset/@rdf:resource,12,17)"/>'
       </NO>
-      <SUBSTATION>
-        <xsl:for-each select='cim:Bay/cim:Equipment.MemberOf_EquipmentContainer'>
+      <ITEM>
+        <Property name="SUBSTATION">     
+        '<xsl:for-each select='cim:Bay/cim:Equipment.MemberOf_EquipmentContainer'>
         <xsl:if test='substring(@rdf:resource,6,3)=&apos;Sub&apos;'>
-          '<xsl:value-of select='substring(@rdf:resource,17,17)'/>'
+          <xsl:value-of select='substring(@rdf:resource,17,17)'/>
         </xsl:if>
-      </xsl:for-each>
-      </SUBSTATION>
+      </xsl:for-each>'     
+      </Property>
+      </ITEM>
       <ITEM>
         <Property name="PSRTYPE">
           '<xsl:value-of

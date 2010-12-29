@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-SF6QTZXYXYL/CT">
+		<cim:Naming.name>SF6气体最小运行压力</cim:Naming.name>
+		<cim:Property.propertyType>SF6QTZXYXYL</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-YBBAXS/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:ElectricalAssetModel rdf:ID="PMS-ElectricalAssetModel@02M10000000772222/CT">
+		<cim:Naming.name>KLH-ⅢA</cim:Naming.name>
+		<cim:ElectricalAssetModel.numberPhases>单相</cim:ElectricalAssetModel.numberPhases>
+		<cim:ElectricalAssetModel.ratedVolts>0.5</cim:ElectricalAssetModel.ratedVolts>
+		<cim:Document.PowerSystemResources rdf:resource="#PMS-CT@02M10000000772222/CT"/>
+		<cim:ElectricalAssetModel.insulateMedium>干式</cim:ElectricalAssetModel.insulateMedium>
+	</cim:ElectricalAssetModel>
+	<cim:CTAsset rdf:ID="PMS-CTAsset@02M10000000772222/CT">
+		<cim:CTAsset.CT rdf:resource="#PMS-CT@02M10000000772222/CT"/>
+		<cim:Asset.factory>北京科伟达电力设备有限公司</cim:Asset.factory>
+		<cim:Asset.utc>85709</cim:Asset.utc>
+		<cim:Asset.phases>O相</cim:Asset.phases>
+		<cim:Asset.plantTransferDate>2009-06-23 00:00:00</cim:Asset.plantTransferDate>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-LXRWDDL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-DRL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-YCJ/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-SFWLX/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-SF6QTEDYL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-JYLX/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-ECRZSLBH/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-SF6QTZXYXYL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-YBBAXS/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-ZGGZDY/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-ECRZZSL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-SF6QTYSYL/CT"/>
+		<cim:Asset.Properties rdf:resource="#PMS-Property@02M10000000772222-YZ/CT"/>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.manufacturedCountry>中国</cim:Asset.manufacturedCountry>
+		<cim:Asset.currentStatus>在运</cim:Asset.currentStatus>
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.installationEnviron>户内式</cim:Asset.installationEnviron>
+		<cim:Asset.manufacturedDate>2008-07-01 00:00:00</cim:Asset.manufacturedDate>
+	</cim:CTAsset>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-DRL/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:CT rdf:ID="PMS-CT@02M10000000772222/CT">
+		<cim:CT.CTAsset rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+		<cim:PowerSystemResource.unitName>232出线单元</cim:PowerSystemResource.unitName>
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-EquipmentLocation@02M2CQ00010055542/EquipmentLocation"/>
+		<cim:CT.ctRunningRatio>100/5</cim:CT.ctRunningRatio>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0313000B0"/>
+		<cim:Naming.name>232O相电流互感器</cim:Naming.name>
+		<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@02M10000000772222/CT"/>
+		<cim:ConductingEquipment.dynamicCurrent>0</cim:ConductingEquipment.dynamicCurrent>
+		<cim:PowerSystemResource.assetProperty>省（直辖市、自治区）公司</cim:PowerSystemResource.assetProperty>
+		<cim:PowerSystemResource.remarks>［定级］：1
+————————————————————
+O热稳定电流(kA)、爬电比距(mm/kV)查不到
+
+型号：KLH-180/方 原生产厂家:北京科伟达电力设备有限公司</cim:PowerSystemResource.remarks>
+		<cim:PowerSystemResource.coEquipmentNumber>02M10000000771855</cim:PowerSystemResource.coEquipmentNumber>
+		<cim:PowerSystemResource.dispatchNo>232电流互感器</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.ifCoEquipment>开关柜</cim:PowerSystemResource.ifCoEquipment>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1021-0001</cim:PowerSystemResource.locCode>
+		<cim:CT.ctRatedRatio>100/5</cim:CT.ctRatedRatio>
+		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+	</cim:CT>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-ECRZSLBH/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-JYJZZL/CT">
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-JYLX/CT">
+		<cim:Naming.name>绝缘类型</cim:Naming.name>
+		<cim:Property.propertyValue>环氧胶注型</cim:Property.propertyValue>
+		<cim:Property.propertyType>JYLX</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-YZ/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-SF6QTEDYL/CT">
+		<cim:Naming.name>SF6气体额定压力</cim:Naming.name>
+		<cim:Property.propertyType>SF6QTEDYL</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-SFWLX/CT">
+		<cim:Naming.name>是否为零序CT</cim:Naming.name>
+		<cim:Property.propertyValue>是</cim:Property.propertyValue>
+		<cim:Property.propertyType>SFWLX</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-ZGGZDY/CT">
+		<cim:Naming.name>最高工作电压</cim:Naming.name>
+		<cim:Property.propertyType>ZGGZDY</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-ECRZZSL/CT">
+		<cim:Naming.name>二次绕组总数量</cim:Naming.name>
+		<cim:Property.propertyValue>1</cim:Property.propertyValue>
+		<cim:Property.propertyType>ECRZZSL</cim:Property.propertyType>
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-YCJ/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-SF6QTYSYL/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-ECRZSLJL/CT">
+	</cim:Property>
+	<cim:Property rdf:ID="PMS-Property@02M10000000772222-LXRWDDL/CT">
+		<cim:Property.Assets rdf:resource="#PMS-CTAsset@02M10000000772222/CT"/>
+	</cim:Property>
+</rdf:RDF>

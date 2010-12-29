@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Asset rdf:ID="PMS-Asset@02M2HD00010000465/Substation">
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ04"/>
+		<cim:Asset.voltGrade>110kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-Substation@02M2HD00010000465/Substation"/>
+		<cim:Asset.plantTransferDate>1996-12-31 00:00:00</cim:Asset.plantTransferDate>
+	</cim:Asset>
+	<cim:Substation rdf:ID="PMS-Substation@02M2HD00010000465/Substation">
+		<cim:Substation.subType>变电站</cim:Substation.subType>
+		<cim:Substation.pivotSubstation>否</cim:Substation.pivotSubstation>
+		<cim:PowerSystemResource.runingCrew>上地操作队</cim:PowerSystemResource.runingCrew>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0001000B0"/>
+		<cim:Naming.name>西三旗站</cim:Naming.name>
+		<cim:Substation.buldingArea>6877</cim:Substation.buldingArea>
+		<cim:PowerSystemResource.filthGrade>d级</cim:PowerSystemResource.filthGrade>
+		<cim:Substation.Contains_Bays rdf:resource="#OMS-Bay@02M3HD0000000036B/Bay"/>
+		<cim:Substation.Contains_Bays rdf:resource="#OMS-Bay@HDB0000011430220Z/Bay"/>
+		<cim:Substation.Contains_Bays rdf:resource="#OMS-Bay@02M3HD0000000036Z/Bay"/>
+		<cim:Substation.workingMode>无人值班</cim:Substation.workingMode>
+		<cim:Substation.fixingMode>常规</cim:Substation.fixingMode>
+		<cim:PowerSystemResource.assetProperty>省（直辖市、自治区）公司</cim:PowerSystemResource.assetProperty>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708037/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708026/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708032/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#OMS-AutomaticEquipment@02M3DD196404265D1/AutomaticEquipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708029/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708045/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708028/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708038/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708040/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708046/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708035/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708044/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708021/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708041/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708043/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708163/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708025/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708036/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708031/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708033/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708047/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708022/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708024/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708042/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708048/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708023/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708027/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708030/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708034/Equipment"/>
+		<cim:EquipmentContainer.Contains_Equipments rdf:resource="#PMS-Equipment@02M10000000708039/Equipment"/>
+		<cim:PowerSystemResource.dispatchNo>114</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.locCode>HD-B-00000114</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M2HD00010000465/Substation"/>
+		<cim:Substation.teleNumber>63128407</cim:Substation.teleNumber>
+		<cim:Substation.district>海淀</cim:Substation.district>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007265/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007268/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007261/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007263/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007273/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007278/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00040002176/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007271/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007279/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007274/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007267/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007277/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007266/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007269/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007270/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007262/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007264/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007275/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007276/ACLineSegment"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M2HD00030007272/ACLineSegment"/>
+		<cim:Substation.subAddress>北邻建材环岛</cim:Substation.subAddress>
+		<cim:Substation.occupyingArea>5767</cim:Substation.occupyingArea>
+	</cim:Substation>
+</rdf:RDF>

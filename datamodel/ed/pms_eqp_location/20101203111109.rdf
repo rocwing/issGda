@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<cim:Asset rdf:ID="PMS-Asset@02M2CQ00040024743/EquipmentLocation">
+		<cim:Asset.Organisations rdf:resource="#PMS-Organisation@BJ02"/>
+		<cim:Asset.voltGrade>10kV</cim:Asset.voltGrade>
+		<cim:Asset.PowerSystemResource rdf:resource="#PMS-EquipmentLocation@02M2CQ00040024743/EquipmentLocation"/>
+	</cim:Asset>
+	<cim:EquipmentLocation rdf:ID="PMS-EquipmentLocation@02M2CQ00040024743/EquipmentLocation">
+		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-Bay@02M10000000326337/Bay"/>
+		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0001000B1"/>
+		<cim:Naming.name>236电力电缆</cim:Naming.name>
+		<cim:EquipmentLocation.ChildType rdf:resource="#PMS-PSRType@0201000B0"/>
+		<cim:PowerSystemResource.dispatchNo>236</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.locCode>DC-B-00000108-1025-0010</cim:PowerSystemResource.locCode>
+		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M2CQ00040024743/EquipmentLocation"/>
+		<cim:PowerSystemResource.ChildPSRs rdf:resource="#PMS-ACLineSegment@02M10000000781631/ACLineSegment"/>
+		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>
+	</cim:EquipmentLocation>
+</rdf:RDF>
