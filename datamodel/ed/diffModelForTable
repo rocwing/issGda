@@ -1,0 +1,43 @@
+PowerTransformer  pms_main_transformer 主变压器   27个属性   30个域
+                               
+                  pms_jdb   接地变压器     13个属性   16个域
+           
+                  pms_syb   所用变压器      9个属性    12个域
+                 
+                  
+ConductingEquipment   pms_blq   避雷器      8个属性      11个域
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-CZCJDLXCY/ConductingEquipment"/><!--关联操作冲击电流下残压-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-DPCJDLXCY/ConductingEquipment"/><!--关联陡波冲击电流下残压-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-FBTLRL/ConductingEquipment"/><!--关联方波通流容量-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-MXJS/ConductingEquipment"/><!--关联每相节数-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-LDCJCY_FZ/ConductingEquipment"/><!--关联标准雷电残压-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-BCFDDL/ConductingEquipment"/><!--关联标称放电电流-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SFDJX/ConductingEquipment"/><!--关联是否带间隙-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-JYTLX/ConductingEquipment"/><!--关联绝缘体类型-->
+                      pms_fdxq  放电线圈    8个属性       11个域
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-SH/ConductingEquipment"/><!--关联损耗-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-QSZ/ConductingEquipment"/><!--关联器身重-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-ZQJCXQ2/ConductingEquipment"/><!--关联准确级次(线圈2)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-EDECFHXQ2/ConductingEquipment"/><!--关联额定二次负荷(线圈2)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-EDECDYXQ2/ConductingEquipment"/><!--关联额定二次电压(线圈2)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-ZQJCXQ1/ConductingEquipment"/><!--关联准确级次(线圈1)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-EDECFHXQ1/ConductingEquipment"/><!--关联额定二次负荷(线圈1)-->
+<cim:Asset.Properties rdf:resource="#PMS-Property@PMSID#-EDECDYXQ1/ConductingEquipment"/><!--关联额定二次电压(线圈1)-->
+                      pms_kgg   开关柜       1个属性       4个域
+                     
+                      pms_xhzz  消弧装置     15个属性       18个域
+                     
+                      pms_zbq           4个属性           7个域
+                     
+                      pms_zhhgq  组合互感器    2个属性        5个域
+                     
+                      
+StaticVarCompensator  pms_dldrq  电力电容器    9个属性        12个属性
+
+                      pms_ohdrq  耦合电容器       12个属性     15个属性
+                      
+                      
+                      
+                      
+                      
+                                                   
