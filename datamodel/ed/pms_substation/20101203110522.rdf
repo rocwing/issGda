@@ -9,7 +9,7 @@
 	<cim:Substation rdf:ID="PMS-Substation@02M2HD00010000465/Substation">
 		<cim:Substation.subType>变电站</cim:Substation.subType>
 		<cim:Substation.pivotSubstation>否</cim:Substation.pivotSubstation>
-		<cim:PowerSystemResource.runingCrew>上地操作队</cim:PowerSystemResource.runingCrew>
+		<cim:PowerSystemResource.runingCrew>清河操作队</cim:PowerSystemResource.runingCrew>
 		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0001000B0"/>
 		<cim:Naming.name>西三旗站</cim:Naming.name>
 		<cim:Substation.buldingArea>6877</cim:Substation.buldingArea>

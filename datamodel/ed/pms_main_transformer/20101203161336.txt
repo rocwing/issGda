@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<message>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QTYLBT/PowerTransformer"/>
+	<uri operation="m" value="PMS-PowerTransformer@02M10000000116489/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-KZDL/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YWRHX/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-FZSHGYZY/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YH/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YQXQD/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-RZXS/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-LQSZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-FZSHGYDY/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QTYLYZKG/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-QSZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YSZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-TYFS/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6CJ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SJYXZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YZMFFS/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YCD/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YQXZKCY/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-FZSHZYDY/PowerTransformer"/>
+	<uri operation="m" value="PMS-TransformerModel@02M10000000116489/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-ZLQRL/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QZYZKG/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YQXJG/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-AZWZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QZDLC/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QTYLDLC/PowerTransformer"/>
+	<uri operation="m" value="PMS-TransformerAsset@02M10000000116489/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-YZ/PowerTransformer"/>
+	<uri operation="m" value="PMS-Property@02M10000000116489-SF6QZBT/PowerTransformer"/>
+</message>

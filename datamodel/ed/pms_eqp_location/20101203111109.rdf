@@ -8,7 +8,7 @@
 	<cim:EquipmentLocation rdf:ID="PMS-EquipmentLocation@02M2CQ00040024743/EquipmentLocation">
 		<cim:PowerSystemResource.ParentPSR rdf:resource="#PMS-Bay@02M10000000326337/Bay"/>
 		<cim:PowerSystemResource.PSRType rdf:resource="#PMS-PSRType@0001000B1"/>
-		<cim:Naming.name>236电力电缆</cim:Naming.name>
+		<cim:Naming.name>237电力电缆</cim:Naming.name>
 		<cim:EquipmentLocation.ChildType rdf:resource="#PMS-PSRType@0201000B0"/>
 		<cim:PowerSystemResource.dispatchNo>236</cim:PowerSystemResource.dispatchNo>
 		<cim:PowerSystemResource.locCode>DC-B-00000108-1025-0010</cim:PowerSystemResource.locCode>

@@ -62,7 +62,7 @@
 ————————————————————
 B
 </cim:PowerSystemResource.remarks>
-		<cim:PowerSystemResource.dispatchNo>212放电线圈</cim:PowerSystemResource.dispatchNo>
+		<cim:PowerSystemResource.dispatchNo>213放电线圈</cim:PowerSystemResource.dispatchNo>
 		<cim:PowerSystemResource.locCode>DC-B-00000108-1010-0004</cim:PowerSystemResource.locCode>
 		<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M10000000130949/ConductingEquipment"/>
 		<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2CQ00010000715/Substation"/>

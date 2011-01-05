@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<message>
+	<uri operation="m" value="PMS-Property@02M10000000130949-SH/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-EDECFHXQ1/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-ZQJCXQ2/ConductingEquipment"/>
+	<uri operation="m" value="PMS-ElectricalAssetModel@02M10000000130949/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-EDECDYXQ2/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Asset@02M10000000130949/ConductingEquipment"/>
+	<uri operation="m" value="PMS-ConductingEquipment@02M10000000130949/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-QSZ/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-EDECDYXQ1/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-ZQJCXQ1/ConductingEquipment"/>
+	<uri operation="m" value="PMS-Property@02M10000000130949-EDECFHXQ2/ConductingEquipment"/>
+</message>

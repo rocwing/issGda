@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<message>
+	<uri operation="m" value="PMS-Property@02M10000000002022-TS/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-ElectricalAssetModel@02M10000000002022/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-FDXQYCDY/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-JXFS/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Asset@02M10000000002022/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-AZFS/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-DRQSZMX/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-DTBHFS/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-StaticVarCompensator@02M10000000002022/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-DTRL/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-DRZ/StaticVarCompensator"/>
+	<uri operation="m" value="PMS-Property@02M10000000002022-DRQZNBBHFS/StaticVarCompensator"/>
+</message>
