@@ -2,6 +2,8 @@ package com.iss.gda;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.sql.Connection;
@@ -15,13 +17,19 @@ import java.util.logging.Level;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.XMLStreamWriter;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.apache.axiom.om.OMAbstractFactory;
 import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.OMFactory;
+import org.apache.axiom.om.OMText;
 import org.apache.axiom.om.impl.builder.StAXOMBuilder;
 
 import oracle.jdbc.pool.OracleDataSource;
@@ -86,9 +94,57 @@ public static void main(String[] args) throws Exception{
 	
 	public static void main(String[] args)throws Exception{
 		
-		equipmentTypeTest("D:/temp/20101203161331.txt");
+		//equipmentTypeTest("D:/temp/20101203161331.txt");
+		
+		queryCondition("a","b");
 		
 	}
+public static void queryCondition(String queryFlagValue, String columnNameValue){
+		
+		try{
+		OMFactory factory = OMAbstractFactory.getOMFactory();
+		
+		OMElement query = factory.createOMElement(new QName("Query"));
+		OMElement queryHead = factory.createOMElement(new QName("QueryHead"));
+		
+		OMElement queryFlag = factory.createOMElement(new QName("QueryFlag"));
+		queryFlag.setText(queryFlagValue);
+		queryHead.addChild(queryFlag);
+		query.addChild(queryHead);
+		OMElement queryConditions = factory.createOMElement(new QName("QueryConditions"));
+		query.addChild(queryConditions);
+		OMElement queryCondition = factory.createOMElement(new QName("QueryCondition"));
+		queryConditions.addChild(queryCondition);
+		OMElement columnName = factory.createOMElement(new QName("ColumnName"));
+		columnName.setText(columnNameValue);
+		OMElement columnValue = factory.createOMElement(new QName("ColumnValue"));
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		columnValue.setText(cal.getTime().toLocaleString());
+	
+		
+		OMElement compare = factory.createOMElement(new QName("Compare"));
+		
+		OMText cd = factory.createOMText("<",XMLStreamConstants.CDATA);
+		compare.addChild(cd);
+		queryCondition.addChild(columnName);
+		queryCondition.addChild(columnValue);
+		queryCondition.addChild(compare);
+		
+		XMLOutputFactory xof = XMLOutputFactory.newInstance();
+		StringWriter stringWriter = new StringWriter();
+		XMLStreamWriter writer = xof.createXMLStreamWriter(stringWriter);
+	    query.serialize(stringWriter);	   	    
+		writer.flush();	    
+	    String queryString = new String(stringWriter.toString());
+	    queryString = "<?xml version=\"1.0\" encoding=\"GBK\" ?>"+queryString;
+		System.out.println(queryString);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+
     public static void  equipmentTypeTest(String fileName){
     
         //StringReader stringReader = new StringReader(jmsMessage);
