@@ -205,6 +205,38 @@
             }
                 
            /**
+            * auto generated Axis2 call back method for queryDataByMessage method
+            * override this method for handling normal response from queryDataByMessage operation
+            */
+           public void receiveResultqueryDataByMessage(
+                    java.lang.String result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from queryDataByMessage operation
+           */
+            public void receiveErrorqueryDataByMessage(java.lang.Exception e) {
+            }
+                
+           /**
+            * auto generated Axis2 call back method for queryDataCondition method
+            * override this method for handling normal response from queryDataCondition operation
+            */
+           public void receiveResultqueryDataCondition(
+                    java.lang.String result
+                        ) {
+           }
+
+          /**
+           * auto generated Axis2 Error handler
+           * override this method for handling error response from queryDataCondition operation
+           */
+            public void receiveErrorqueryDataCondition(java.lang.Exception e) {
+            }
+                
+           /**
             * auto generated Axis2 call back method for appendResourceAppointQueue method
             * override this method for handling normal response from appendResourceAppointQueue operation
             */
@@ -234,22 +266,6 @@
            * override this method for handling error response from deleteResource operation
            */
             public void receiveErrordeleteResource(java.lang.Exception e) {
-            }
-                
-           /**
-            * auto generated Axis2 call back method for queryDataByMessage method
-            * override this method for handling normal response from queryDataByMessage operation
-            */
-           public void receiveResultqueryDataByMessage(
-                    java.lang.String result
-                        ) {
-           }
-
-          /**
-           * auto generated Axis2 Error handler
-           * override this method for handling error response from queryDataByMessage operation
-           */
-            public void receiveErrorqueryDataByMessage(java.lang.Exception e) {
             }
                 
            /**

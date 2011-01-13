@@ -95,8 +95,25 @@ public static void main(String[] args) throws Exception{
 	public static void main(String[] args)throws Exception{
 		
 		//equipmentTypeTest("D:/temp/20101203161331.txt");
-		
-		queryCondition("a","b");
+		 OracleDataSource ods = new OracleDataSource();
+	        ods.setDriverType ( "thin" ); // type of driver
+	        ods.setNetworkProtocol("tcp"); // tcp is the default anyway
+	        ods.setServerName ("172.20.43.179"); // database server name
+	        ods.setDatabaseName("orcl"); // Oracle SID
+	        ods.setPortNumber(1521); // listener port number
+	        ods.setUser("xopens"); // username
+	        ods.setPassword("ytdf000"); // password
+	        Connection conn=ods.getConnection();
+	        Statement statement=conn.createStatement();
+	        String query = "select count(*) from pms_ct";
+	        ResultSet rs = statement.executeQuery(query);
+	        while(rs.next()){
+	        	System.out.println("COUNT(*)"+rs.getInt("COUNT(*)"));
+	        }
+		    rs.close();
+		    statement.close();
+		    conn.close();
+		//queryCondition("a","b");
 		
 	}
 public static void queryCondition(String queryFlagValue, String columnNameValue){

@@ -44,7 +44,7 @@
         //creating the operations
         org.apache.axis2.description.AxisOperation __operation;
 
-        _operations = new org.apache.axis2.description.AxisOperation[29];
+        _operations = new org.apache.axis2.description.AxisOperation[30];
         
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
@@ -169,7 +169,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResourceAppointQueue"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryDataByMessage"));
 	    _service.addOperation(__operation);
 	    
 
@@ -181,7 +181,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResource"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryDataCondition"));
 	    _service.addOperation(__operation);
 	    
 
@@ -193,7 +193,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryDataByMessage"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResourceAppointQueue"));
 	    _service.addOperation(__operation);
 	    
 
@@ -205,7 +205,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "insertUriMapping"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResource"));
 	    _service.addOperation(__operation);
 	    
 
@@ -217,7 +217,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryAllResource"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "insertUriMapping"));
 	    _service.addOperation(__operation);
 	    
 
@@ -229,7 +229,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryMISCode"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryAllResource"));
 	    _service.addOperation(__operation);
 	    
 
@@ -241,7 +241,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceAppointQueue"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryMISCode"));
 	    _service.addOperation(__operation);
 	    
 
@@ -253,7 +253,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceForDistributed"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceAppointQueue"));
 	    _service.addOperation(__operation);
 	    
 
@@ -265,7 +265,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResource"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceForDistributed"));
 	    _service.addOperation(__operation);
 	    
 
@@ -277,7 +277,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteSubscription"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResource"));
 	    _service.addOperation(__operation);
 	    
 
@@ -289,7 +289,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceExceptionQueue"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteSubscription"));
 	    _service.addOperation(__operation);
 	    
 
@@ -301,7 +301,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryCSData"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "deleteResourceExceptionQueue"));
 	    _service.addOperation(__operation);
 	    
 
@@ -313,7 +313,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResourceExceptionQueue"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryCSData"));
 	    _service.addOperation(__operation);
 	    
 
@@ -325,7 +325,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "updateResource"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "appendResourceExceptionQueue"));
 	    _service.addOperation(__operation);
 	    
 
@@ -337,7 +337,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "insertMessage"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "updateResource"));
 	    _service.addOperation(__operation);
 	    
 
@@ -349,7 +349,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "getToken"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "insertMessage"));
 	    _service.addOperation(__operation);
 	    
 
@@ -361,7 +361,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryDataByKey"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "getToken"));
 	    _service.addOperation(__operation);
 	    
 
@@ -373,7 +373,7 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "updateData"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryDataByKey"));
 	    _service.addOperation(__operation);
 	    
 
@@ -385,13 +385,25 @@
                    __operation = new org.apache.axis2.description.OutInAxisOperation();
                 
 
-            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryResourceByKey"));
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "updateData"));
 	    _service.addOperation(__operation);
 	    
 
 	    
 	    
             _operations[28]=__operation;
+            
+        
+                   __operation = new org.apache.axis2.description.OutInAxisOperation();
+                
+
+            __operation.setName(new javax.xml.namespace.QName("http://www.neusoft.com/bsp", "queryResourceByKey"));
+	    _service.addOperation(__operation);
+	    
+
+	    
+	    
+            _operations[29]=__operation;
             
         
         }
@@ -466,7 +478,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryData
-                     * @param queryData243
+                     * @param queryData250
                     
                      */
 
@@ -474,7 +486,7 @@
 
                             public  java.lang.String queryData(
 
-                            java.lang.String token244,java.lang.String date245,java.lang.String flag246)
+                            java.lang.String token251,java.lang.String date252,java.lang.String flag253)
                         
 
                     throws java.rmi.RemoteException
@@ -500,9 +512,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token244,
-                                                    date245,
-                                                    flag246,
+                                                    token251,
+                                                    date252,
+                                                    flag253,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryData")));
@@ -587,12 +599,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryData
-                    * @param queryData243
+                    * @param queryData250
                 
                 */
                 public  void startqueryData(
 
-                 java.lang.String token244,java.lang.String date245,java.lang.String flag246,
+                 java.lang.String token251,java.lang.String date252,java.lang.String flag253,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -616,9 +628,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token244,
-                                                    date245,
-                                                    flag246,
+                                                    token251,
+                                                    date252,
+                                                    flag253,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryData")));
@@ -735,7 +747,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryResourceEX
-                     * @param queryResourceEX249
+                     * @param queryResourceEX256
                     
                      */
 
@@ -743,7 +755,7 @@
 
                             public  java.lang.String queryResourceEX(
 
-                            java.lang.String token250,java.lang.String uri251,java.lang.String props252,java.lang.String associations253)
+                            java.lang.String token257,java.lang.String uri258,java.lang.String props259,java.lang.String associations260)
                         
 
                     throws java.rmi.RemoteException
@@ -769,10 +781,10 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryResourceEX dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token250,
-                                                    uri251,
-                                                    props252,
-                                                    associations253,
+                                                    token257,
+                                                    uri258,
+                                                    props259,
+                                                    associations260,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResourceEX")));
@@ -857,12 +869,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryResourceEX
-                    * @param queryResourceEX249
+                    * @param queryResourceEX256
                 
                 */
                 public  void startqueryResourceEX(
 
-                 java.lang.String token250,java.lang.String uri251,java.lang.String props252,java.lang.String associations253,
+                 java.lang.String token257,java.lang.String uri258,java.lang.String props259,java.lang.String associations260,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -886,10 +898,10 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryResourceEX dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token250,
-                                                    uri251,
-                                                    props252,
-                                                    associations253,
+                                                    token257,
+                                                    uri258,
+                                                    props259,
+                                                    associations260,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResourceEX")));
@@ -1006,7 +1018,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#updateResourceAppointQueue
-                     * @param updateResourceAppointQueue256
+                     * @param updateResourceAppointQueue263
                     
                      */
 
@@ -1014,7 +1026,7 @@
 
                             public  java.lang.String updateResourceAppointQueue(
 
-                            java.lang.String token257,java.lang.String xmlResource258,java.lang.String queueNames259)
+                            java.lang.String token264,java.lang.String xmlResource265,java.lang.String queueNames266)
                         
 
                     throws java.rmi.RemoteException
@@ -1040,9 +1052,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.UpdateResourceAppointQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token257,
-                                                    xmlResource258,
-                                                    queueNames259,
+                                                    token264,
+                                                    xmlResource265,
+                                                    queueNames266,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResourceAppointQueue")));
@@ -1127,12 +1139,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startupdateResourceAppointQueue
-                    * @param updateResourceAppointQueue256
+                    * @param updateResourceAppointQueue263
                 
                 */
                 public  void startupdateResourceAppointQueue(
 
-                 java.lang.String token257,java.lang.String xmlResource258,java.lang.String queueNames259,
+                 java.lang.String token264,java.lang.String xmlResource265,java.lang.String queueNames266,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -1156,9 +1168,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.UpdateResourceAppointQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token257,
-                                                    xmlResource258,
-                                                    queueNames259,
+                                                    token264,
+                                                    xmlResource265,
+                                                    queueNames266,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResourceAppointQueue")));
@@ -1275,7 +1287,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#insertData
-                     * @param insertData262
+                     * @param insertData269
                     
                      */
 
@@ -1283,7 +1295,7 @@
 
                             public  java.lang.String insertData(
 
-                            java.lang.String token263,java.lang.String xmlData264,java.lang.String flag265)
+                            java.lang.String token270,java.lang.String xmlData271,java.lang.String flag272)
                         
 
                     throws java.rmi.RemoteException
@@ -1309,9 +1321,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.InsertData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token263,
-                                                    xmlData264,
-                                                    flag265,
+                                                    token270,
+                                                    xmlData271,
+                                                    flag272,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertData")));
@@ -1396,12 +1408,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startinsertData
-                    * @param insertData262
+                    * @param insertData269
                 
                 */
                 public  void startinsertData(
 
-                 java.lang.String token263,java.lang.String xmlData264,java.lang.String flag265,
+                 java.lang.String token270,java.lang.String xmlData271,java.lang.String flag272,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -1425,9 +1437,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.InsertData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token263,
-                                                    xmlData264,
-                                                    flag265,
+                                                    token270,
+                                                    xmlData271,
+                                                    flag272,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertData")));
@@ -1544,7 +1556,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryResource
-                     * @param queryResource268
+                     * @param queryResource275
                     
                      */
 
@@ -1552,7 +1564,7 @@
 
                             public  java.lang.String queryResource(
 
-                            java.lang.String token269,java.lang.String uris270,java.lang.String props271,java.lang.String associations272)
+                            java.lang.String token276,java.lang.String uris277,java.lang.String props278,java.lang.String associations279)
                         
 
                     throws java.rmi.RemoteException
@@ -1578,10 +1590,10 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token269,
-                                                    uris270,
-                                                    props271,
-                                                    associations272,
+                                                    token276,
+                                                    uris277,
+                                                    props278,
+                                                    associations279,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResource")));
@@ -1666,12 +1678,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryResource
-                    * @param queryResource268
+                    * @param queryResource275
                 
                 */
                 public  void startqueryResource(
 
-                 java.lang.String token269,java.lang.String uris270,java.lang.String props271,java.lang.String associations272,
+                 java.lang.String token276,java.lang.String uris277,java.lang.String props278,java.lang.String associations279,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -1695,10 +1707,10 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token269,
-                                                    uris270,
-                                                    props271,
-                                                    associations272,
+                                                    token276,
+                                                    uris277,
+                                                    props278,
+                                                    associations279,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResource")));
@@ -1815,7 +1827,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#querySubscription
-                     * @param querySubscription275
+                     * @param querySubscription282
                     
                      */
 
@@ -1823,7 +1835,7 @@
 
                             public  java.lang.String querySubscription(
 
-                            java.lang.String token276)
+                            java.lang.String token283)
                         
 
                     throws java.rmi.RemoteException
@@ -1849,7 +1861,7 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QuerySubscription dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token276,
+                                                    token283,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "querySubscription")));
@@ -1934,12 +1946,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startquerySubscription
-                    * @param querySubscription275
+                    * @param querySubscription282
                 
                 */
                 public  void startquerySubscription(
 
-                 java.lang.String token276,
+                 java.lang.String token283,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -1963,7 +1975,7 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QuerySubscription dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token276,
+                                                    token283,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "querySubscription")));
@@ -2080,7 +2092,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#deleteData
-                     * @param deleteData279
+                     * @param deleteData286
                     
                      */
 
@@ -2088,7 +2100,7 @@
 
                             public  java.lang.String deleteData(
 
-                            java.lang.String token280,java.lang.String xmlData281,java.lang.String flag282)
+                            java.lang.String token287,java.lang.String xmlData288,java.lang.String flag289)
                         
 
                     throws java.rmi.RemoteException
@@ -2114,9 +2126,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.DeleteData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token280,
-                                                    xmlData281,
-                                                    flag282,
+                                                    token287,
+                                                    xmlData288,
+                                                    flag289,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteData")));
@@ -2201,12 +2213,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startdeleteData
-                    * @param deleteData279
+                    * @param deleteData286
                 
                 */
                 public  void startdeleteData(
 
-                 java.lang.String token280,java.lang.String xmlData281,java.lang.String flag282,
+                 java.lang.String token287,java.lang.String xmlData288,java.lang.String flag289,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -2230,9 +2242,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.DeleteData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token280,
-                                                    xmlData281,
-                                                    flag282,
+                                                    token287,
+                                                    xmlData288,
+                                                    flag289,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteData")));
@@ -2349,7 +2361,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#querySJZFData
-                     * @param querySJZFData285
+                     * @param querySJZFData292
                     
                      */
 
@@ -2357,7 +2369,7 @@
 
                             public  java.lang.String querySJZFData(
 
-                            java.lang.String token286,java.lang.String org287,java.lang.String date288,java.lang.String time289,java.lang.String flag290)
+                            java.lang.String token293,java.lang.String orga294,java.lang.String date295,java.lang.String time296,java.lang.String flag297)
                         
 
                     throws java.rmi.RemoteException
@@ -2383,11 +2395,11 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QuerySJZFData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token286,
-                                                    org287,
-                                                    date288,
-                                                    time289,
-                                                    flag290,
+                                                    token293,
+                                                    orga294,
+                                                    date295,
+                                                    time296,
+                                                    flag297,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "querySJZFData")));
@@ -2472,12 +2484,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startquerySJZFData
-                    * @param querySJZFData285
+                    * @param querySJZFData292
                 
                 */
                 public  void startquerySJZFData(
 
-                 java.lang.String token286,java.lang.String org287,java.lang.String date288,java.lang.String time289,java.lang.String flag290,
+                 java.lang.String token293,java.lang.String orga294,java.lang.String date295,java.lang.String time296,java.lang.String flag297,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -2501,11 +2513,11 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QuerySJZFData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token286,
-                                                    org287,
-                                                    date288,
-                                                    time289,
-                                                    flag290,
+                                                    token293,
+                                                    orga294,
+                                                    date295,
+                                                    time296,
+                                                    flag297,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "querySJZFData")));
@@ -2622,7 +2634,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#subscribe
-                     * @param subscribe293
+                     * @param subscribe300
                     
                      */
 
@@ -2630,7 +2642,7 @@
 
                             public  java.lang.String subscribe(
 
-                            java.lang.String token294,java.lang.String xml295)
+                            java.lang.String token301,java.lang.String xml302)
                         
 
                     throws java.rmi.RemoteException
@@ -2656,8 +2668,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.Subscribe dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token294,
-                                                    xml295,
+                                                    token301,
+                                                    xml302,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "subscribe")));
@@ -2742,12 +2754,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startsubscribe
-                    * @param subscribe293
+                    * @param subscribe300
                 
                 */
                 public  void startsubscribe(
 
-                 java.lang.String token294,java.lang.String xml295,
+                 java.lang.String token301,java.lang.String xml302,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -2771,8 +2783,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.Subscribe dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token294,
-                                                    xml295,
+                                                    token301,
+                                                    xml302,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "subscribe")));
@@ -2889,7 +2901,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#updateResourceExceptionQueue
-                     * @param updateResourceExceptionQueue298
+                     * @param updateResourceExceptionQueue305
                     
                      */
 
@@ -2897,7 +2909,7 @@
 
                             public  java.lang.String updateResourceExceptionQueue(
 
-                            java.lang.String token299,java.lang.String xmlResource300,java.lang.String exceptionQueues301)
+                            java.lang.String token306,java.lang.String xmlResource307,java.lang.String exceptionQueues308)
                         
 
                     throws java.rmi.RemoteException
@@ -2923,9 +2935,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.UpdateResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token299,
-                                                    xmlResource300,
-                                                    exceptionQueues301,
+                                                    token306,
+                                                    xmlResource307,
+                                                    exceptionQueues308,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResourceExceptionQueue")));
@@ -3010,12 +3022,12 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startupdateResourceExceptionQueue
-                    * @param updateResourceExceptionQueue298
+                    * @param updateResourceExceptionQueue305
                 
                 */
                 public  void startupdateResourceExceptionQueue(
 
-                 java.lang.String token299,java.lang.String xmlResource300,java.lang.String exceptionQueues301,
+                 java.lang.String token306,java.lang.String xmlResource307,java.lang.String exceptionQueues308,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -3039,9 +3051,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.UpdateResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token299,
-                                                    xmlResource300,
-                                                    exceptionQueues301,
+                                                    token306,
+                                                    xmlResource307,
+                                                    exceptionQueues308,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResourceExceptionQueue")));
@@ -3157,16 +3169,16 @@
                     /**
                      * Auto generated method signature
                      * 
-                     * @see com.iss.gda.GdaService#appendResourceAppointQueue
-                     * @param appendResourceAppointQueue304
+                     * @see com.iss.gda.GdaService#queryDataByMessage
+                     * @param queryDataByMessage311
                     
                      */
 
                     
 
-                            public  java.lang.String appendResourceAppointQueue(
+                            public  java.lang.String queryDataByMessage(
 
-                            java.lang.String token305,java.lang.String xmlResource306,java.lang.String queueNames307)
+                            java.lang.String token312,java.lang.String keywords313,java.lang.String flag314)
                         
 
                     throws java.rmi.RemoteException
@@ -3175,542 +3187,6 @@
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
                org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[10].getName());
-              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceAppointQueueRequest");
-              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
-
-              
-              
-                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
-              
-
-              // create a message context
-              _messageContext = new org.apache.axis2.context.MessageContext();
-
-              
-
-              // create SOAP envelope with that payload
-              org.apache.axiom.soap.SOAPEnvelope env = null;
-                    com.neusoft.www.bsp.AppendResourceAppointQueue dummyWrappedType = null;
-                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token305,
-                                                    xmlResource306,
-                                                    queueNames307,
-                                                    dummyWrappedType,
-                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
-                                                    "appendResourceAppointQueue")));
-                                                
-        //adding SOAP soap_headers
-         _serviceClient.addHeadersToEnvelope(env);
-        // set the message context with that soap envelope
-        _messageContext.setEnvelope(env);
-
-        // add the message contxt to the operation client
-        _operationClient.addMessageContext(_messageContext);
-
-        //execute the operation client
-        _operationClient.execute(true);
-
-         
-               org.apache.axis2.context.MessageContext _returnMessageContext = _operationClient.getMessageContext(
-                                           org.apache.axis2.wsdl.WSDLConstants.MESSAGE_LABEL_IN_VALUE);
-                org.apache.axiom.soap.SOAPEnvelope _returnEnv = _returnMessageContext.getEnvelope();
-                
-                
-                                java.lang.Object object = fromOM(
-                                             _returnEnv.getBody().getFirstElement() ,
-                                             com.neusoft.www.bsp.AppendResourceAppointQueueResponse.class,
-                                              getEnvelopeNamespaces(_returnEnv));
-
-                               
-                                        return getAppendResourceAppointQueueResponse_return((com.neusoft.www.bsp.AppendResourceAppointQueueResponse)object);
-                                   
-         }catch(org.apache.axis2.AxisFault f){
-
-            org.apache.axiom.om.OMElement faultElt = f.getDetail();
-            if (faultElt!=null){
-                if (faultExceptionNameMap.containsKey(faultElt.getQName())){
-                    //make the fault by reflection
-                    try{
-                        java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
-                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
-                        java.lang.Exception ex=
-                                (java.lang.Exception) exceptionClass.newInstance();
-                        //message class
-                        java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
-                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
-                        java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
-                        java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
-                                   new java.lang.Class[]{messageClass});
-                        m.invoke(ex,new java.lang.Object[]{messageObject});
-                        
-
-                        throw new java.rmi.RemoteException(ex.getMessage(), ex);
-                    }catch(java.lang.ClassCastException e){
-                       // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    } catch (java.lang.ClassNotFoundException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }catch (java.lang.NoSuchMethodException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    } catch (java.lang.reflect.InvocationTargetException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }  catch (java.lang.IllegalAccessException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }   catch (java.lang.InstantiationException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }
-                }else{
-                    throw f;
-                }
-            }else{
-                throw f;
-            }
-            } finally {
-                _messageContext.getTransportOut().getSender().cleanup(_messageContext);
-            }
-        }
-            
-                /**
-                * Auto generated method signature for Asynchronous Invocations
-                * 
-                * @see com.iss.gda.GdaService#startappendResourceAppointQueue
-                    * @param appendResourceAppointQueue304
-                
-                */
-                public  void startappendResourceAppointQueue(
-
-                 java.lang.String token305,java.lang.String xmlResource306,java.lang.String queueNames307,
-
-                  final com.iss.gda.GdaServiceCallbackHandler callback)
-
-                throws java.rmi.RemoteException{
-
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[10].getName());
-             _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceAppointQueueRequest");
-             _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
-
-              
-              
-                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
-              
-
-
-              // create SOAP envelope with that payload
-              org.apache.axiom.soap.SOAPEnvelope env=null;
-              final org.apache.axis2.context.MessageContext _messageContext = new org.apache.axis2.context.MessageContext();
-
-                    
-                                    //Style is Doc.
-                                    com.neusoft.www.bsp.AppendResourceAppointQueue dummyWrappedType = null;
-                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token305,
-                                                    xmlResource306,
-                                                    queueNames307,
-                                                     dummyWrappedType,
-                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
-                                                    "appendResourceAppointQueue")));
-                                                
-        // adding SOAP soap_headers
-         _serviceClient.addHeadersToEnvelope(env);
-        // create message context with that soap envelope
-        _messageContext.setEnvelope(env);
-
-        // add the message context to the operation client
-        _operationClient.addMessageContext(_messageContext);
-
-
-                    
-                        _operationClient.setCallback(new org.apache.axis2.client.async.AxisCallback() {
-                            public void onMessage(org.apache.axis2.context.MessageContext resultContext) {
-                            try {
-                                org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
-                                
-                                        java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         com.neusoft.www.bsp.AppendResourceAppointQueueResponse.class,
-                                                                         getEnvelopeNamespaces(resultEnv));
-                                        callback.receiveResultappendResourceAppointQueue(
-                                            getAppendResourceAppointQueueResponse_return((com.neusoft.www.bsp.AppendResourceAppointQueueResponse)object));
-                                        
-                            } catch (org.apache.axis2.AxisFault e) {
-                                callback.receiveErrorappendResourceAppointQueue(e);
-                            }
-                            }
-
-                            public void onError(java.lang.Exception error) {
-								if (error instanceof org.apache.axis2.AxisFault) {
-									org.apache.axis2.AxisFault f = (org.apache.axis2.AxisFault) error;
-									org.apache.axiom.om.OMElement faultElt = f.getDetail();
-									if (faultElt!=null){
-										if (faultExceptionNameMap.containsKey(faultElt.getQName())){
-											//make the fault by reflection
-											try{
-													java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
-													java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
-													java.lang.Exception ex=
-														(java.lang.Exception) exceptionClass.newInstance();
-													//message class
-													java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
-														java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
-													java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
-													java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
-															new java.lang.Class[]{messageClass});
-													m.invoke(ex,new java.lang.Object[]{messageObject});
-													
-					
-										            callback.receiveErrorappendResourceAppointQueue(new java.rmi.RemoteException(ex.getMessage(), ex));
-                                            } catch(java.lang.ClassCastException e){
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (java.lang.ClassNotFoundException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (java.lang.NoSuchMethodException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (java.lang.reflect.InvocationTargetException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (java.lang.IllegalAccessException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (java.lang.InstantiationException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            } catch (org.apache.axis2.AxisFault e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrorappendResourceAppointQueue(f);
-                                            }
-									    } else {
-										    callback.receiveErrorappendResourceAppointQueue(f);
-									    }
-									} else {
-									    callback.receiveErrorappendResourceAppointQueue(f);
-									}
-								} else {
-								    callback.receiveErrorappendResourceAppointQueue(error);
-								}
-                            }
-
-                            public void onFault(org.apache.axis2.context.MessageContext faultContext) {
-                                org.apache.axis2.AxisFault fault = org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(faultContext);
-                                onError(fault);
-                            }
-
-                            public void onComplete() {
-                                try {
-                                    _messageContext.getTransportOut().getSender().cleanup(_messageContext);
-                                } catch (org.apache.axis2.AxisFault axisFault) {
-                                    callback.receiveErrorappendResourceAppointQueue(axisFault);
-                                }
-                            }
-                });
-                        
-
-          org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[10].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
-           _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[10].setMessageReceiver(
-                    _callbackReceiver);
-        }
-
-           //execute the operation client
-           _operationClient.execute(false);
-
-                    }
-                
-                    /**
-                     * Auto generated method signature
-                     * 
-                     * @see com.iss.gda.GdaService#deleteResource
-                     * @param deleteResource310
-                    
-                     */
-
-                    
-
-                            public  java.lang.String deleteResource(
-
-                            java.lang.String token311,java.lang.String uris312)
-                        
-
-                    throws java.rmi.RemoteException
-                    
-                    {
-              org.apache.axis2.context.MessageContext _messageContext = null;
-              try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
-              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceRequest");
-              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
-
-              
-              
-                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
-              
-
-              // create a message context
-              _messageContext = new org.apache.axis2.context.MessageContext();
-
-              
-
-              // create SOAP envelope with that payload
-              org.apache.axiom.soap.SOAPEnvelope env = null;
-                    com.neusoft.www.bsp.DeleteResource dummyWrappedType = null;
-                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token311,
-                                                    uris312,
-                                                    dummyWrappedType,
-                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
-                                                    "deleteResource")));
-                                                
-        //adding SOAP soap_headers
-         _serviceClient.addHeadersToEnvelope(env);
-        // set the message context with that soap envelope
-        _messageContext.setEnvelope(env);
-
-        // add the message contxt to the operation client
-        _operationClient.addMessageContext(_messageContext);
-
-        //execute the operation client
-        _operationClient.execute(true);
-
-         
-               org.apache.axis2.context.MessageContext _returnMessageContext = _operationClient.getMessageContext(
-                                           org.apache.axis2.wsdl.WSDLConstants.MESSAGE_LABEL_IN_VALUE);
-                org.apache.axiom.soap.SOAPEnvelope _returnEnv = _returnMessageContext.getEnvelope();
-                
-                
-                                java.lang.Object object = fromOM(
-                                             _returnEnv.getBody().getFirstElement() ,
-                                             com.neusoft.www.bsp.DeleteResourceResponse.class,
-                                              getEnvelopeNamespaces(_returnEnv));
-
-                               
-                                        return getDeleteResourceResponse_return((com.neusoft.www.bsp.DeleteResourceResponse)object);
-                                   
-         }catch(org.apache.axis2.AxisFault f){
-
-            org.apache.axiom.om.OMElement faultElt = f.getDetail();
-            if (faultElt!=null){
-                if (faultExceptionNameMap.containsKey(faultElt.getQName())){
-                    //make the fault by reflection
-                    try{
-                        java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
-                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
-                        java.lang.Exception ex=
-                                (java.lang.Exception) exceptionClass.newInstance();
-                        //message class
-                        java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
-                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
-                        java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
-                        java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
-                                   new java.lang.Class[]{messageClass});
-                        m.invoke(ex,new java.lang.Object[]{messageObject});
-                        
-
-                        throw new java.rmi.RemoteException(ex.getMessage(), ex);
-                    }catch(java.lang.ClassCastException e){
-                       // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    } catch (java.lang.ClassNotFoundException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }catch (java.lang.NoSuchMethodException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    } catch (java.lang.reflect.InvocationTargetException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }  catch (java.lang.IllegalAccessException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }   catch (java.lang.InstantiationException e) {
-                        // we cannot intantiate the class - throw the original Axis fault
-                        throw f;
-                    }
-                }else{
-                    throw f;
-                }
-            }else{
-                throw f;
-            }
-            } finally {
-                _messageContext.getTransportOut().getSender().cleanup(_messageContext);
-            }
-        }
-            
-                /**
-                * Auto generated method signature for Asynchronous Invocations
-                * 
-                * @see com.iss.gda.GdaService#startdeleteResource
-                    * @param deleteResource310
-                
-                */
-                public  void startdeleteResource(
-
-                 java.lang.String token311,java.lang.String uris312,
-
-                  final com.iss.gda.GdaServiceCallbackHandler callback)
-
-                throws java.rmi.RemoteException{
-
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
-             _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceRequest");
-             _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
-
-              
-              
-                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
-              
-
-
-              // create SOAP envelope with that payload
-              org.apache.axiom.soap.SOAPEnvelope env=null;
-              final org.apache.axis2.context.MessageContext _messageContext = new org.apache.axis2.context.MessageContext();
-
-                    
-                                    //Style is Doc.
-                                    com.neusoft.www.bsp.DeleteResource dummyWrappedType = null;
-                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token311,
-                                                    uris312,
-                                                     dummyWrappedType,
-                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
-                                                    "deleteResource")));
-                                                
-        // adding SOAP soap_headers
-         _serviceClient.addHeadersToEnvelope(env);
-        // create message context with that soap envelope
-        _messageContext.setEnvelope(env);
-
-        // add the message context to the operation client
-        _operationClient.addMessageContext(_messageContext);
-
-
-                    
-                        _operationClient.setCallback(new org.apache.axis2.client.async.AxisCallback() {
-                            public void onMessage(org.apache.axis2.context.MessageContext resultContext) {
-                            try {
-                                org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
-                                
-                                        java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                                                         com.neusoft.www.bsp.DeleteResourceResponse.class,
-                                                                         getEnvelopeNamespaces(resultEnv));
-                                        callback.receiveResultdeleteResource(
-                                            getDeleteResourceResponse_return((com.neusoft.www.bsp.DeleteResourceResponse)object));
-                                        
-                            } catch (org.apache.axis2.AxisFault e) {
-                                callback.receiveErrordeleteResource(e);
-                            }
-                            }
-
-                            public void onError(java.lang.Exception error) {
-								if (error instanceof org.apache.axis2.AxisFault) {
-									org.apache.axis2.AxisFault f = (org.apache.axis2.AxisFault) error;
-									org.apache.axiom.om.OMElement faultElt = f.getDetail();
-									if (faultElt!=null){
-										if (faultExceptionNameMap.containsKey(faultElt.getQName())){
-											//make the fault by reflection
-											try{
-													java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
-													java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
-													java.lang.Exception ex=
-														(java.lang.Exception) exceptionClass.newInstance();
-													//message class
-													java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
-														java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
-													java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
-													java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
-															new java.lang.Class[]{messageClass});
-													m.invoke(ex,new java.lang.Object[]{messageObject});
-													
-					
-										            callback.receiveErrordeleteResource(new java.rmi.RemoteException(ex.getMessage(), ex));
-                                            } catch(java.lang.ClassCastException e){
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (java.lang.ClassNotFoundException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (java.lang.NoSuchMethodException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (java.lang.reflect.InvocationTargetException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (java.lang.IllegalAccessException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (java.lang.InstantiationException e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            } catch (org.apache.axis2.AxisFault e) {
-                                                // we cannot intantiate the class - throw the original Axis fault
-                                                callback.receiveErrordeleteResource(f);
-                                            }
-									    } else {
-										    callback.receiveErrordeleteResource(f);
-									    }
-									} else {
-									    callback.receiveErrordeleteResource(f);
-									}
-								} else {
-								    callback.receiveErrordeleteResource(error);
-								}
-                            }
-
-                            public void onFault(org.apache.axis2.context.MessageContext faultContext) {
-                                org.apache.axis2.AxisFault fault = org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(faultContext);
-                                onError(fault);
-                            }
-
-                            public void onComplete() {
-                                try {
-                                    _messageContext.getTransportOut().getSender().cleanup(_messageContext);
-                                } catch (org.apache.axis2.AxisFault axisFault) {
-                                    callback.receiveErrordeleteResource(axisFault);
-                                }
-                            }
-                });
-                        
-
-          org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[11].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
-           _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[11].setMessageReceiver(
-                    _callbackReceiver);
-        }
-
-           //execute the operation client
-           _operationClient.execute(false);
-
-                    }
-                
-                    /**
-                     * Auto generated method signature
-                     * 
-                     * @see com.iss.gda.GdaService#queryDataByMessage
-                     * @param queryDataByMessage315
-                    
-                     */
-
-                    
-
-                            public  java.lang.String queryDataByMessage(
-
-                            java.lang.String token316,java.lang.String keywords317,java.lang.String flag318)
-                        
-
-                    throws java.rmi.RemoteException
-                    
-                    {
-              org.apache.axis2.context.MessageContext _messageContext = null;
-              try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataByMessageRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -3728,9 +3204,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryDataByMessage dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token316,
-                                                    keywords317,
-                                                    flag318,
+                                                    token312,
+                                                    keywords313,
+                                                    flag314,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryDataByMessage")));
@@ -3815,18 +3291,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryDataByMessage
-                    * @param queryDataByMessage315
+                    * @param queryDataByMessage311
                 
                 */
                 public  void startqueryDataByMessage(
 
-                 java.lang.String token316,java.lang.String keywords317,java.lang.String flag318,
+                 java.lang.String token312,java.lang.String keywords313,java.lang.String flag314,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[10].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataByMessageRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -3844,9 +3320,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryDataByMessage dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token316,
-                                                    keywords317,
-                                                    flag318,
+                                                    token312,
+                                                    keywords313,
+                                                    flag314,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryDataByMessage")));
@@ -3948,6 +3424,542 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
+        if ( _operations[10].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+           _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
+          _operations[10].setMessageReceiver(
+                    _callbackReceiver);
+        }
+
+           //execute the operation client
+           _operationClient.execute(false);
+
+                    }
+                
+                    /**
+                     * Auto generated method signature
+                     * 
+                     * @see com.iss.gda.GdaService#queryDataCondition
+                     * @param queryDataCondition317
+                    
+                     */
+
+                    
+
+                            public  java.lang.String queryDataCondition(
+
+                            java.lang.String token318,java.lang.String condition319)
+                        
+
+                    throws java.rmi.RemoteException
+                    
+                    {
+              org.apache.axis2.context.MessageContext _messageContext = null;
+              try{
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
+              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataConditionRequest");
+              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+              // create a message context
+              _messageContext = new org.apache.axis2.context.MessageContext();
+
+              
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env = null;
+                    com.neusoft.www.bsp.QueryDataCondition dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token318,
+                                                    condition319,
+                                                    dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "queryDataCondition")));
+                                                
+        //adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // set the message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message contxt to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+        //execute the operation client
+        _operationClient.execute(true);
+
+         
+               org.apache.axis2.context.MessageContext _returnMessageContext = _operationClient.getMessageContext(
+                                           org.apache.axis2.wsdl.WSDLConstants.MESSAGE_LABEL_IN_VALUE);
+                org.apache.axiom.soap.SOAPEnvelope _returnEnv = _returnMessageContext.getEnvelope();
+                
+                
+                                java.lang.Object object = fromOM(
+                                             _returnEnv.getBody().getFirstElement() ,
+                                             com.neusoft.www.bsp.QueryDataConditionResponse.class,
+                                              getEnvelopeNamespaces(_returnEnv));
+
+                               
+                                        return getQueryDataConditionResponseResources((com.neusoft.www.bsp.QueryDataConditionResponse)object);
+                                   
+         }catch(org.apache.axis2.AxisFault f){
+
+            org.apache.axiom.om.OMElement faultElt = f.getDetail();
+            if (faultElt!=null){
+                if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+                    //make the fault by reflection
+                    try{
+                        java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+                        java.lang.Exception ex=
+                                (java.lang.Exception) exceptionClass.newInstance();
+                        //message class
+                        java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+                        java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+                        java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+                                   new java.lang.Class[]{messageClass});
+                        m.invoke(ex,new java.lang.Object[]{messageObject});
+                        
+
+                        throw new java.rmi.RemoteException(ex.getMessage(), ex);
+                    }catch(java.lang.ClassCastException e){
+                       // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.ClassNotFoundException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }catch (java.lang.NoSuchMethodException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.reflect.InvocationTargetException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }  catch (java.lang.IllegalAccessException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }   catch (java.lang.InstantiationException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }
+                }else{
+                    throw f;
+                }
+            }else{
+                throw f;
+            }
+            } finally {
+                _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+            }
+        }
+            
+                /**
+                * Auto generated method signature for Asynchronous Invocations
+                * 
+                * @see com.iss.gda.GdaService#startqueryDataCondition
+                    * @param queryDataCondition317
+                
+                */
+                public  void startqueryDataCondition(
+
+                 java.lang.String token318,java.lang.String condition319,
+
+                  final com.iss.gda.GdaServiceCallbackHandler callback)
+
+                throws java.rmi.RemoteException{
+
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[11].getName());
+             _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataConditionRequest");
+             _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env=null;
+              final org.apache.axis2.context.MessageContext _messageContext = new org.apache.axis2.context.MessageContext();
+
+                    
+                                    //Style is Doc.
+                                    com.neusoft.www.bsp.QueryDataCondition dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token318,
+                                                    condition319,
+                                                     dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "queryDataCondition")));
+                                                
+        // adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // create message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message context to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+
+                    
+                        _operationClient.setCallback(new org.apache.axis2.client.async.AxisCallback() {
+                            public void onMessage(org.apache.axis2.context.MessageContext resultContext) {
+                            try {
+                                org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
+                                
+                                        java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
+                                                                         com.neusoft.www.bsp.QueryDataConditionResponse.class,
+                                                                         getEnvelopeNamespaces(resultEnv));
+                                        callback.receiveResultqueryDataCondition(
+                                            getQueryDataConditionResponseResources((com.neusoft.www.bsp.QueryDataConditionResponse)object));
+                                        
+                            } catch (org.apache.axis2.AxisFault e) {
+                                callback.receiveErrorqueryDataCondition(e);
+                            }
+                            }
+
+                            public void onError(java.lang.Exception error) {
+								if (error instanceof org.apache.axis2.AxisFault) {
+									org.apache.axis2.AxisFault f = (org.apache.axis2.AxisFault) error;
+									org.apache.axiom.om.OMElement faultElt = f.getDetail();
+									if (faultElt!=null){
+										if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+											//make the fault by reflection
+											try{
+													java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+													java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+													java.lang.Exception ex=
+														(java.lang.Exception) exceptionClass.newInstance();
+													//message class
+													java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+														java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+													java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+													java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+															new java.lang.Class[]{messageClass});
+													m.invoke(ex,new java.lang.Object[]{messageObject});
+													
+					
+										            callback.receiveErrorqueryDataCondition(new java.rmi.RemoteException(ex.getMessage(), ex));
+                                            } catch(java.lang.ClassCastException e){
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (java.lang.ClassNotFoundException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (java.lang.NoSuchMethodException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (java.lang.reflect.InvocationTargetException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (java.lang.IllegalAccessException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (java.lang.InstantiationException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            } catch (org.apache.axis2.AxisFault e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorqueryDataCondition(f);
+                                            }
+									    } else {
+										    callback.receiveErrorqueryDataCondition(f);
+									    }
+									} else {
+									    callback.receiveErrorqueryDataCondition(f);
+									}
+								} else {
+								    callback.receiveErrorqueryDataCondition(error);
+								}
+                            }
+
+                            public void onFault(org.apache.axis2.context.MessageContext faultContext) {
+                                org.apache.axis2.AxisFault fault = org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(faultContext);
+                                onError(fault);
+                            }
+
+                            public void onComplete() {
+                                try {
+                                    _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+                                } catch (org.apache.axis2.AxisFault axisFault) {
+                                    callback.receiveErrorqueryDataCondition(axisFault);
+                                }
+                            }
+                });
+                        
+
+          org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
+        if ( _operations[11].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+           _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
+          _operations[11].setMessageReceiver(
+                    _callbackReceiver);
+        }
+
+           //execute the operation client
+           _operationClient.execute(false);
+
+                    }
+                
+                    /**
+                     * Auto generated method signature
+                     * 
+                     * @see com.iss.gda.GdaService#appendResourceAppointQueue
+                     * @param appendResourceAppointQueue322
+                    
+                     */
+
+                    
+
+                            public  java.lang.String appendResourceAppointQueue(
+
+                            java.lang.String token323,java.lang.String xmlResource324,java.lang.String queueNames325)
+                        
+
+                    throws java.rmi.RemoteException
+                    
+                    {
+              org.apache.axis2.context.MessageContext _messageContext = null;
+              try{
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
+              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceAppointQueueRequest");
+              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+              // create a message context
+              _messageContext = new org.apache.axis2.context.MessageContext();
+
+              
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env = null;
+                    com.neusoft.www.bsp.AppendResourceAppointQueue dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token323,
+                                                    xmlResource324,
+                                                    queueNames325,
+                                                    dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "appendResourceAppointQueue")));
+                                                
+        //adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // set the message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message contxt to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+        //execute the operation client
+        _operationClient.execute(true);
+
+         
+               org.apache.axis2.context.MessageContext _returnMessageContext = _operationClient.getMessageContext(
+                                           org.apache.axis2.wsdl.WSDLConstants.MESSAGE_LABEL_IN_VALUE);
+                org.apache.axiom.soap.SOAPEnvelope _returnEnv = _returnMessageContext.getEnvelope();
+                
+                
+                                java.lang.Object object = fromOM(
+                                             _returnEnv.getBody().getFirstElement() ,
+                                             com.neusoft.www.bsp.AppendResourceAppointQueueResponse.class,
+                                              getEnvelopeNamespaces(_returnEnv));
+
+                               
+                                        return getAppendResourceAppointQueueResponse_return((com.neusoft.www.bsp.AppendResourceAppointQueueResponse)object);
+                                   
+         }catch(org.apache.axis2.AxisFault f){
+
+            org.apache.axiom.om.OMElement faultElt = f.getDetail();
+            if (faultElt!=null){
+                if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+                    //make the fault by reflection
+                    try{
+                        java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+                        java.lang.Exception ex=
+                                (java.lang.Exception) exceptionClass.newInstance();
+                        //message class
+                        java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+                        java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+                        java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+                                   new java.lang.Class[]{messageClass});
+                        m.invoke(ex,new java.lang.Object[]{messageObject});
+                        
+
+                        throw new java.rmi.RemoteException(ex.getMessage(), ex);
+                    }catch(java.lang.ClassCastException e){
+                       // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.ClassNotFoundException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }catch (java.lang.NoSuchMethodException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.reflect.InvocationTargetException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }  catch (java.lang.IllegalAccessException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }   catch (java.lang.InstantiationException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }
+                }else{
+                    throw f;
+                }
+            }else{
+                throw f;
+            }
+            } finally {
+                _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+            }
+        }
+            
+                /**
+                * Auto generated method signature for Asynchronous Invocations
+                * 
+                * @see com.iss.gda.GdaService#startappendResourceAppointQueue
+                    * @param appendResourceAppointQueue322
+                
+                */
+                public  void startappendResourceAppointQueue(
+
+                 java.lang.String token323,java.lang.String xmlResource324,java.lang.String queueNames325,
+
+                  final com.iss.gda.GdaServiceCallbackHandler callback)
+
+                throws java.rmi.RemoteException{
+
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[12].getName());
+             _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceAppointQueueRequest");
+             _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env=null;
+              final org.apache.axis2.context.MessageContext _messageContext = new org.apache.axis2.context.MessageContext();
+
+                    
+                                    //Style is Doc.
+                                    com.neusoft.www.bsp.AppendResourceAppointQueue dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token323,
+                                                    xmlResource324,
+                                                    queueNames325,
+                                                     dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "appendResourceAppointQueue")));
+                                                
+        // adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // create message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message context to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+
+                    
+                        _operationClient.setCallback(new org.apache.axis2.client.async.AxisCallback() {
+                            public void onMessage(org.apache.axis2.context.MessageContext resultContext) {
+                            try {
+                                org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
+                                
+                                        java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
+                                                                         com.neusoft.www.bsp.AppendResourceAppointQueueResponse.class,
+                                                                         getEnvelopeNamespaces(resultEnv));
+                                        callback.receiveResultappendResourceAppointQueue(
+                                            getAppendResourceAppointQueueResponse_return((com.neusoft.www.bsp.AppendResourceAppointQueueResponse)object));
+                                        
+                            } catch (org.apache.axis2.AxisFault e) {
+                                callback.receiveErrorappendResourceAppointQueue(e);
+                            }
+                            }
+
+                            public void onError(java.lang.Exception error) {
+								if (error instanceof org.apache.axis2.AxisFault) {
+									org.apache.axis2.AxisFault f = (org.apache.axis2.AxisFault) error;
+									org.apache.axiom.om.OMElement faultElt = f.getDetail();
+									if (faultElt!=null){
+										if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+											//make the fault by reflection
+											try{
+													java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+													java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+													java.lang.Exception ex=
+														(java.lang.Exception) exceptionClass.newInstance();
+													//message class
+													java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+														java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+													java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+													java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+															new java.lang.Class[]{messageClass});
+													m.invoke(ex,new java.lang.Object[]{messageObject});
+													
+					
+										            callback.receiveErrorappendResourceAppointQueue(new java.rmi.RemoteException(ex.getMessage(), ex));
+                                            } catch(java.lang.ClassCastException e){
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (java.lang.ClassNotFoundException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (java.lang.NoSuchMethodException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (java.lang.reflect.InvocationTargetException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (java.lang.IllegalAccessException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (java.lang.InstantiationException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            } catch (org.apache.axis2.AxisFault e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrorappendResourceAppointQueue(f);
+                                            }
+									    } else {
+										    callback.receiveErrorappendResourceAppointQueue(f);
+									    }
+									} else {
+									    callback.receiveErrorappendResourceAppointQueue(f);
+									}
+								} else {
+								    callback.receiveErrorappendResourceAppointQueue(error);
+								}
+                            }
+
+                            public void onFault(org.apache.axis2.context.MessageContext faultContext) {
+                                org.apache.axis2.AxisFault fault = org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(faultContext);
+                                onError(fault);
+                            }
+
+                            public void onComplete() {
+                                try {
+                                    _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+                                } catch (org.apache.axis2.AxisFault axisFault) {
+                                    callback.receiveErrorappendResourceAppointQueue(axisFault);
+                                }
+                            }
+                });
+                        
+
+          org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
         if ( _operations[12].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
           _operations[12].setMessageReceiver(
@@ -3962,16 +3974,16 @@
                     /**
                      * Auto generated method signature
                      * 
-                     * @see com.iss.gda.GdaService#insertUriMapping
-                     * @param insertUriMapping321
+                     * @see com.iss.gda.GdaService#deleteResource
+                     * @param deleteResource328
                     
                      */
 
                     
 
-                            public  void insertUriMapping(
+                            public  java.lang.String deleteResource(
 
-                            java.lang.String token322,java.lang.String dcuri323,java.lang.String uri324)
+                            java.lang.String token329,java.lang.String uris330)
                         
 
                     throws java.rmi.RemoteException
@@ -3980,6 +3992,273 @@
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
                org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[13].getName());
+              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceRequest");
+              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+              // create a message context
+              _messageContext = new org.apache.axis2.context.MessageContext();
+
+              
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env = null;
+                    com.neusoft.www.bsp.DeleteResource dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token329,
+                                                    uris330,
+                                                    dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "deleteResource")));
+                                                
+        //adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // set the message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message contxt to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+        //execute the operation client
+        _operationClient.execute(true);
+
+         
+               org.apache.axis2.context.MessageContext _returnMessageContext = _operationClient.getMessageContext(
+                                           org.apache.axis2.wsdl.WSDLConstants.MESSAGE_LABEL_IN_VALUE);
+                org.apache.axiom.soap.SOAPEnvelope _returnEnv = _returnMessageContext.getEnvelope();
+                
+                
+                                java.lang.Object object = fromOM(
+                                             _returnEnv.getBody().getFirstElement() ,
+                                             com.neusoft.www.bsp.DeleteResourceResponse.class,
+                                              getEnvelopeNamespaces(_returnEnv));
+
+                               
+                                        return getDeleteResourceResponse_return((com.neusoft.www.bsp.DeleteResourceResponse)object);
+                                   
+         }catch(org.apache.axis2.AxisFault f){
+
+            org.apache.axiom.om.OMElement faultElt = f.getDetail();
+            if (faultElt!=null){
+                if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+                    //make the fault by reflection
+                    try{
+                        java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+                        java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+                        java.lang.Exception ex=
+                                (java.lang.Exception) exceptionClass.newInstance();
+                        //message class
+                        java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+                        java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+                        java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+                        java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+                                   new java.lang.Class[]{messageClass});
+                        m.invoke(ex,new java.lang.Object[]{messageObject});
+                        
+
+                        throw new java.rmi.RemoteException(ex.getMessage(), ex);
+                    }catch(java.lang.ClassCastException e){
+                       // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.ClassNotFoundException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }catch (java.lang.NoSuchMethodException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    } catch (java.lang.reflect.InvocationTargetException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }  catch (java.lang.IllegalAccessException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }   catch (java.lang.InstantiationException e) {
+                        // we cannot intantiate the class - throw the original Axis fault
+                        throw f;
+                    }
+                }else{
+                    throw f;
+                }
+            }else{
+                throw f;
+            }
+            } finally {
+                _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+            }
+        }
+            
+                /**
+                * Auto generated method signature for Asynchronous Invocations
+                * 
+                * @see com.iss.gda.GdaService#startdeleteResource
+                    * @param deleteResource328
+                
+                */
+                public  void startdeleteResource(
+
+                 java.lang.String token329,java.lang.String uris330,
+
+                  final com.iss.gda.GdaServiceCallbackHandler callback)
+
+                throws java.rmi.RemoteException{
+
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[13].getName());
+             _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceRequest");
+             _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
+
+              
+              
+                  addPropertyToOperationClient(_operationClient,org.apache.axis2.description.WSDL2Constants.ATTR_WHTTP_QUERY_PARAMETER_SEPARATOR,"&");
+              
+
+
+              // create SOAP envelope with that payload
+              org.apache.axiom.soap.SOAPEnvelope env=null;
+              final org.apache.axis2.context.MessageContext _messageContext = new org.apache.axis2.context.MessageContext();
+
+                    
+                                    //Style is Doc.
+                                    com.neusoft.www.bsp.DeleteResource dummyWrappedType = null;
+                                                    env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
+                                                    token329,
+                                                    uris330,
+                                                     dummyWrappedType,
+                                                    optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
+                                                    "deleteResource")));
+                                                
+        // adding SOAP soap_headers
+         _serviceClient.addHeadersToEnvelope(env);
+        // create message context with that soap envelope
+        _messageContext.setEnvelope(env);
+
+        // add the message context to the operation client
+        _operationClient.addMessageContext(_messageContext);
+
+
+                    
+                        _operationClient.setCallback(new org.apache.axis2.client.async.AxisCallback() {
+                            public void onMessage(org.apache.axis2.context.MessageContext resultContext) {
+                            try {
+                                org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
+                                
+                                        java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
+                                                                         com.neusoft.www.bsp.DeleteResourceResponse.class,
+                                                                         getEnvelopeNamespaces(resultEnv));
+                                        callback.receiveResultdeleteResource(
+                                            getDeleteResourceResponse_return((com.neusoft.www.bsp.DeleteResourceResponse)object));
+                                        
+                            } catch (org.apache.axis2.AxisFault e) {
+                                callback.receiveErrordeleteResource(e);
+                            }
+                            }
+
+                            public void onError(java.lang.Exception error) {
+								if (error instanceof org.apache.axis2.AxisFault) {
+									org.apache.axis2.AxisFault f = (org.apache.axis2.AxisFault) error;
+									org.apache.axiom.om.OMElement faultElt = f.getDetail();
+									if (faultElt!=null){
+										if (faultExceptionNameMap.containsKey(faultElt.getQName())){
+											//make the fault by reflection
+											try{
+													java.lang.String exceptionClassName = (java.lang.String)faultExceptionClassNameMap.get(faultElt.getQName());
+													java.lang.Class exceptionClass = java.lang.Class.forName(exceptionClassName);
+													java.lang.Exception ex=
+														(java.lang.Exception) exceptionClass.newInstance();
+													//message class
+													java.lang.String messageClassName = (java.lang.String)faultMessageMap.get(faultElt.getQName());
+														java.lang.Class messageClass = java.lang.Class.forName(messageClassName);
+													java.lang.Object messageObject = fromOM(faultElt,messageClass,null);
+													java.lang.reflect.Method m = exceptionClass.getMethod("setFaultMessage",
+															new java.lang.Class[]{messageClass});
+													m.invoke(ex,new java.lang.Object[]{messageObject});
+													
+					
+										            callback.receiveErrordeleteResource(new java.rmi.RemoteException(ex.getMessage(), ex));
+                                            } catch(java.lang.ClassCastException e){
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (java.lang.ClassNotFoundException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (java.lang.NoSuchMethodException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (java.lang.reflect.InvocationTargetException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (java.lang.IllegalAccessException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (java.lang.InstantiationException e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            } catch (org.apache.axis2.AxisFault e) {
+                                                // we cannot intantiate the class - throw the original Axis fault
+                                                callback.receiveErrordeleteResource(f);
+                                            }
+									    } else {
+										    callback.receiveErrordeleteResource(f);
+									    }
+									} else {
+									    callback.receiveErrordeleteResource(f);
+									}
+								} else {
+								    callback.receiveErrordeleteResource(error);
+								}
+                            }
+
+                            public void onFault(org.apache.axis2.context.MessageContext faultContext) {
+                                org.apache.axis2.AxisFault fault = org.apache.axis2.util.Utils.getInboundFaultFromMessageContext(faultContext);
+                                onError(fault);
+                            }
+
+                            public void onComplete() {
+                                try {
+                                    _messageContext.getTransportOut().getSender().cleanup(_messageContext);
+                                } catch (org.apache.axis2.AxisFault axisFault) {
+                                    callback.receiveErrordeleteResource(axisFault);
+                                }
+                            }
+                });
+                        
+
+          org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
+        if ( _operations[13].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+           _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
+          _operations[13].setMessageReceiver(
+                    _callbackReceiver);
+        }
+
+           //execute the operation client
+           _operationClient.execute(false);
+
+                    }
+                
+                    /**
+                     * Auto generated method signature
+                     * 
+                     * @see com.iss.gda.GdaService#insertUriMapping
+                     * @param insertUriMapping333
+                    
+                     */
+
+                    
+
+                            public  void insertUriMapping(
+
+                            java.lang.String token334,java.lang.String dcuri335,java.lang.String uri336)
+                        
+
+                    throws java.rmi.RemoteException
+                    
+                    {
+              org.apache.axis2.context.MessageContext _messageContext = null;
+              try{
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/insertUriMappingRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -3997,9 +4276,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.InsertUriMapping dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token322,
-                                                    dcuri323,
-                                                    uri324,
+                                                    token334,
+                                                    dcuri335,
+                                                    uri336,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertUriMapping")));
@@ -4084,18 +4363,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startinsertUriMapping
-                    * @param insertUriMapping321
+                    * @param insertUriMapping333
                 
                 */
                 public  void startinsertUriMapping(
 
-                 java.lang.String token322,java.lang.String dcuri323,java.lang.String uri324,
+                 java.lang.String token334,java.lang.String dcuri335,java.lang.String uri336,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[13].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/insertUriMappingRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4113,9 +4392,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.InsertUriMapping dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token322,
-                                                    dcuri323,
-                                                    uri324,
+                                                    token334,
+                                                    dcuri335,
+                                                    uri336,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertUriMapping")));
@@ -4215,9 +4494,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[13].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[14].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[13].setMessageReceiver(
+          _operations[14].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -4230,7 +4509,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryAllResource
-                     * @param queryAllResource326
+                     * @param queryAllResource338
                     
                      */
 
@@ -4238,7 +4517,7 @@
 
                             public  java.lang.String queryAllResource(
 
-                            java.lang.String token327,java.lang.String message328)
+                            java.lang.String token339,java.lang.String message340)
                         
 
                     throws java.rmi.RemoteException
@@ -4246,7 +4525,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryAllResourceRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4264,8 +4543,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryAllResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token327,
-                                                    message328,
+                                                    token339,
+                                                    message340,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryAllResource")));
@@ -4350,18 +4629,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryAllResource
-                    * @param queryAllResource326
+                    * @param queryAllResource338
                 
                 */
                 public  void startqueryAllResource(
 
-                 java.lang.String token327,java.lang.String message328,
+                 java.lang.String token339,java.lang.String message340,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[14].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryAllResourceRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4379,8 +4658,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryAllResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token327,
-                                                    message328,
+                                                    token339,
+                                                    message340,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryAllResource")));
@@ -4482,9 +4761,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[14].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[15].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[14].setMessageReceiver(
+          _operations[15].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -4497,7 +4776,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryMISCode
-                     * @param queryMISCode331
+                     * @param queryMISCode343
                     
                      */
 
@@ -4505,7 +4784,7 @@
 
                             public  java.lang.String queryMISCode(
 
-                            java.lang.String yxCode332)
+                            java.lang.String yxCode344)
                         
 
                     throws java.rmi.RemoteException
@@ -4513,7 +4792,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryMISCodeRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4531,7 +4810,7 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryMISCode dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    yxCode332,
+                                                    yxCode344,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryMISCode")));
@@ -4616,18 +4895,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryMISCode
-                    * @param queryMISCode331
+                    * @param queryMISCode343
                 
                 */
                 public  void startqueryMISCode(
 
-                 java.lang.String yxCode332,
+                 java.lang.String yxCode344,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[15].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryMISCodeRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4645,7 +4924,7 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryMISCode dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    yxCode332,
+                                                    yxCode344,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryMISCode")));
@@ -4747,9 +5026,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[15].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[16].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[15].setMessageReceiver(
+          _operations[16].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -4762,7 +5041,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#deleteResourceAppointQueue
-                     * @param deleteResourceAppointQueue335
+                     * @param deleteResourceAppointQueue347
                     
                      */
 
@@ -4770,7 +5049,7 @@
 
                             public  java.lang.String deleteResourceAppointQueue(
 
-                            java.lang.String token336,java.lang.String uris337,java.lang.String queueNames338)
+                            java.lang.String token348,java.lang.String uris349,java.lang.String queueNames350)
                         
 
                     throws java.rmi.RemoteException
@@ -4778,7 +5057,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceAppointQueueRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4796,9 +5075,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.DeleteResourceAppointQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token336,
-                                                    uris337,
-                                                    queueNames338,
+                                                    token348,
+                                                    uris349,
+                                                    queueNames350,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceAppointQueue")));
@@ -4883,18 +5162,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startdeleteResourceAppointQueue
-                    * @param deleteResourceAppointQueue335
+                    * @param deleteResourceAppointQueue347
                 
                 */
                 public  void startdeleteResourceAppointQueue(
 
-                 java.lang.String token336,java.lang.String uris337,java.lang.String queueNames338,
+                 java.lang.String token348,java.lang.String uris349,java.lang.String queueNames350,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[16].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceAppointQueueRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -4912,9 +5191,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.DeleteResourceAppointQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token336,
-                                                    uris337,
-                                                    queueNames338,
+                                                    token348,
+                                                    uris349,
+                                                    queueNames350,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceAppointQueue")));
@@ -5016,9 +5295,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[16].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[17].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[16].setMessageReceiver(
+          _operations[17].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -5031,7 +5310,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#deleteResourceForDistributed
-                     * @param deleteResourceForDistributed341
+                     * @param deleteResourceForDistributed353
                     
                      */
 
@@ -5039,7 +5318,7 @@
 
                             public  java.lang.String deleteResourceForDistributed(
 
-                            java.lang.String token342,java.lang.String uris343,java.lang.String apanage344)
+                            java.lang.String token354,java.lang.String uris355,java.lang.String apanage356)
                         
 
                     throws java.rmi.RemoteException
@@ -5047,7 +5326,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceForDistributedRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5065,9 +5344,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.DeleteResourceForDistributed dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token342,
-                                                    uris343,
-                                                    apanage344,
+                                                    token354,
+                                                    uris355,
+                                                    apanage356,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceForDistributed")));
@@ -5152,18 +5431,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startdeleteResourceForDistributed
-                    * @param deleteResourceForDistributed341
+                    * @param deleteResourceForDistributed353
                 
                 */
                 public  void startdeleteResourceForDistributed(
 
-                 java.lang.String token342,java.lang.String uris343,java.lang.String apanage344,
+                 java.lang.String token354,java.lang.String uris355,java.lang.String apanage356,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[17].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceForDistributedRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5181,9 +5460,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.DeleteResourceForDistributed dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token342,
-                                                    uris343,
-                                                    apanage344,
+                                                    token354,
+                                                    uris355,
+                                                    apanage356,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceForDistributed")));
@@ -5285,9 +5564,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[17].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[18].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[17].setMessageReceiver(
+          _operations[18].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -5300,7 +5579,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#appendResource
-                     * @param appendResource347
+                     * @param appendResource359
                     
                      */
 
@@ -5308,7 +5587,7 @@
 
                             public  java.lang.String appendResource(
 
-                            java.lang.String token348,java.lang.String xmlResource349)
+                            java.lang.String token360,java.lang.String xmlResource361)
                         
 
                     throws java.rmi.RemoteException
@@ -5316,7 +5595,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5334,8 +5613,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.AppendResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token348,
-                                                    xmlResource349,
+                                                    token360,
+                                                    xmlResource361,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "appendResource")));
@@ -5420,18 +5699,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startappendResource
-                    * @param appendResource347
+                    * @param appendResource359
                 
                 */
                 public  void startappendResource(
 
-                 java.lang.String token348,java.lang.String xmlResource349,
+                 java.lang.String token360,java.lang.String xmlResource361,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[18].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5449,8 +5728,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.AppendResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token348,
-                                                    xmlResource349,
+                                                    token360,
+                                                    xmlResource361,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "appendResource")));
@@ -5552,9 +5831,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[18].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[19].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[18].setMessageReceiver(
+          _operations[19].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -5567,7 +5846,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#deleteSubscription
-                     * @param deleteSubscription352
+                     * @param deleteSubscription364
                     
                      */
 
@@ -5575,7 +5854,7 @@
 
                             public  java.lang.String deleteSubscription(
 
-                            java.lang.String token353,java.lang.String classNames354)
+                            java.lang.String token365,java.lang.String classNames366)
                         
 
                     throws java.rmi.RemoteException
@@ -5583,7 +5862,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteSubscriptionRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5601,8 +5880,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.DeleteSubscription dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token353,
-                                                    classNames354,
+                                                    token365,
+                                                    classNames366,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteSubscription")));
@@ -5687,18 +5966,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startdeleteSubscription
-                    * @param deleteSubscription352
+                    * @param deleteSubscription364
                 
                 */
                 public  void startdeleteSubscription(
 
-                 java.lang.String token353,java.lang.String classNames354,
+                 java.lang.String token365,java.lang.String classNames366,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[19].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteSubscriptionRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5716,8 +5995,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.DeleteSubscription dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token353,
-                                                    classNames354,
+                                                    token365,
+                                                    classNames366,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteSubscription")));
@@ -5819,9 +6098,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[19].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[20].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[19].setMessageReceiver(
+          _operations[20].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -5834,7 +6113,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#deleteResourceExceptionQueue
-                     * @param deleteResourceExceptionQueue357
+                     * @param deleteResourceExceptionQueue369
                     
                      */
 
@@ -5842,7 +6121,7 @@
 
                             public  java.lang.String deleteResourceExceptionQueue(
 
-                            java.lang.String token358,java.lang.String uris359,java.lang.String exceptionQueues360)
+                            java.lang.String token370,java.lang.String uris371,java.lang.String exceptionQueues372)
                         
 
                     throws java.rmi.RemoteException
@@ -5850,7 +6129,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceExceptionQueueRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5868,9 +6147,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.DeleteResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token358,
-                                                    uris359,
-                                                    exceptionQueues360,
+                                                    token370,
+                                                    uris371,
+                                                    exceptionQueues372,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceExceptionQueue")));
@@ -5955,18 +6234,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startdeleteResourceExceptionQueue
-                    * @param deleteResourceExceptionQueue357
+                    * @param deleteResourceExceptionQueue369
                 
                 */
                 public  void startdeleteResourceExceptionQueue(
 
-                 java.lang.String token358,java.lang.String uris359,java.lang.String exceptionQueues360,
+                 java.lang.String token370,java.lang.String uris371,java.lang.String exceptionQueues372,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[20].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/deleteResourceExceptionQueueRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -5984,9 +6263,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.DeleteResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token358,
-                                                    uris359,
-                                                    exceptionQueues360,
+                                                    token370,
+                                                    uris371,
+                                                    exceptionQueues372,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "deleteResourceExceptionQueue")));
@@ -6088,9 +6367,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[20].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[21].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[20].setMessageReceiver(
+          _operations[21].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -6103,7 +6382,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryCSData
-                     * @param queryCSData363
+                     * @param queryCSData375
                     
                      */
 
@@ -6111,7 +6390,7 @@
 
                             public  java.lang.String queryCSData(
 
-                            java.lang.String token364,java.lang.String org365,java.lang.String startDate366,java.lang.String endDate367,java.lang.String flag368)
+                            java.lang.String token376,java.lang.String orga377,java.lang.String startDate378,java.lang.String endDate379,java.lang.String flag380)
                         
 
                     throws java.rmi.RemoteException
@@ -6119,7 +6398,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryCSDataRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6137,11 +6416,11 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryCSData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token364,
-                                                    org365,
-                                                    startDate366,
-                                                    endDate367,
-                                                    flag368,
+                                                    token376,
+                                                    orga377,
+                                                    startDate378,
+                                                    endDate379,
+                                                    flag380,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryCSData")));
@@ -6226,18 +6505,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryCSData
-                    * @param queryCSData363
+                    * @param queryCSData375
                 
                 */
                 public  void startqueryCSData(
 
-                 java.lang.String token364,java.lang.String org365,java.lang.String startDate366,java.lang.String endDate367,java.lang.String flag368,
+                 java.lang.String token376,java.lang.String orga377,java.lang.String startDate378,java.lang.String endDate379,java.lang.String flag380,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[21].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryCSDataRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6255,11 +6534,11 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryCSData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token364,
-                                                    org365,
-                                                    startDate366,
-                                                    endDate367,
-                                                    flag368,
+                                                    token376,
+                                                    orga377,
+                                                    startDate378,
+                                                    endDate379,
+                                                    flag380,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryCSData")));
@@ -6361,9 +6640,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[21].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[22].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[21].setMessageReceiver(
+          _operations[22].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -6376,7 +6655,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#appendResourceExceptionQueue
-                     * @param appendResourceExceptionQueue371
+                     * @param appendResourceExceptionQueue383
                     
                      */
 
@@ -6384,7 +6663,7 @@
 
                             public  java.lang.String appendResourceExceptionQueue(
 
-                            java.lang.String token372,java.lang.String xmlResource373,java.lang.String exceptionQueues374)
+                            java.lang.String token384,java.lang.String xmlResource385,java.lang.String exceptionQueues386)
                         
 
                     throws java.rmi.RemoteException
@@ -6392,7 +6671,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceExceptionQueueRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6410,9 +6689,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.AppendResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token372,
-                                                    xmlResource373,
-                                                    exceptionQueues374,
+                                                    token384,
+                                                    xmlResource385,
+                                                    exceptionQueues386,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "appendResourceExceptionQueue")));
@@ -6497,18 +6776,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startappendResourceExceptionQueue
-                    * @param appendResourceExceptionQueue371
+                    * @param appendResourceExceptionQueue383
                 
                 */
                 public  void startappendResourceExceptionQueue(
 
-                 java.lang.String token372,java.lang.String xmlResource373,java.lang.String exceptionQueues374,
+                 java.lang.String token384,java.lang.String xmlResource385,java.lang.String exceptionQueues386,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[22].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/appendResourceExceptionQueueRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6526,9 +6805,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.AppendResourceExceptionQueue dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token372,
-                                                    xmlResource373,
-                                                    exceptionQueues374,
+                                                    token384,
+                                                    xmlResource385,
+                                                    exceptionQueues386,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "appendResourceExceptionQueue")));
@@ -6630,9 +6909,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[22].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[23].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[22].setMessageReceiver(
+          _operations[23].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -6645,7 +6924,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#updateResource
-                     * @param updateResource377
+                     * @param updateResource389
                     
                      */
 
@@ -6653,7 +6932,7 @@
 
                             public  java.lang.String updateResource(
 
-                            java.lang.String token378,java.lang.String xmlResource379)
+                            java.lang.String token390,java.lang.String xmlResource391)
                         
 
                     throws java.rmi.RemoteException
@@ -6661,7 +6940,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/updateResourceRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6679,8 +6958,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.UpdateResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token378,
-                                                    xmlResource379,
+                                                    token390,
+                                                    xmlResource391,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResource")));
@@ -6765,18 +7044,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startupdateResource
-                    * @param updateResource377
+                    * @param updateResource389
                 
                 */
                 public  void startupdateResource(
 
-                 java.lang.String token378,java.lang.String xmlResource379,
+                 java.lang.String token390,java.lang.String xmlResource391,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[23].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/updateResourceRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6794,8 +7073,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.UpdateResource dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token378,
-                                                    xmlResource379,
+                                                    token390,
+                                                    xmlResource391,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateResource")));
@@ -6897,9 +7176,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[23].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[24].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[23].setMessageReceiver(
+          _operations[24].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -6912,7 +7191,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#insertMessage
-                     * @param insertMessage382
+                     * @param insertMessage394
                     
                      */
 
@@ -6920,7 +7199,7 @@
 
                             public  java.lang.String insertMessage(
 
-                            java.lang.String token383,java.lang.String queueName384,java.lang.String xmlString385)
+                            java.lang.String token395,java.lang.String queueName396,java.lang.String xmlString397)
                         
 
                     throws java.rmi.RemoteException
@@ -6928,7 +7207,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/insertMessageRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -6946,9 +7225,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.InsertMessage dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token383,
-                                                    queueName384,
-                                                    xmlString385,
+                                                    token395,
+                                                    queueName396,
+                                                    xmlString397,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertMessage")));
@@ -7033,18 +7312,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startinsertMessage
-                    * @param insertMessage382
+                    * @param insertMessage394
                 
                 */
                 public  void startinsertMessage(
 
-                 java.lang.String token383,java.lang.String queueName384,java.lang.String xmlString385,
+                 java.lang.String token395,java.lang.String queueName396,java.lang.String xmlString397,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[24].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/insertMessageRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7062,9 +7341,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.InsertMessage dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token383,
-                                                    queueName384,
-                                                    xmlString385,
+                                                    token395,
+                                                    queueName396,
+                                                    xmlString397,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "insertMessage")));
@@ -7166,9 +7445,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[24].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[25].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[24].setMessageReceiver(
+          _operations[25].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -7181,7 +7460,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#getToken
-                     * @param getToken388
+                     * @param getToken400
                     
                      */
 
@@ -7189,7 +7468,7 @@
 
                             public  java.lang.String getToken(
 
-                            java.lang.String userId389,java.lang.String password390)
+                            java.lang.String userId401,java.lang.String password402)
                         
 
                     throws java.rmi.RemoteException
@@ -7197,7 +7476,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/getTokenRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7215,8 +7494,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.GetToken dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    userId389,
-                                                    password390,
+                                                    userId401,
+                                                    password402,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "getToken")));
@@ -7301,18 +7580,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startgetToken
-                    * @param getToken388
+                    * @param getToken400
                 
                 */
                 public  void startgetToken(
 
-                 java.lang.String userId389,java.lang.String password390,
+                 java.lang.String userId401,java.lang.String password402,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[25].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/getTokenRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7330,8 +7609,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.GetToken dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    userId389,
-                                                    password390,
+                                                    userId401,
+                                                    password402,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "getToken")));
@@ -7433,9 +7712,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[25].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[26].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[25].setMessageReceiver(
+          _operations[26].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -7448,7 +7727,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryDataByKey
-                     * @param queryDataByKey393
+                     * @param queryDataByKey405
                     
                      */
 
@@ -7456,7 +7735,7 @@
 
                             public  java.lang.String queryDataByKey(
 
-                            java.lang.String token394,java.lang.String keyWordsValue395,java.lang.String flag396)
+                            java.lang.String token406,java.lang.String keyWordsValue407,java.lang.String flag408)
                         
 
                     throws java.rmi.RemoteException
@@ -7464,7 +7743,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataByKeyRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7482,9 +7761,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryDataByKey dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token394,
-                                                    keyWordsValue395,
-                                                    flag396,
+                                                    token406,
+                                                    keyWordsValue407,
+                                                    flag408,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryDataByKey")));
@@ -7569,18 +7848,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryDataByKey
-                    * @param queryDataByKey393
+                    * @param queryDataByKey405
                 
                 */
                 public  void startqueryDataByKey(
 
-                 java.lang.String token394,java.lang.String keyWordsValue395,java.lang.String flag396,
+                 java.lang.String token406,java.lang.String keyWordsValue407,java.lang.String flag408,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[26].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryDataByKeyRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7598,9 +7877,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryDataByKey dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token394,
-                                                    keyWordsValue395,
-                                                    flag396,
+                                                    token406,
+                                                    keyWordsValue407,
+                                                    flag408,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryDataByKey")));
@@ -7702,9 +7981,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[26].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[27].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[26].setMessageReceiver(
+          _operations[27].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -7717,7 +7996,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#updateData
-                     * @param updateData399
+                     * @param updateData411
                     
                      */
 
@@ -7725,7 +8004,7 @@
 
                             public  java.lang.String updateData(
 
-                            java.lang.String token400,java.lang.String xmlData401,java.lang.String flag402)
+                            java.lang.String token412,java.lang.String xmlData413,java.lang.String flag414)
                         
 
                     throws java.rmi.RemoteException
@@ -7733,7 +8012,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/updateDataRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7751,9 +8030,9 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.UpdateData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token400,
-                                                    xmlData401,
-                                                    flag402,
+                                                    token412,
+                                                    xmlData413,
+                                                    flag414,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateData")));
@@ -7838,18 +8117,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startupdateData
-                    * @param updateData399
+                    * @param updateData411
                 
                 */
                 public  void startupdateData(
 
-                 java.lang.String token400,java.lang.String xmlData401,java.lang.String flag402,
+                 java.lang.String token412,java.lang.String xmlData413,java.lang.String flag414,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[27].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/updateDataRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -7867,9 +8146,9 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.UpdateData dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token400,
-                                                    xmlData401,
-                                                    flag402,
+                                                    token412,
+                                                    xmlData413,
+                                                    flag414,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "updateData")));
@@ -7971,9 +8250,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[27].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[28].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[27].setMessageReceiver(
+          _operations[28].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -7986,7 +8265,7 @@
                      * Auto generated method signature
                      * 
                      * @see com.iss.gda.GdaService#queryResourceByKey
-                     * @param queryResourceByKey405
+                     * @param queryResourceByKey417
                     
                      */
 
@@ -7994,7 +8273,7 @@
 
                             public  java.lang.String queryResourceByKey(
 
-                            java.lang.String token406,java.lang.String pmsUri407)
+                            java.lang.String token418,java.lang.String pmsUri419)
                         
 
                     throws java.rmi.RemoteException
@@ -8002,7 +8281,7 @@
                     {
               org.apache.axis2.context.MessageContext _messageContext = null;
               try{
-               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
+               org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[29].getName());
               _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryResourceByKeyRequest");
               _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -8020,8 +8299,8 @@
               org.apache.axiom.soap.SOAPEnvelope env = null;
                     com.neusoft.www.bsp.QueryResourceByKey dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token406,
-                                                    pmsUri407,
+                                                    token418,
+                                                    pmsUri419,
                                                     dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResourceByKey")));
@@ -8106,18 +8385,18 @@
                 * Auto generated method signature for Asynchronous Invocations
                 * 
                 * @see com.iss.gda.GdaService#startqueryResourceByKey
-                    * @param queryResourceByKey405
+                    * @param queryResourceByKey417
                 
                 */
                 public  void startqueryResourceByKey(
 
-                 java.lang.String token406,java.lang.String pmsUri407,
+                 java.lang.String token418,java.lang.String pmsUri419,
 
                   final com.iss.gda.GdaServiceCallbackHandler callback)
 
                 throws java.rmi.RemoteException{
 
-              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[28].getName());
+              org.apache.axis2.client.OperationClient _operationClient = _serviceClient.createClient(_operations[29].getName());
              _operationClient.getOptions().setAction("http://www.neusoft.com/bsp/GdaPortType/queryResourceByKeyRequest");
              _operationClient.getOptions().setExceptionToBeThrownOnSOAPFault(true);
 
@@ -8135,8 +8414,8 @@
                                     //Style is Doc.
                                     com.neusoft.www.bsp.QueryResourceByKey dummyWrappedType = null;
                                                     env = toEnvelope(getFactory(_operationClient.getOptions().getSoapVersionURI()),
-                                                    token406,
-                                                    pmsUri407,
+                                                    token418,
+                                                    pmsUri419,
                                                      dummyWrappedType,
                                                     optimizeContent(new javax.xml.namespace.QName("http://www.neusoft.com/bsp",
                                                     "queryResourceByKey")));
@@ -8238,9 +8517,9 @@
                         
 
           org.apache.axis2.util.CallbackReceiver _callbackReceiver = null;
-        if ( _operations[28].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
+        if ( _operations[29].getMessageReceiver()==null &&  _operationClient.getOptions().isUseSeparateListener()) {
            _callbackReceiver = new org.apache.axis2.util.CallbackReceiver();
-          _operations[28].setMessageReceiver(
+          _operations[29].setMessageReceiver(
                     _callbackReceiver);
         }
 
@@ -8561,6 +8840,62 @@
 
             }
         
+            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataByMessage param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(com.neusoft.www.bsp.QueryDataByMessage.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataByMessageResponse param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(com.neusoft.www.bsp.QueryDataByMessageResponse.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataCondition param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(com.neusoft.www.bsp.QueryDataCondition.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
+            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataConditionResponse param, boolean optimizeContent)
+            throws org.apache.axis2.AxisFault {
+
+            
+                        try{
+                             return param.getOMElement(com.neusoft.www.bsp.QueryDataConditionResponse.MY_QNAME,
+                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
+                        } catch(org.apache.axis2.databinding.ADBException e){
+                            throw org.apache.axis2.AxisFault.makeFault(e);
+                        }
+                    
+
+            }
+        
             private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.AppendResourceAppointQueue param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
@@ -8609,34 +8944,6 @@
             
                         try{
                              return param.getOMElement(com.neusoft.www.bsp.DeleteResourceResponse.MY_QNAME,
-                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
-                        } catch(org.apache.axis2.databinding.ADBException e){
-                            throw org.apache.axis2.AxisFault.makeFault(e);
-                        }
-                    
-
-            }
-        
-            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataByMessage param, boolean optimizeContent)
-            throws org.apache.axis2.AxisFault {
-
-            
-                        try{
-                             return param.getOMElement(com.neusoft.www.bsp.QueryDataByMessage.MY_QNAME,
-                                          org.apache.axiom.om.OMAbstractFactory.getOMFactory());
-                        } catch(org.apache.axis2.databinding.ADBException e){
-                            throw org.apache.axis2.AxisFault.makeFault(e);
-                        }
-                    
-
-            }
-        
-            private  org.apache.axiom.om.OMElement  toOM(com.neusoft.www.bsp.QueryDataByMessageResponse param, boolean optimizeContent)
-            throws org.apache.axis2.AxisFault {
-
-            
-                        try{
-                             return param.getOMElement(com.neusoft.www.bsp.QueryDataByMessageResponse.MY_QNAME,
                                           org.apache.axiom.om.OMAbstractFactory.getOMFactory());
                         } catch(org.apache.axis2.databinding.ADBException e){
                             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -9431,7 +9738,7 @@
                                  
                                               wrappedType.setToken(param1);
                                          
-                                              wrappedType.setOrg(param2);
+                                              wrappedType.setOrga(param2);
                                          
                                               wrappedType.setDate(param3);
                                          
@@ -9561,6 +9868,95 @@
                                     java.lang.String param1,
                                     java.lang.String param2,
                                     java.lang.String param3,
+                                    com.neusoft.www.bsp.QueryDataByMessage dummyWrappedType,
+                                 boolean optimizeContent) throws org.apache.axis2.AxisFault{
+
+                                try{
+                                com.neusoft.www.bsp.QueryDataByMessage wrappedType = new com.neusoft.www.bsp.QueryDataByMessage();
+
+                                 
+                                              wrappedType.setToken(param1);
+                                         
+                                              wrappedType.setKeywords(param2);
+                                         
+                                              wrappedType.setFlag(param3);
+                                         
+
+                               org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
+                                  
+                                        emptyEnvelope.getBody().addChild(wrappedType.getOMElement(com.neusoft.www.bsp.QueryDataByMessage.MY_QNAME,factory));
+                                    
+
+                                return emptyEnvelope;
+                               } catch(org.apache.axis2.databinding.ADBException e){
+                                    throw org.apache.axis2.AxisFault.makeFault(e);
+                               }
+                               }
+
+
+
+                                
+                             
+                             /* methods to provide back word compatibility */
+
+                             
+
+                                
+                                private java.lang.String getQueryDataByMessageResponseResources(
+                                com.neusoft.www.bsp.QueryDataByMessageResponse wrappedType){
+                                
+                                        return wrappedType.getResources();
+                                    
+                                }
+                             
+                                    
+                                private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory,
+                                    java.lang.String param1,
+                                    java.lang.String param2,
+                                    com.neusoft.www.bsp.QueryDataCondition dummyWrappedType,
+                                 boolean optimizeContent) throws org.apache.axis2.AxisFault{
+
+                                try{
+                                com.neusoft.www.bsp.QueryDataCondition wrappedType = new com.neusoft.www.bsp.QueryDataCondition();
+
+                                 
+                                              wrappedType.setToken(param1);
+                                         
+                                              wrappedType.setCondition(param2);
+                                         
+
+                               org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
+                                  
+                                        emptyEnvelope.getBody().addChild(wrappedType.getOMElement(com.neusoft.www.bsp.QueryDataCondition.MY_QNAME,factory));
+                                    
+
+                                return emptyEnvelope;
+                               } catch(org.apache.axis2.databinding.ADBException e){
+                                    throw org.apache.axis2.AxisFault.makeFault(e);
+                               }
+                               }
+
+
+
+                                
+                             
+                             /* methods to provide back word compatibility */
+
+                             
+
+                                
+                                private java.lang.String getQueryDataConditionResponseResources(
+                                com.neusoft.www.bsp.QueryDataConditionResponse wrappedType){
+                                
+                                        return wrappedType.getResources();
+                                    
+                                }
+                             
+                                    
+                                private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory,
+                                    java.lang.String param1,
+                                    java.lang.String param2,
+                                    java.lang.String param3,
                                     com.neusoft.www.bsp.AppendResourceAppointQueue dummyWrappedType,
                                  boolean optimizeContent) throws org.apache.axis2.AxisFault{
 
@@ -9642,52 +10038,6 @@
                                 com.neusoft.www.bsp.DeleteResourceResponse wrappedType){
                                 
                                         return wrappedType.get_return();
-                                    
-                                }
-                             
-                                    
-                                private  org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory,
-                                    java.lang.String param1,
-                                    java.lang.String param2,
-                                    java.lang.String param3,
-                                    com.neusoft.www.bsp.QueryDataByMessage dummyWrappedType,
-                                 boolean optimizeContent) throws org.apache.axis2.AxisFault{
-
-                                try{
-                                com.neusoft.www.bsp.QueryDataByMessage wrappedType = new com.neusoft.www.bsp.QueryDataByMessage();
-
-                                 
-                                              wrappedType.setToken(param1);
-                                         
-                                              wrappedType.setKeywords(param2);
-                                         
-                                              wrappedType.setFlag(param3);
-                                         
-
-                               org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-                                  
-                                        emptyEnvelope.getBody().addChild(wrappedType.getOMElement(com.neusoft.www.bsp.QueryDataByMessage.MY_QNAME,factory));
-                                    
-
-                                return emptyEnvelope;
-                               } catch(org.apache.axis2.databinding.ADBException e){
-                                    throw org.apache.axis2.AxisFault.makeFault(e);
-                               }
-                               }
-
-
-
-                                
-                             
-                             /* methods to provide back word compatibility */
-
-                             
-
-                                
-                                private java.lang.String getQueryDataByMessageResponseResources(
-                                com.neusoft.www.bsp.QueryDataByMessageResponse wrappedType){
-                                
-                                        return wrappedType.getResources();
                                     
                                 }
                              
@@ -10051,7 +10401,7 @@
                                  
                                               wrappedType.setToken(param1);
                                          
-                                              wrappedType.setOrg(param2);
+                                              wrappedType.setOrga(param2);
                                          
                                               wrappedType.setStartDate(param3);
                                          
@@ -10557,6 +10907,34 @@
 
                 }
            
+                if (com.neusoft.www.bsp.QueryDataByMessage.class.equals(type)){
+                
+                           return com.neusoft.www.bsp.QueryDataByMessage.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (com.neusoft.www.bsp.QueryDataByMessageResponse.class.equals(type)){
+                
+                           return com.neusoft.www.bsp.QueryDataByMessageResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (com.neusoft.www.bsp.QueryDataCondition.class.equals(type)){
+                
+                           return com.neusoft.www.bsp.QueryDataCondition.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
+                if (com.neusoft.www.bsp.QueryDataConditionResponse.class.equals(type)){
+                
+                           return com.neusoft.www.bsp.QueryDataConditionResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                    
+
+                }
+           
                 if (com.neusoft.www.bsp.AppendResourceAppointQueue.class.equals(type)){
                 
                            return com.neusoft.www.bsp.AppendResourceAppointQueue.Factory.parse(param.getXMLStreamReaderWithoutCaching());
@@ -10581,20 +10959,6 @@
                 if (com.neusoft.www.bsp.DeleteResourceResponse.class.equals(type)){
                 
                            return com.neusoft.www.bsp.DeleteResourceResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
-                    
-
-                }
-           
-                if (com.neusoft.www.bsp.QueryDataByMessage.class.equals(type)){
-                
-                           return com.neusoft.www.bsp.QueryDataByMessage.Factory.parse(param.getXMLStreamReaderWithoutCaching());
-                    
-
-                }
-           
-                if (com.neusoft.www.bsp.QueryDataByMessageResponse.class.equals(type)){
-                
-                           return com.neusoft.www.bsp.QueryDataByMessageResponse.Factory.parse(param.getXMLStreamReaderWithoutCaching());
                     
 
                 }

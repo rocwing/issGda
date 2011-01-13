@@ -63,30 +63,30 @@
                             
 
                         /**
-                        * field for Org
+                        * field for Orga
                         */
 
                         
-                                    protected java.lang.String localOrg ;
+                                    protected java.lang.String localOrga ;
                                 
 
                            /**
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getOrg(){
-                               return localOrg;
+                           public  java.lang.String getOrga(){
+                               return localOrga;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Org
+                               * @param param Orga
                                */
-                               public void setOrg(java.lang.String param){
+                               public void setOrga(java.lang.String param){
                             
-                                            this.localOrg=param;
+                                            this.localOrga=param;
                                     
 
                                }
@@ -320,28 +320,28 @@
                                         if (prefix == null) {
                                             prefix = generatePrefix(namespace);
 
-                                            xmlWriter.writeStartElement(prefix,"org", namespace);
+                                            xmlWriter.writeStartElement(prefix,"orga", namespace);
                                             xmlWriter.writeNamespace(prefix, namespace);
                                             xmlWriter.setPrefix(prefix, namespace);
 
                                         } else {
-                                            xmlWriter.writeStartElement(namespace,"org");
+                                            xmlWriter.writeStartElement(namespace,"orga");
                                         }
 
                                     } else {
-                                        xmlWriter.writeStartElement("org");
+                                        xmlWriter.writeStartElement("orga");
                                     }
                                 
 
-                                          if (localOrg==null){
+                                          if (localOrga==null){
                                               // write the nil attribute
                                               
-                                                     throw new org.apache.axis2.databinding.ADBException("org cannot be null!!");
+                                                     throw new org.apache.axis2.databinding.ADBException("orga cannot be null!!");
                                                   
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localOrg);
+                                                   xmlWriter.writeCharacters(localOrga);
                                             
                                           }
                                     
@@ -621,12 +621,12 @@
                                         }
                                     
                                       elementList.add(new javax.xml.namespace.QName("",
-                                                                      "org"));
+                                                                      "orga"));
                                  
-                                        if (localOrg != null){
-                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localOrg));
+                                        if (localOrga != null){
+                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localOrga));
                                         } else {
-                                           throw new org.apache.axis2.databinding.ADBException("org cannot be null!!");
+                                           throw new org.apache.axis2.databinding.ADBException("orga cannot be null!!");
                                         }
                                     
                                       elementList.add(new javax.xml.namespace.QName("",
@@ -753,11 +753,11 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","org").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","orga").equals(reader.getName())){
                                 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setOrg(
+                                              object.setOrga(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                               
                                         reader.next();

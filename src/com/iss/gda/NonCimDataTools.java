@@ -114,9 +114,10 @@ public String getQXJLsql(String token,GdaServiceStub gdaClient){
 	
 	
 	TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
-	 Transformer transformerForAssetModel;
+	
 	try {
-		transformerForAssetModel = tFactory.newTransformer(new StreamSource(new File(ClientTools.config.get("qxjl"))));
+		Transformer	transformerForAssetModel = 
+			tFactory.newTransformer(new StreamSource(new File(ClientTools.config.get("qxjl"))));
 		 transformerForAssetModel.transform(new StreamSource(stringReader),
 				 new StreamResult(stringWriter));
 	} catch (Exception e) {
@@ -148,7 +149,7 @@ public String getXSJLsql(String token,GdaServiceStub gdaClient){
 	TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
 	try{
 	Transformer transformerForAssetModel =
-        tFactory.newTransformer(new StreamSource(ClientTools.config.get("xsjl")));   
+        tFactory.newTransformer(new StreamSource(new File(ClientTools.config.get("xsjl"))));   
 	transformerForAssetModel.transform(new StreamSource(stringReader),
 			 new StreamResult(stringWriter));
 	}catch(Exception e){
@@ -165,13 +166,58 @@ public String getRJXJHsql(String token,GdaServiceStub gdaClient){
 	
 	String queryCondition = queryCondition("oms_rjxjh","CURRENT_TIME");
 	
-	rjxjh = gdaClient.queryDataCondition(token,queryCondition);
+	try {
+		rjxjh = gdaClient.queryDataCondition(token,queryCondition);
+	} catch (RemoteException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	
-	return rjxjh;
+	StringWriter stringWriter = new StringWriter();
+	StringReader stringReader = new StringReader(rjxjh);
+    TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
+    try{
+     Transformer transformerForAssetModel =
+      tFactory.newTransformer(new StreamSource(new File(ClientTools.config.get("rjxjh"))));   
+     transformerForAssetModel.transform(new StreamSource(stringReader),
+		 new StreamResult(stringWriter));
+    }catch(Exception e){
+	     e.printStackTrace();
+    }
+
+    String sql = new String(stringWriter.toString());
+	
+    sql = "begin "+sql+"end;";
+    return sql;
 }
 public String getYJXJHsql(String token,GdaServiceStub gdaClient){
 	String yjxjh = null;
-	return yjxjh;
+	
+	String queryCondition = queryCondition("oms_yjxjh","UPDATE_TIME");
+	
+	try {
+		yjxjh = gdaClient.queryDataCondition(token,queryCondition);
+	} catch (RemoteException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	StringWriter stringWriter = new StringWriter();
+	StringReader stringReader = new StringReader(yjxjh);
+    TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
+    try{
+     Transformer transformerForAssetModel =
+      tFactory.newTransformer(new StreamSource(new File(ClientTools.config.get("yjxjh"))));   
+     transformerForAssetModel.transform(new StreamSource(stringReader),
+		 new StreamResult(stringWriter));
+    }catch(Exception e){
+	     e.printStackTrace();
+    }
+
+    String sql = new String(stringWriter.toString());
+	
+    sql = "begin "+sql+"end;";
+    return sql;
 }
 public String queryCondition(String queryFlagValue, String columnNameValue){
 		

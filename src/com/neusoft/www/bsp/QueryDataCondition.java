@@ -1,6 +1,6 @@
 
 /**
- * QueryCSData.java
+ * QueryDataCondition.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.5.1  Built on : Oct 19, 2009 (10:59:34 EDT)
@@ -10,15 +10,15 @@
             
 
             /**
-            *  QueryCSData bean class
+            *  QueryDataCondition bean class
             */
         
-        public  class QueryCSData
+        public  class QueryDataCondition
         implements org.apache.axis2.databinding.ADBBean{
         
                 public static final javax.xml.namespace.QName MY_QNAME = new javax.xml.namespace.QName(
                 "http://www.neusoft.com/bsp",
-                "queryCSData",
+                "queryDataCondition",
                 "ns1");
 
             
@@ -63,120 +63,30 @@
                             
 
                         /**
-                        * field for Orga
+                        * field for Condition
                         */
 
                         
-                                    protected java.lang.String localOrga ;
+                                    protected java.lang.String localCondition ;
                                 
 
                            /**
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getOrga(){
-                               return localOrga;
+                           public  java.lang.String getCondition(){
+                               return localCondition;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Orga
+                               * @param param Condition
                                */
-                               public void setOrga(java.lang.String param){
+                               public void setCondition(java.lang.String param){
                             
-                                            this.localOrga=param;
-                                    
-
-                               }
-                            
-
-                        /**
-                        * field for StartDate
-                        */
-
-                        
-                                    protected java.lang.String localStartDate ;
-                                
-
-                           /**
-                           * Auto generated getter method
-                           * @return java.lang.String
-                           */
-                           public  java.lang.String getStartDate(){
-                               return localStartDate;
-                           }
-
-                           
-                        
-                            /**
-                               * Auto generated setter method
-                               * @param param StartDate
-                               */
-                               public void setStartDate(java.lang.String param){
-                            
-                                            this.localStartDate=param;
-                                    
-
-                               }
-                            
-
-                        /**
-                        * field for EndDate
-                        */
-
-                        
-                                    protected java.lang.String localEndDate ;
-                                
-
-                           /**
-                           * Auto generated getter method
-                           * @return java.lang.String
-                           */
-                           public  java.lang.String getEndDate(){
-                               return localEndDate;
-                           }
-
-                           
-                        
-                            /**
-                               * Auto generated setter method
-                               * @param param EndDate
-                               */
-                               public void setEndDate(java.lang.String param){
-                            
-                                            this.localEndDate=param;
-                                    
-
-                               }
-                            
-
-                        /**
-                        * field for Flag
-                        */
-
-                        
-                                    protected java.lang.String localFlag ;
-                                
-
-                           /**
-                           * Auto generated getter method
-                           * @return java.lang.String
-                           */
-                           public  java.lang.String getFlag(){
-                               return localFlag;
-                           }
-
-                           
-                        
-                            /**
-                               * Auto generated setter method
-                               * @param param Flag
-                               */
-                               public void setFlag(java.lang.String param){
-                            
-                                            this.localFlag=param;
+                                            this.localCondition=param;
                                     
 
                                }
@@ -214,7 +124,7 @@
                        new org.apache.axis2.databinding.ADBDataSource(this,MY_QNAME){
 
                  public void serialize(org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter) throws javax.xml.stream.XMLStreamException {
-                       QueryCSData.this.serialize(MY_QNAME,factory,xmlWriter);
+                       QueryDataCondition.this.serialize(MY_QNAME,factory,xmlWriter);
                  }
                };
                return new org.apache.axiom.om.impl.llom.OMSourcedElementImpl(
@@ -268,11 +178,11 @@
                    java.lang.String namespacePrefix = registerPrefix(xmlWriter,"http://www.neusoft.com/bsp");
                    if ((namespacePrefix != null) && (namespacePrefix.trim().length() > 0)){
                        writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","type",
-                           namespacePrefix+":queryCSData",
+                           namespacePrefix+":queryDataCondition",
                            xmlWriter);
                    } else {
                        writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","type",
-                           "queryCSData",
+                           "queryDataCondition",
                            xmlWriter);
                    }
 
@@ -320,130 +230,28 @@
                                         if (prefix == null) {
                                             prefix = generatePrefix(namespace);
 
-                                            xmlWriter.writeStartElement(prefix,"orga", namespace);
+                                            xmlWriter.writeStartElement(prefix,"condition", namespace);
                                             xmlWriter.writeNamespace(prefix, namespace);
                                             xmlWriter.setPrefix(prefix, namespace);
 
                                         } else {
-                                            xmlWriter.writeStartElement(namespace,"orga");
+                                            xmlWriter.writeStartElement(namespace,"condition");
                                         }
 
                                     } else {
-                                        xmlWriter.writeStartElement("orga");
+                                        xmlWriter.writeStartElement("condition");
                                     }
                                 
 
-                                          if (localOrga==null){
+                                          if (localCondition==null){
                                               // write the nil attribute
                                               
-                                                     throw new org.apache.axis2.databinding.ADBException("orga cannot be null!!");
+                                                     throw new org.apache.axis2.databinding.ADBException("condition cannot be null!!");
                                                   
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localOrga);
-                                            
-                                          }
-                                    
-                                   xmlWriter.writeEndElement();
-                             
-                                    namespace = "";
-                                    if (! namespace.equals("")) {
-                                        prefix = xmlWriter.getPrefix(namespace);
-
-                                        if (prefix == null) {
-                                            prefix = generatePrefix(namespace);
-
-                                            xmlWriter.writeStartElement(prefix,"startDate", namespace);
-                                            xmlWriter.writeNamespace(prefix, namespace);
-                                            xmlWriter.setPrefix(prefix, namespace);
-
-                                        } else {
-                                            xmlWriter.writeStartElement(namespace,"startDate");
-                                        }
-
-                                    } else {
-                                        xmlWriter.writeStartElement("startDate");
-                                    }
-                                
-
-                                          if (localStartDate==null){
-                                              // write the nil attribute
-                                              
-                                                     throw new org.apache.axis2.databinding.ADBException("startDate cannot be null!!");
-                                                  
-                                          }else{
-
-                                        
-                                                   xmlWriter.writeCharacters(localStartDate);
-                                            
-                                          }
-                                    
-                                   xmlWriter.writeEndElement();
-                             
-                                    namespace = "";
-                                    if (! namespace.equals("")) {
-                                        prefix = xmlWriter.getPrefix(namespace);
-
-                                        if (prefix == null) {
-                                            prefix = generatePrefix(namespace);
-
-                                            xmlWriter.writeStartElement(prefix,"endDate", namespace);
-                                            xmlWriter.writeNamespace(prefix, namespace);
-                                            xmlWriter.setPrefix(prefix, namespace);
-
-                                        } else {
-                                            xmlWriter.writeStartElement(namespace,"endDate");
-                                        }
-
-                                    } else {
-                                        xmlWriter.writeStartElement("endDate");
-                                    }
-                                
-
-                                          if (localEndDate==null){
-                                              // write the nil attribute
-                                              
-                                                     throw new org.apache.axis2.databinding.ADBException("endDate cannot be null!!");
-                                                  
-                                          }else{
-
-                                        
-                                                   xmlWriter.writeCharacters(localEndDate);
-                                            
-                                          }
-                                    
-                                   xmlWriter.writeEndElement();
-                             
-                                    namespace = "";
-                                    if (! namespace.equals("")) {
-                                        prefix = xmlWriter.getPrefix(namespace);
-
-                                        if (prefix == null) {
-                                            prefix = generatePrefix(namespace);
-
-                                            xmlWriter.writeStartElement(prefix,"flag", namespace);
-                                            xmlWriter.writeNamespace(prefix, namespace);
-                                            xmlWriter.setPrefix(prefix, namespace);
-
-                                        } else {
-                                            xmlWriter.writeStartElement(namespace,"flag");
-                                        }
-
-                                    } else {
-                                        xmlWriter.writeStartElement("flag");
-                                    }
-                                
-
-                                          if (localFlag==null){
-                                              // write the nil attribute
-                                              
-                                                     throw new org.apache.axis2.databinding.ADBException("flag cannot be null!!");
-                                                  
-                                          }else{
-
-                                        
-                                                   xmlWriter.writeCharacters(localFlag);
+                                                   xmlWriter.writeCharacters(localCondition);
                                             
                                           }
                                     
@@ -621,39 +429,12 @@
                                         }
                                     
                                       elementList.add(new javax.xml.namespace.QName("",
-                                                                      "orga"));
+                                                                      "condition"));
                                  
-                                        if (localOrga != null){
-                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localOrga));
+                                        if (localCondition != null){
+                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localCondition));
                                         } else {
-                                           throw new org.apache.axis2.databinding.ADBException("orga cannot be null!!");
-                                        }
-                                    
-                                      elementList.add(new javax.xml.namespace.QName("",
-                                                                      "startDate"));
-                                 
-                                        if (localStartDate != null){
-                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localStartDate));
-                                        } else {
-                                           throw new org.apache.axis2.databinding.ADBException("startDate cannot be null!!");
-                                        }
-                                    
-                                      elementList.add(new javax.xml.namespace.QName("",
-                                                                      "endDate"));
-                                 
-                                        if (localEndDate != null){
-                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localEndDate));
-                                        } else {
-                                           throw new org.apache.axis2.databinding.ADBException("endDate cannot be null!!");
-                                        }
-                                    
-                                      elementList.add(new javax.xml.namespace.QName("",
-                                                                      "flag"));
-                                 
-                                        if (localFlag != null){
-                                            elementList.add(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localFlag));
-                                        } else {
-                                           throw new org.apache.axis2.databinding.ADBException("flag cannot be null!!");
+                                           throw new org.apache.axis2.databinding.ADBException("condition cannot be null!!");
                                         }
                                     
 
@@ -680,9 +461,9 @@
         * Postcondition: If this object is an element, the reader is positioned at its end element
         *                If this object is a complex type, the reader is positioned at the end element of its outer element
         */
-        public static QueryCSData parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
-            QueryCSData object =
-                new QueryCSData();
+        public static QueryDataCondition parse(javax.xml.stream.XMLStreamReader reader) throws java.lang.Exception{
+            QueryDataCondition object =
+                new QueryDataCondition();
 
             int event;
             java.lang.String nillableValue = null;
@@ -706,10 +487,10 @@
 
                     java.lang.String type = fullTypeName.substring(fullTypeName.indexOf(":")+1);
                     
-                            if (!"queryCSData".equals(type)){
+                            if (!"queryDataCondition".equals(type)){
                                 //find namespace for the prefix
                                 java.lang.String nsUri = reader.getNamespaceContext().getNamespaceURI(nsPrefix);
-                                return (QueryCSData)com.neusoft.www.bsp.ExtensionMapper.getTypeObject(
+                                return (QueryDataCondition)com.neusoft.www.bsp.ExtensionMapper.getTypeObject(
                                      nsUri,type,reader);
                               }
                         
@@ -753,68 +534,11 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","orga").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","condition").equals(reader.getName())){
                                 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setOrga(
-                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
-                                              
-                                        reader.next();
-                                    
-                              }  // End of if for expected property start element
-                                
-                                else{
-                                    // A start element we are not expecting indicates an invalid parameter was passed
-                                    throw new org.apache.axis2.databinding.ADBException("Unexpected subelement " + reader.getLocalName());
-                                }
-                            
-                                    
-                                    while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
-                                
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","startDate").equals(reader.getName())){
-                                
-                                    java.lang.String content = reader.getElementText();
-                                    
-                                              object.setStartDate(
-                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
-                                              
-                                        reader.next();
-                                    
-                              }  // End of if for expected property start element
-                                
-                                else{
-                                    // A start element we are not expecting indicates an invalid parameter was passed
-                                    throw new org.apache.axis2.databinding.ADBException("Unexpected subelement " + reader.getLocalName());
-                                }
-                            
-                                    
-                                    while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
-                                
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","endDate").equals(reader.getName())){
-                                
-                                    java.lang.String content = reader.getElementText();
-                                    
-                                              object.setEndDate(
-                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
-                                              
-                                        reader.next();
-                                    
-                              }  // End of if for expected property start element
-                                
-                                else{
-                                    // A start element we are not expecting indicates an invalid parameter was passed
-                                    throw new org.apache.axis2.databinding.ADBException("Unexpected subelement " + reader.getLocalName());
-                                }
-                            
-                                    
-                                    while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
-                                
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("","flag").equals(reader.getName())){
-                                
-                                    java.lang.String content = reader.getElementText();
-                                    
-                                              object.setFlag(
+                                              object.setCondition(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                               
                                         reader.next();

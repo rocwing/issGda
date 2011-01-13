@@ -19,14 +19,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryData76
+                    * @param queryData78
                 
          */
 
          
                      public java.lang.String queryData(
 
-                        java.lang.String token77,java.lang.String date78,java.lang.String flag79)
+                        java.lang.String token79,java.lang.String date80,java.lang.String flag81)
                         throws java.rmi.RemoteException
              ;
 
@@ -34,12 +34,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryData76
+                * @param queryData78
             
           */
         public void startqueryData(
 
-            java.lang.String token77,java.lang.String date78,java.lang.String flag79,
+            java.lang.String token79,java.lang.String date80,java.lang.String flag81,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -50,14 +50,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryResourceEX82
+                    * @param queryResourceEX84
                 
          */
 
          
                      public java.lang.String queryResourceEX(
 
-                        java.lang.String token83,java.lang.String uri84,java.lang.String props85,java.lang.String associations86)
+                        java.lang.String token85,java.lang.String uri86,java.lang.String props87,java.lang.String associations88)
                         throws java.rmi.RemoteException
              ;
 
@@ -65,12 +65,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryResourceEX82
+                * @param queryResourceEX84
             
           */
         public void startqueryResourceEX(
 
-            java.lang.String token83,java.lang.String uri84,java.lang.String props85,java.lang.String associations86,
+            java.lang.String token85,java.lang.String uri86,java.lang.String props87,java.lang.String associations88,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -81,14 +81,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param updateResourceAppointQueue89
+                    * @param updateResourceAppointQueue91
                 
          */
 
          
                      public java.lang.String updateResourceAppointQueue(
 
-                        java.lang.String token90,java.lang.String xmlResource91,java.lang.String queueNames92)
+                        java.lang.String token92,java.lang.String xmlResource93,java.lang.String queueNames94)
                         throws java.rmi.RemoteException
              ;
 
@@ -96,12 +96,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param updateResourceAppointQueue89
+                * @param updateResourceAppointQueue91
             
           */
         public void startupdateResourceAppointQueue(
 
-            java.lang.String token90,java.lang.String xmlResource91,java.lang.String queueNames92,
+            java.lang.String token92,java.lang.String xmlResource93,java.lang.String queueNames94,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -112,14 +112,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param insertData95
+                    * @param insertData97
                 
          */
 
          
                      public java.lang.String insertData(
 
-                        java.lang.String token96,java.lang.String xmlData97,java.lang.String flag98)
+                        java.lang.String token98,java.lang.String xmlData99,java.lang.String flag100)
                         throws java.rmi.RemoteException
              ;
 
@@ -127,12 +127,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param insertData95
+                * @param insertData97
             
           */
         public void startinsertData(
 
-            java.lang.String token96,java.lang.String xmlData97,java.lang.String flag98,
+            java.lang.String token98,java.lang.String xmlData99,java.lang.String flag100,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -143,14 +143,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryResource101
+                    * @param queryResource103
                 
          */
 
          
                      public java.lang.String queryResource(
 
-                        java.lang.String token102,java.lang.String uris103,java.lang.String props104,java.lang.String associations105)
+                        java.lang.String token104,java.lang.String uris105,java.lang.String props106,java.lang.String associations107)
                         throws java.rmi.RemoteException
              ;
 
@@ -158,12 +158,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryResource101
+                * @param queryResource103
             
           */
         public void startqueryResource(
 
-            java.lang.String token102,java.lang.String uris103,java.lang.String props104,java.lang.String associations105,
+            java.lang.String token104,java.lang.String uris105,java.lang.String props106,java.lang.String associations107,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -174,14 +174,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param querySubscription108
+                    * @param querySubscription110
                 
          */
 
          
                      public java.lang.String querySubscription(
 
-                        java.lang.String token109)
+                        java.lang.String token111)
                         throws java.rmi.RemoteException
              ;
 
@@ -189,12 +189,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param querySubscription108
+                * @param querySubscription110
             
           */
         public void startquerySubscription(
 
-            java.lang.String token109,
+            java.lang.String token111,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -205,14 +205,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param deleteData112
+                    * @param deleteData114
                 
          */
 
          
                      public java.lang.String deleteData(
 
-                        java.lang.String token113,java.lang.String xmlData114,java.lang.String flag115)
+                        java.lang.String token115,java.lang.String xmlData116,java.lang.String flag117)
                         throws java.rmi.RemoteException
              ;
 
@@ -220,12 +220,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param deleteData112
+                * @param deleteData114
             
           */
         public void startdeleteData(
 
-            java.lang.String token113,java.lang.String xmlData114,java.lang.String flag115,
+            java.lang.String token115,java.lang.String xmlData116,java.lang.String flag117,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -236,14 +236,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param querySJZFData118
+                    * @param querySJZFData120
                 
          */
 
          
                      public java.lang.String querySJZFData(
 
-                        java.lang.String token119,java.lang.String org120,java.lang.String date121,java.lang.String time122,java.lang.String flag123)
+                        java.lang.String token121,java.lang.String orga122,java.lang.String date123,java.lang.String time124,java.lang.String flag125)
                         throws java.rmi.RemoteException
              ;
 
@@ -251,12 +251,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param querySJZFData118
+                * @param querySJZFData120
             
           */
         public void startquerySJZFData(
 
-            java.lang.String token119,java.lang.String org120,java.lang.String date121,java.lang.String time122,java.lang.String flag123,
+            java.lang.String token121,java.lang.String orga122,java.lang.String date123,java.lang.String time124,java.lang.String flag125,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -267,14 +267,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param subscribe126
+                    * @param subscribe128
                 
          */
 
          
                      public java.lang.String subscribe(
 
-                        java.lang.String token127,java.lang.String xml128)
+                        java.lang.String token129,java.lang.String xml130)
                         throws java.rmi.RemoteException
              ;
 
@@ -282,12 +282,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param subscribe126
+                * @param subscribe128
             
           */
         public void startsubscribe(
 
-            java.lang.String token127,java.lang.String xml128,
+            java.lang.String token129,java.lang.String xml130,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -298,14 +298,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param updateResourceExceptionQueue131
+                    * @param updateResourceExceptionQueue133
                 
          */
 
          
                      public java.lang.String updateResourceExceptionQueue(
 
-                        java.lang.String token132,java.lang.String xmlResource133,java.lang.String exceptionQueues134)
+                        java.lang.String token134,java.lang.String xmlResource135,java.lang.String exceptionQueues136)
                         throws java.rmi.RemoteException
              ;
 
@@ -313,12 +313,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param updateResourceExceptionQueue131
+                * @param updateResourceExceptionQueue133
             
           */
         public void startupdateResourceExceptionQueue(
 
-            java.lang.String token132,java.lang.String xmlResource133,java.lang.String exceptionQueues134,
+            java.lang.String token134,java.lang.String xmlResource135,java.lang.String exceptionQueues136,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -329,76 +329,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param appendResourceAppointQueue137
-                
-         */
-
-         
-                     public java.lang.String appendResourceAppointQueue(
-
-                        java.lang.String token138,java.lang.String xmlResource139,java.lang.String queueNames140)
-                        throws java.rmi.RemoteException
-             ;
-
-        
-         /**
-            * Auto generated method signature for Asynchronous Invocations
-            * 
-                * @param appendResourceAppointQueue137
-            
-          */
-        public void startappendResourceAppointQueue(
-
-            java.lang.String token138,java.lang.String xmlResource139,java.lang.String queueNames140,
-
-            final com.iss.gda.GdaServiceCallbackHandler callback)
-
-            throws java.rmi.RemoteException;
-
-     
-
-        /**
-          * Auto generated method signature
-          * 
-                    * @param deleteResource143
-                
-         */
-
-         
-                     public java.lang.String deleteResource(
-
-                        java.lang.String token144,java.lang.String uris145)
-                        throws java.rmi.RemoteException
-             ;
-
-        
-         /**
-            * Auto generated method signature for Asynchronous Invocations
-            * 
-                * @param deleteResource143
-            
-          */
-        public void startdeleteResource(
-
-            java.lang.String token144,java.lang.String uris145,
-
-            final com.iss.gda.GdaServiceCallbackHandler callback)
-
-            throws java.rmi.RemoteException;
-
-     
-
-        /**
-          * Auto generated method signature
-          * 
-                    * @param queryDataByMessage148
+                    * @param queryDataByMessage139
                 
          */
 
          
                      public java.lang.String queryDataByMessage(
 
-                        java.lang.String token149,java.lang.String keywords150,java.lang.String flag151)
+                        java.lang.String token140,java.lang.String keywords141,java.lang.String flag142)
                         throws java.rmi.RemoteException
              ;
 
@@ -406,12 +344,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryDataByMessage148
+                * @param queryDataByMessage139
             
           */
         public void startqueryDataByMessage(
 
-            java.lang.String token149,java.lang.String keywords150,java.lang.String flag151,
+            java.lang.String token140,java.lang.String keywords141,java.lang.String flag142,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -422,14 +360,107 @@
         /**
           * Auto generated method signature
           * 
-                    * @param insertUriMapping154
+                    * @param queryDataCondition145
+                
+         */
+
+         
+                     public java.lang.String queryDataCondition(
+
+                        java.lang.String token146,java.lang.String condition147)
+                        throws java.rmi.RemoteException
+             ;
+
+        
+         /**
+            * Auto generated method signature for Asynchronous Invocations
+            * 
+                * @param queryDataCondition145
+            
+          */
+        public void startqueryDataCondition(
+
+            java.lang.String token146,java.lang.String condition147,
+
+            final com.iss.gda.GdaServiceCallbackHandler callback)
+
+            throws java.rmi.RemoteException;
+
+     
+
+        /**
+          * Auto generated method signature
+          * 
+                    * @param appendResourceAppointQueue150
+                
+         */
+
+         
+                     public java.lang.String appendResourceAppointQueue(
+
+                        java.lang.String token151,java.lang.String xmlResource152,java.lang.String queueNames153)
+                        throws java.rmi.RemoteException
+             ;
+
+        
+         /**
+            * Auto generated method signature for Asynchronous Invocations
+            * 
+                * @param appendResourceAppointQueue150
+            
+          */
+        public void startappendResourceAppointQueue(
+
+            java.lang.String token151,java.lang.String xmlResource152,java.lang.String queueNames153,
+
+            final com.iss.gda.GdaServiceCallbackHandler callback)
+
+            throws java.rmi.RemoteException;
+
+     
+
+        /**
+          * Auto generated method signature
+          * 
+                    * @param deleteResource156
+                
+         */
+
+         
+                     public java.lang.String deleteResource(
+
+                        java.lang.String token157,java.lang.String uris158)
+                        throws java.rmi.RemoteException
+             ;
+
+        
+         /**
+            * Auto generated method signature for Asynchronous Invocations
+            * 
+                * @param deleteResource156
+            
+          */
+        public void startdeleteResource(
+
+            java.lang.String token157,java.lang.String uris158,
+
+            final com.iss.gda.GdaServiceCallbackHandler callback)
+
+            throws java.rmi.RemoteException;
+
+     
+
+        /**
+          * Auto generated method signature
+          * 
+                    * @param insertUriMapping161
                 
          */
 
          
                      public void insertUriMapping(
 
-                        java.lang.String token155,java.lang.String dcuri156,java.lang.String uri157)
+                        java.lang.String token162,java.lang.String dcuri163,java.lang.String uri164)
                         throws java.rmi.RemoteException
              ;
 
@@ -437,12 +468,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param insertUriMapping154
+                * @param insertUriMapping161
             
           */
         public void startinsertUriMapping(
 
-            java.lang.String token155,java.lang.String dcuri156,java.lang.String uri157,
+            java.lang.String token162,java.lang.String dcuri163,java.lang.String uri164,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -453,14 +484,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryAllResource159
+                    * @param queryAllResource166
                 
          */
 
          
                      public java.lang.String queryAllResource(
 
-                        java.lang.String token160,java.lang.String message161)
+                        java.lang.String token167,java.lang.String message168)
                         throws java.rmi.RemoteException
              ;
 
@@ -468,12 +499,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryAllResource159
+                * @param queryAllResource166
             
           */
         public void startqueryAllResource(
 
-            java.lang.String token160,java.lang.String message161,
+            java.lang.String token167,java.lang.String message168,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -484,14 +515,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryMISCode164
+                    * @param queryMISCode171
                 
          */
 
          
                      public java.lang.String queryMISCode(
 
-                        java.lang.String yxCode165)
+                        java.lang.String yxCode172)
                         throws java.rmi.RemoteException
              ;
 
@@ -499,12 +530,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryMISCode164
+                * @param queryMISCode171
             
           */
         public void startqueryMISCode(
 
-            java.lang.String yxCode165,
+            java.lang.String yxCode172,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -515,14 +546,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param deleteResourceAppointQueue168
+                    * @param deleteResourceAppointQueue175
                 
          */
 
          
                      public java.lang.String deleteResourceAppointQueue(
 
-                        java.lang.String token169,java.lang.String uris170,java.lang.String queueNames171)
+                        java.lang.String token176,java.lang.String uris177,java.lang.String queueNames178)
                         throws java.rmi.RemoteException
              ;
 
@@ -530,12 +561,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param deleteResourceAppointQueue168
+                * @param deleteResourceAppointQueue175
             
           */
         public void startdeleteResourceAppointQueue(
 
-            java.lang.String token169,java.lang.String uris170,java.lang.String queueNames171,
+            java.lang.String token176,java.lang.String uris177,java.lang.String queueNames178,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -546,14 +577,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param deleteResourceForDistributed174
+                    * @param deleteResourceForDistributed181
                 
          */
 
          
                      public java.lang.String deleteResourceForDistributed(
 
-                        java.lang.String token175,java.lang.String uris176,java.lang.String apanage177)
+                        java.lang.String token182,java.lang.String uris183,java.lang.String apanage184)
                         throws java.rmi.RemoteException
              ;
 
@@ -561,12 +592,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param deleteResourceForDistributed174
+                * @param deleteResourceForDistributed181
             
           */
         public void startdeleteResourceForDistributed(
 
-            java.lang.String token175,java.lang.String uris176,java.lang.String apanage177,
+            java.lang.String token182,java.lang.String uris183,java.lang.String apanage184,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -577,14 +608,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param appendResource180
+                    * @param appendResource187
                 
          */
 
          
                      public java.lang.String appendResource(
 
-                        java.lang.String token181,java.lang.String xmlResource182)
+                        java.lang.String token188,java.lang.String xmlResource189)
                         throws java.rmi.RemoteException
              ;
 
@@ -592,12 +623,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param appendResource180
+                * @param appendResource187
             
           */
         public void startappendResource(
 
-            java.lang.String token181,java.lang.String xmlResource182,
+            java.lang.String token188,java.lang.String xmlResource189,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -608,14 +639,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param deleteSubscription185
+                    * @param deleteSubscription192
                 
          */
 
          
                      public java.lang.String deleteSubscription(
 
-                        java.lang.String token186,java.lang.String classNames187)
+                        java.lang.String token193,java.lang.String classNames194)
                         throws java.rmi.RemoteException
              ;
 
@@ -623,12 +654,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param deleteSubscription185
+                * @param deleteSubscription192
             
           */
         public void startdeleteSubscription(
 
-            java.lang.String token186,java.lang.String classNames187,
+            java.lang.String token193,java.lang.String classNames194,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -639,14 +670,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param deleteResourceExceptionQueue190
+                    * @param deleteResourceExceptionQueue197
                 
          */
 
          
                      public java.lang.String deleteResourceExceptionQueue(
 
-                        java.lang.String token191,java.lang.String uris192,java.lang.String exceptionQueues193)
+                        java.lang.String token198,java.lang.String uris199,java.lang.String exceptionQueues200)
                         throws java.rmi.RemoteException
              ;
 
@@ -654,12 +685,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param deleteResourceExceptionQueue190
+                * @param deleteResourceExceptionQueue197
             
           */
         public void startdeleteResourceExceptionQueue(
 
-            java.lang.String token191,java.lang.String uris192,java.lang.String exceptionQueues193,
+            java.lang.String token198,java.lang.String uris199,java.lang.String exceptionQueues200,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -670,14 +701,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryCSData196
+                    * @param queryCSData203
                 
          */
 
          
                      public java.lang.String queryCSData(
 
-                        java.lang.String token197,java.lang.String org198,java.lang.String startDate199,java.lang.String endDate200,java.lang.String flag201)
+                        java.lang.String token204,java.lang.String orga205,java.lang.String startDate206,java.lang.String endDate207,java.lang.String flag208)
                         throws java.rmi.RemoteException
              ;
 
@@ -685,12 +716,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryCSData196
+                * @param queryCSData203
             
           */
         public void startqueryCSData(
 
-            java.lang.String token197,java.lang.String org198,java.lang.String startDate199,java.lang.String endDate200,java.lang.String flag201,
+            java.lang.String token204,java.lang.String orga205,java.lang.String startDate206,java.lang.String endDate207,java.lang.String flag208,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -701,14 +732,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param appendResourceExceptionQueue204
+                    * @param appendResourceExceptionQueue211
                 
          */
 
          
                      public java.lang.String appendResourceExceptionQueue(
 
-                        java.lang.String token205,java.lang.String xmlResource206,java.lang.String exceptionQueues207)
+                        java.lang.String token212,java.lang.String xmlResource213,java.lang.String exceptionQueues214)
                         throws java.rmi.RemoteException
              ;
 
@@ -716,12 +747,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param appendResourceExceptionQueue204
+                * @param appendResourceExceptionQueue211
             
           */
         public void startappendResourceExceptionQueue(
 
-            java.lang.String token205,java.lang.String xmlResource206,java.lang.String exceptionQueues207,
+            java.lang.String token212,java.lang.String xmlResource213,java.lang.String exceptionQueues214,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -732,14 +763,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param updateResource210
+                    * @param updateResource217
                 
          */
 
          
                      public java.lang.String updateResource(
 
-                        java.lang.String token211,java.lang.String xmlResource212)
+                        java.lang.String token218,java.lang.String xmlResource219)
                         throws java.rmi.RemoteException
              ;
 
@@ -747,12 +778,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param updateResource210
+                * @param updateResource217
             
           */
         public void startupdateResource(
 
-            java.lang.String token211,java.lang.String xmlResource212,
+            java.lang.String token218,java.lang.String xmlResource219,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -763,14 +794,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param insertMessage215
+                    * @param insertMessage222
                 
          */
 
          
                      public java.lang.String insertMessage(
 
-                        java.lang.String token216,java.lang.String queueName217,java.lang.String xmlString218)
+                        java.lang.String token223,java.lang.String queueName224,java.lang.String xmlString225)
                         throws java.rmi.RemoteException
              ;
 
@@ -778,12 +809,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param insertMessage215
+                * @param insertMessage222
             
           */
         public void startinsertMessage(
 
-            java.lang.String token216,java.lang.String queueName217,java.lang.String xmlString218,
+            java.lang.String token223,java.lang.String queueName224,java.lang.String xmlString225,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -794,14 +825,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param getToken221
+                    * @param getToken228
                 
          */
 
          
                      public java.lang.String getToken(
 
-                        java.lang.String userId222,java.lang.String password223)
+                        java.lang.String userId229,java.lang.String password230)
                         throws java.rmi.RemoteException
              ;
 
@@ -809,12 +840,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param getToken221
+                * @param getToken228
             
           */
         public void startgetToken(
 
-            java.lang.String userId222,java.lang.String password223,
+            java.lang.String userId229,java.lang.String password230,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -825,14 +856,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryDataByKey226
+                    * @param queryDataByKey233
                 
          */
 
          
                      public java.lang.String queryDataByKey(
 
-                        java.lang.String token227,java.lang.String keyWordsValue228,java.lang.String flag229)
+                        java.lang.String token234,java.lang.String keyWordsValue235,java.lang.String flag236)
                         throws java.rmi.RemoteException
              ;
 
@@ -840,12 +871,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryDataByKey226
+                * @param queryDataByKey233
             
           */
         public void startqueryDataByKey(
 
-            java.lang.String token227,java.lang.String keyWordsValue228,java.lang.String flag229,
+            java.lang.String token234,java.lang.String keyWordsValue235,java.lang.String flag236,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -856,14 +887,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param updateData232
+                    * @param updateData239
                 
          */
 
          
                      public java.lang.String updateData(
 
-                        java.lang.String token233,java.lang.String xmlData234,java.lang.String flag235)
+                        java.lang.String token240,java.lang.String xmlData241,java.lang.String flag242)
                         throws java.rmi.RemoteException
              ;
 
@@ -871,12 +902,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param updateData232
+                * @param updateData239
             
           */
         public void startupdateData(
 
-            java.lang.String token233,java.lang.String xmlData234,java.lang.String flag235,
+            java.lang.String token240,java.lang.String xmlData241,java.lang.String flag242,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
@@ -887,14 +918,14 @@
         /**
           * Auto generated method signature
           * 
-                    * @param queryResourceByKey238
+                    * @param queryResourceByKey245
                 
          */
 
          
                      public java.lang.String queryResourceByKey(
 
-                        java.lang.String token239,java.lang.String pmsUri240)
+                        java.lang.String token246,java.lang.String pmsUri247)
                         throws java.rmi.RemoteException
              ;
 
@@ -902,12 +933,12 @@
          /**
             * Auto generated method signature for Asynchronous Invocations
             * 
-                * @param queryResourceByKey238
+                * @param queryResourceByKey245
             
           */
         public void startqueryResourceByKey(
 
-            java.lang.String token239,java.lang.String pmsUri240,
+            java.lang.String token246,java.lang.String pmsUri247,
 
             final com.iss.gda.GdaServiceCallbackHandler callback)
 
