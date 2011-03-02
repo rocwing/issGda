@@ -20,14 +20,14 @@ public class ClientForGda {
 		//clientTools.xsltTransformer = clientTools.getBundleInfoMap("info");
 		
 		//System.out.println(clientTools.xsltTransformer.get("Breaker"));
-		
+		ClientTools.config = ClientTools.getBundleInfoMap("info");
 		DataTools dataTools = new DataTools();
 		
-		String jmsMessage = "<?xml version=\"1.0\" encoding=\"GBK\"?><message><uri operation=\"a\" value=\"PMS-Property@02M10000002254189-JYLX/CT\"/></message>";
+		String jmsMessage = "<?xml version=\"1.0\" encoding=\"GBK\"?><message><uri operation=\"d\" value=\"PMS-Property@02M10000002254189-JYLX/CT\"/></message>";
 		
-		dataTools.rdfToConsole(jmsMessage);
+		//dataTools.rdfToConsole(jmsMessage);
 		
-		
+		dataTools.deleteOperation(jmsMessage);
 		
 		
 		/*

@@ -7,6 +7,8 @@ import java.io.StringWriter;
 import java.rmi.RemoteException;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLOutputFactory;
@@ -31,6 +33,7 @@ public class NonCimDataTools {
 	public static void main(String[] args)throws Exception{
 		
 		ClientTools.config = ClientTools.getBundleInfoMap("info");
+		ClientTools.logger = Logger.getLogger("logger");
 		OracleDataSource ods = new OracleDataSource();
         ods.setDriverType ( "thin" ); // type of driver
         ods.setNetworkProtocol("tcp"); // tcp is the default anyway
@@ -107,6 +110,7 @@ public String getQXJLsql(String token,GdaServiceStub gdaClient){
 	} catch (RemoteException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
 	StringWriter stringWriter = new StringWriter();
 	StringReader stringReader = new StringReader(bdqxjl);
@@ -123,6 +127,7 @@ public String getQXJLsql(String token,GdaServiceStub gdaClient){
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
 	
 	
@@ -142,6 +147,7 @@ public String getXSJLsql(String token,GdaServiceStub gdaClient){
 	} catch (RemoteException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
 	
 	 StringWriter stringWriter = new StringWriter();
@@ -154,6 +160,7 @@ public String getXSJLsql(String token,GdaServiceStub gdaClient){
 			 new StreamResult(stringWriter));
 	}catch(Exception e){
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
    
    String sql = new String(stringWriter.toString());
@@ -171,6 +178,7 @@ public String getRJXJHsql(String token,GdaServiceStub gdaClient){
 	} catch (RemoteException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
 	
 	StringWriter stringWriter = new StringWriter();
@@ -183,6 +191,7 @@ public String getRJXJHsql(String token,GdaServiceStub gdaClient){
 		 new StreamResult(stringWriter));
     }catch(Exception e){
 	     e.printStackTrace();
+	     ClientTools.logger.log(Level.WARNING, null, e);
     }
 
     String sql = new String(stringWriter.toString());
@@ -200,6 +209,7 @@ public String getYJXJHsql(String token,GdaServiceStub gdaClient){
 	} catch (RemoteException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		ClientTools.logger.log(Level.WARNING, null, e);
 	}
 	
 	StringWriter stringWriter = new StringWriter();
@@ -212,6 +222,7 @@ public String getYJXJHsql(String token,GdaServiceStub gdaClient){
 		 new StreamResult(stringWriter));
     }catch(Exception e){
 	     e.printStackTrace();
+	     ClientTools.logger.log(Level.WARNING, null, e);
     }
 
     String sql = new String(stringWriter.toString());
@@ -260,6 +271,7 @@ public String queryCondition(String queryFlagValue, String columnNameValue){
 		catch(Exception e){
 			
 			e.printStackTrace();
+			ClientTools.logger.log(Level.WARNING, null, e);
 		}
 	    String queryString = new String(stringWriter.toString());
 	    queryString = "<?xml version=\"1.0\" encoding=\"GBK\" ?>"+queryString;

@@ -83,15 +83,12 @@ public class QueueReceive implements MessageListener{
 	//ClientTools clientTools = new ClientTools();
 	
 	ClientTools.getRequestAsFile(msgText);
-	
-	ClientTools.getResourceAsFile(msgText);
-	
 	DataTools dataTools = new DataTools();
-	
-	
-	
-	dataTools.rdfToConsole(msgText);
-	
+	if(!dataTools.deleteOperation(msgText))
+	{
+	   ClientTools.getResourceAsFile(msgText);	
+	   dataTools.rdfToConsole(msgText);
+	}
 	//System.out.println("OK");
 	
 

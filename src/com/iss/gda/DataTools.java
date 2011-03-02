@@ -39,14 +39,14 @@ import net.sf.saxon.Transform;
 public class DataTools {
 	
 	
-/*	
+	
 public static void main(String[] args) throws Exception{
 		
 	
 	TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
 	
-	 Transformer transformer =
-         tFactory.newTransformer(new StreamSource(new File("./issGda_xslt/datamodel/pms_main_transformer.xslt")));
+	 //Transformer transformer =
+        // tFactory.newTransformer(new StreamSource(new File("F:/消息转换/datamodel/ed/pms_breaker/pms_breaker.xslt")));
 	 
 	 
 	 StringWriter stringWriter = new StringWriter();
@@ -54,23 +54,27 @@ public static void main(String[] args) throws Exception{
 	 
 	 //transformer.transform(new StreamSource(new File("E:\\iESBtest\\saxonhe9-3-0-1j\\assetmodel\\BDYCSB\\DLQ-0305000B0.xml")),
             //new StreamResult(System.out));
-	transformer.transform(new StreamSource(new File("D:/datamodel/ed/pms_main_transformer/20101203161336.rdf")),
-		 new StreamResult(stringWriter));
+	//transformer.transform(new StreamSource(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.rdf")),
+		 //new StreamResult(stringWriter));
+	 //transformer.transform(new StreamSource(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.rdf")),
+			 //new StreamResult(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.xml")));
 	
-	String dataModel = new String(stringWriter.toString());
+	//String dataModel = new String(stringWriter.toString());
 	
-	System.out.println(dataModel);
+	//System.out.println(dataModel);
 	Transformer transformer1 =
-        tFactory.newTransformer(new StreamSource(new File("./issGda_xslt/sqlmodel/delete_sql.xslt")));
+        tFactory.newTransformer(new StreamSource(new File("F:/消息转换/sqlmodel/update_sql.xslt")));
+	transformer1.transform(new StreamSource(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.xml")),
+	 new StreamResult(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.sql")));
 			 //new StreamResult(System.out));
-	StringWriter stringWriterForSql = new StringWriter();
-	 transformer1.transform(new StreamSource(new StringReader(dataModel)), new StreamResult(stringWriterForSql));
+	//StringWriter stringWriterForSql = new StringWriter();
+	 //transformer1.transform(new StreamSource(new StringReader(dataModel)), new StreamResult(stringWriterForSql));
 			//new StreamResult(new File("E:\\iESBtest\\saxonhe9-3-0-1j\\data\\20101123091208.xml")));
-	 String sql = new String(stringWriterForSql.toString());
+	 //String sql = new String(stringWriterForSql.toString());
 	 
-	 System.out.println(sql);
+	 //System.out.println(sql);
 	
-	 
+	 /*
 	 OracleDataSource ods = new OracleDataSource();
      ods.setDriverType ( "thin" ); // type of driver
      ods.setNetworkProtocol("tcp"); // tcp is the default anyway
@@ -88,10 +92,11 @@ public static void main(String[] args) throws Exception{
     
      statement.close();
      conn.close();
+     */
 	 
 	}
-*/
-	
+
+/*	
 	public static void main(String[] args)throws Exception{
 		
 		//equipmentTypeTest("D:/temp/20101203161331.txt");
@@ -116,6 +121,7 @@ public static void main(String[] args) throws Exception{
 		//queryCondition("a","b");
 		
 	}
+*/
 public static void queryCondition(String queryFlagValue, String columnNameValue){
 		
 		try{
@@ -158,6 +164,7 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 		}
 		catch(Exception e){
 			e.printStackTrace();
+			ClientTools.logger.log(Level.WARNING, null, e);
 		}
 	}
 
@@ -291,12 +298,10 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
     		e.printStackTrace();
     	}
     }
-	public void rdfToConsole(String jmsMessage){
+public boolean deleteOperation(String jmsMessage){
 		
-		
-	
 		try{
-	    StringReader stringReader = new StringReader(jmsMessage);
+        StringReader stringReader = new StringReader(jmsMessage);
 	    
 	    XMLInputFactory xif = XMLInputFactory.newInstance();
 	    
@@ -305,6 +310,69 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 		StAXOMBuilder builder = new StAXOMBuilder(reader);
 		
 		String operation = builder.getDocument().getFirstChildWithName(new QName("message")).getFirstChildWithName(new QName("uri")).getAttributeValue(new QName("operation"));
+		String value = builder.getDocument().getFirstChildWithName(new QName("message")).getFirstChildWithName(new QName("uri")).getAttributeValue(new QName("value"));
+		
+		String equipmentType = getEquipmentType(jmsMessage);
+		
+		
+		equipmentType = equipmentType + "ForDelete";
+		
+		//System.out.println(equipmentType);
+		String tableName = ClientTools.config.get(equipmentType);
+		if(operation.equals("d"))
+		  {	
+			
+			OracleDataSource ods = new OracleDataSource();
+	        ods.setDriverType ( "thin" ); // type of driver
+	        ods.setNetworkProtocol("tcp"); // tcp is the default anyway
+	        ods.setServerName ( ClientTools.config.get("dataBaseServerName")); // database server name
+	        ods.setDatabaseName(ClientTools.config.get("dataBaseSID")); // Oracle SID
+	        ods.setPortNumber(1521); // listener port number
+	        ods.setUser(ClientTools.config.get("dataBaseUser")); // username
+	        ods.setPassword(ClientTools.config.get("dataBasePSW")); // password
+	        Connection conn=ods.getConnection();
+	        Statement statement=conn.createStatement();
+			
+	        
+	        
+	        int beginIndex = value.indexOf("@")+1;
+	        int endIndex = beginIndex+17;
+	        String no = value.substring(beginIndex, endIndex);
+	        
+	        String sql = "delete from " + tableName + " where NO='"+no+"'";
+	        //System.out.println(sql);
+	        statement.execute(sql);
+			
+	        System.out.println(equipmentType+" "+operation+ " 成功!");
+	        	        
+	        statement.close();
+	        conn.close();
+	        
+			return true;
+			
+		  }
+		
+		}catch(Exception e){
+			e.printStackTrace();
+			ClientTools.logger.log(Level.WARNING, null, e);
+		}
+		
+		return false;
+	}
+    public String getEquipmentType(String jmsMessage){
+    	
+    	String equipmentType = "";
+    	try{
+        StringReader stringReader = new StringReader(jmsMessage);
+	    
+	    XMLInputFactory xif = XMLInputFactory.newInstance();
+	 
+	    XMLStreamReader reader = xif.createXMLStreamReader(stringReader);
+	    
+	    
+		StAXOMBuilder builder = new StAXOMBuilder(reader);
+		
+		
 		
 		//System.out.println(operation);
 		//String nodeNum = builder.getDocument().getFirstChildWithName(new QName("message"))
@@ -320,7 +388,7 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 		
 		//System.out.println(equipmentTypeIndex);
 		
-		String equipmentType = equipmentTypeRow.substring(equipmentTypeIndex);
+		equipmentType = equipmentTypeRow.substring(equipmentTypeIndex);
 		
 		if(equipmentType.equals("PowerTransformer")){
 			switch(nodeNum){
@@ -355,8 +423,8 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 				{
 					switch(nodeNum){
 					
-					case 4:
-						equipmentType = "kgg";
+					case 3:
+						equipmentType = "jddz";
 						break;
 					case 18:
 						equipmentType = "xhzz";
@@ -401,6 +469,31 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 			}
 			
 		}
+    	}catch(Exception e){
+    		e.printStackTrace();
+    		ClientTools.logger.log(Level.WARNING, null, e);
+    	}
+    	
+    	return equipmentType;
+    	
+    }
+	public void rdfToConsole(String jmsMessage){
+		
+		
+	
+		try{
+	    StringReader stringReader = new StringReader(jmsMessage);
+	    
+	    XMLInputFactory xif = XMLInputFactory.newInstance();
+	    
+	    XMLStreamReader reader = xif.createXMLStreamReader(stringReader);
+	    
+		StAXOMBuilder builder = new StAXOMBuilder(reader);
+		
+		String operation = builder.getDocument().getFirstChildWithName(new QName("message")).getFirstChildWithName(new QName("uri")).getAttributeValue(new QName("operation"));
+		
+		
+		String equipmentType = getEquipmentType(jmsMessage);
 		
 		//System.out.println(equipmentType);
 		
