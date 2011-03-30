@@ -48,7 +48,7 @@ public class QueueReceive implements MessageListener{
 
 	// Defines the JNDI provider url.
 
-	public final static String PROVIDER_URL="t3://10.157.43.129:7091";
+	public final static String PROVIDER_URL="t3://10.157.43.138:7091";
 
 	// Defines the JMS connection factory for the queue.
 
@@ -82,11 +82,11 @@ public class QueueReceive implements MessageListener{
 	//System.out.println("Message Received: "+ msgText );
 	//ClientTools clientTools = new ClientTools();
 	
-	ClientTools.getRequestAsFile(msgText);
+	//ClientTools.getRequestAsFile(msgText);
 	DataTools dataTools = new DataTools();
 	if(!dataTools.deleteOperation(msgText))
 	{
-	   ClientTools.getResourceAsFile(msgText);	
+	   //ClientTools.getResourceAsFile(msgText);	
 	   dataTools.rdfToConsole(msgText);
 	}
 	//System.out.println("OK");

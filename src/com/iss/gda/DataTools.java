@@ -42,6 +42,8 @@ public class DataTools {
 	
 public static void main(String[] args) throws Exception{
 		
+  
+	//ClientTools.config = ClientTools.getBundleInfoMap("info");
 	
 	TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
 	
@@ -63,26 +65,27 @@ public static void main(String[] args) throws Exception{
 	
 	//System.out.println(dataModel);
 	Transformer transformer1 =
-        tFactory.newTransformer(new StreamSource(new File("F:/消息转换/sqlmodel/update_sql.xslt")));
-	transformer1.transform(new StreamSource(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.xml")),
-	 new StreamResult(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.sql")));
-			 //new StreamResult(System.out));
+        tFactory.newTransformer(new StreamSource(new File("D:/iESBtest/iESB/issGda/NonCim_xslt/sqlmodel/insert_bdxsjl.xslt")));
+	transformer1.transform(new StreamSource(new File("D:/iESBtest/iESB/issGda/temp/20110324164911.xml")),
+			new StreamResult(stringWriter));
+	 //new StreamResult(new File("F:/消息转换/datamodel/ed/pms_breaker/20101203113737.sql")));
+			// new StreamResult(System.out));
 	//StringWriter stringWriterForSql = new StringWriter();
 	 //transformer1.transform(new StreamSource(new StringReader(dataModel)), new StreamResult(stringWriterForSql));
 			//new StreamResult(new File("E:\\iESBtest\\saxonhe9-3-0-1j\\data\\20101123091208.xml")));
-	 //String sql = new String(stringWriterForSql.toString());
+	 String sql = new String(stringWriter.toString());
 	 
-	 //System.out.println(sql);
+	 System.out.println(sql);
 	
-	 /*
+	 
 	 OracleDataSource ods = new OracleDataSource();
      ods.setDriverType ( "thin" ); // type of driver
      ods.setNetworkProtocol("tcp"); // tcp is the default anyway
-     ods.setServerName ( "172.20.43.179" ); // database server name
+     ods.setServerName ( "10.156.205.100" ); // database server name
      ods.setDatabaseName("orcl"); // Oracle SID
      ods.setPortNumber(1521); // listener port number
      ods.setUser("xopens"); // username
-     ods.setPassword("ytdf000"); // password
+     ods.setPassword("ytdf_000"); // password
      Connection conn=ods.getConnection();
      Statement statement=conn.createStatement();
      
@@ -92,7 +95,7 @@ public static void main(String[] args) throws Exception{
     
      statement.close();
      conn.close();
-     */
+     
 	 
 	}
 
@@ -121,8 +124,8 @@ public static void main(String[] args) throws Exception{
 		//queryCondition("a","b");
 		
 	}
-*/
-public static void queryCondition(String queryFlagValue, String columnNameValue){
+
+public void queryCondition(String queryFlagValue, String columnNameValue){
 		
 		try{
 		OMFactory factory = OMAbstractFactory.getOMFactory();
@@ -167,7 +170,7 @@ public static void queryCondition(String queryFlagValue, String columnNameValue)
 			ClientTools.logger.log(Level.WARNING, null, e);
 		}
 	}
-
+*/
 
     public static void  equipmentTypeTest(String fileName){
     
@@ -338,8 +341,10 @@ public boolean deleteOperation(String jmsMessage){
 	        int beginIndex = value.indexOf("@")+1;
 	        int endIndex = beginIndex+17;
 	        String no = value.substring(beginIndex, endIndex);
-	        
+	        ClientTools.logger.log(Level.INFO, equipmentType);
 	        String sql = "delete from " + tableName + " where NO='"+no+"'";
+	        
+	        ClientTools.logger.log(Level.INFO, sql);
 	        //System.out.println(sql);
 	        statement.execute(sql);
 			
@@ -494,7 +499,7 @@ public boolean deleteOperation(String jmsMessage){
 		
 		
 		String equipmentType = getEquipmentType(jmsMessage);
-		
+		ClientTools.logger.log(Level.INFO, equipmentType);
 		//System.out.println(equipmentType);
 		
 		TransformerFactory tFactory = TransformerFactory.newInstance("net.sf.saxon.TransformerFactoryImpl",null);
@@ -518,7 +523,7 @@ public boolean deleteOperation(String jmsMessage){
 		 String sql = new String(stringWriterForSql.toString());
 		 //String sql = "select * from breaker where no='02M10000000008772'";
 		 //System.out.println(sql);
-		 ClientTools.logger.log(Level.INFO, sql);
+		 //ClientTools.logger.log(Level.INFO, sql);
 		 OracleDataSource ods = new OracleDataSource();
 	        ods.setDriverType ( "thin" ); // type of driver
 	        ods.setNetworkProtocol("tcp"); // tcp is the default anyway
@@ -538,6 +543,7 @@ public boolean deleteOperation(String jmsMessage){
 	        }
 	       
 	        System.out.println(equipmentType+" "+operation+ " 成功!");
+	        
 	        /*
 	        if(rs.next())
 	        System.out.println((rs.getString(10)));
