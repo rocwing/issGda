@@ -3,14 +3,15 @@
 	<xsl:output method="text" encoding="GBK" indent="yes"/>
     <xsl:template match="/Datas">
          <xsl:for-each select="ITEM">
-         	  insert into bdqxjl(
+         	  insert into pms_bdqxjl(
          	  JLID
          	  <xsl:if test="not(string(FXRQ) eq '')">,FXRQ</xsl:if>
          	  <xsl:if test="not(string(SBSJ) eq '')">,SBSJ</xsl:if>
          	  <xsl:if test="not(string(XQRQ) eq '')">,XQRQ</xsl:if>
          	  <xsl:if test="not(string(JHXQRQ) eq '')">,JHXQRQ</xsl:if>
+         	  <xsl:if test="not(string(SYSTEMDATE) eq '')">,SYSTEMDATE</xsl:if>
          	  <xsl:for-each select="*">
-         	  	 <xsl:if test="not(string(node()) eq '') and name()!='JLID' and name()!='FXRQ' and name()!='SBSJ' and name()!='XQRQ' and name()!='JHXQRQ'">,<xsl:value-of select="name()"/>
+         	  	 <xsl:if test="not(string(node()) eq '') and name()!='JLID' and name()!='FXRQ' and name()!='SBSJ' and name()!='XQRQ' and name()!='JHXQRQ' and name()!='SYSTEMDATE'">,<xsl:value-of select="name()"/>
          	   	 </xsl:if>
      	      </xsl:for-each>)
      	      values(
@@ -19,8 +20,9 @@
      	      <xsl:if test="not(string(SBSJ) eq '')">,<xsl:value-of select='concat("to_date(&apos;",SBSJ,"&apos;,&apos;YYYY-MM-DD&apos;)")'/></xsl:if>
      	      <xsl:if test="not(string(XQRQ) eq '')">,<xsl:value-of select='concat("to_date(&apos;",XQRQ,"&apos;,&apos;YYYY-MM-DD&apos;)")'/></xsl:if>
      	      <xsl:if test="not(string(JHXQRQ) eq '')">,<xsl:value-of select='concat("to_date(&apos;",JHXQRQ,"&apos;,&apos;YYYY-MM-DD&apos;)")'/></xsl:if>
+     	      <xsl:if test="not(string(SYSTEMDATE) eq '')">,<xsl:value-of select='concat("to_date(&apos;",SYSTEMDATE,"&apos;,&apos;YYYY-MM-DD&apos;)")'/></xsl:if>
      	      <xsl:for-each select="*">
-     	          <xsl:if test="not(string(node()) eq '') and name()!='JLID' and name()!='FXRQ' and name()!='SBSJ' and name()!='XQRQ' and name()!='JHXQRQ'">,'<xsl:value-of select="."/>'</xsl:if>
+     	          <xsl:if test="not(string(node()) eq '') and name()!='JLID' and name()!='FXRQ' and name()!='SBSJ' and name()!='XQRQ' and name()!='JHXQRQ' and name()!='SYSTEMDATE'">,'<xsl:value-of select="."/>'</xsl:if>
      	      </xsl:for-each>);         	  
          </xsl:for-each> 	
     </xsl:template>	   

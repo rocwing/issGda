@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ 	 xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#">
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-ZXDDY/AutomaticEquipment"><!--中性点电压-->
+        <cim:Naming.name>中性点电压</cim:Naming.name>
+        <cim:Property.propertyType>ZXDDY</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-CZLB/AutomaticEquipment"><!--厂站类别-->
+        <cim:Naming.name>厂站类别</cim:Naming.name>
+        <cim:Property.propertyType>CZLB</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:AutomaticEquipment rdf:ID="PMS-AutomaticEquipment@02M3SJ193107265D1/AutomaticEquipment">
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M3SJ193107265D1/AutomaticEquipment"/> 
+<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@02M3SJ193107265D1/AutomaticEquipment"/> 
+<cim:PowerSystemResource.dispatchNo>网络及GPS对时屏交换机1</cim:PowerSystemResource.dispatchNo> <!--调度号-->
+<cim:PowerSystemResource.PSRType rdf:resource="#OMS-PSRType@0805002Z0"/>
+<cim:AutomaticEquipment.equipmentType></cim:AutomaticEquipment.equipmentType> <!--类型-->
+<cim:PowerSystemResource.Organisations rdf:resource="#PMS-Organisation@BJ05"/><!--关联运行单位-->
+<cim:AutomaticEquipment.maintainOrganisation>丰台供电公司</cim:AutomaticEquipment.maintainOrganisation> <!--维护单位-->
+<cim:AutomaticEquipment.goodsSource>Juniper网络公司</cim:AutomaticEquipment.goodsSource> <!--购货厂家-->
+<cim:AutomaticEquipment.overhaulCycle>0</cim:AutomaticEquipment.overhaulCycle> <!--修试、试验周期-->
+<cim:AutomaticEquipment.stationType></cim:AutomaticEquipment.stationType> <!--所属厂站类型-->
+<cim:AutomaticEquipment.parentId></cim:AutomaticEquipment.parentId> <!--父设备id-->
+<cim:AutomaticEquipment.parentName></cim:AutomaticEquipment.parentName> <!--父设备名称-->
+<cim:AutomaticEquipment.parSystem>54</cim:AutomaticEquipment.parSystem> <!--所属组合设备名称-->
+<cim:PowerSystemResource.remarks></cim:PowerSystemResource.remarks> <!--备注-->
+<cim:PowerSystemResource.lastOverhaulDate>2010-10-26 12:00:00</cim:PowerSystemResource.lastOverhaulDate> <!--最近检修日期-->
+<cim:Naming.aliasName>02M3SJ193107265D1</cim:Naming.aliasName> <!--设备主键值-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2FT00010000651/Substation"/><!--关联变电站名称-->
+<cim:PowerSystemResource.locCode>FT-B-00000456-3005</cim:PowerSystemResource.locCode> <!--功能位置码-->
+<cim:Naming.name>核心交换机</cim:Naming.name> <!--设备名称-->
+<cim:AutomaticEquipment.os>Linux</cim:AutomaticEquipment.os> <!--操作系统-->
+<cim:AutomaticEquipment.communicationProtocol>CDT</cim:AutomaticEquipment.communicationProtocol> <!--通讯规约-->
+</cim:AutomaticEquipment>
+<cim:Asset rdf:ID="PMS-Asset@02M3SJ193107265D1/AutomaticEquipment">
+<cim:Asset.installationPlace>北京市宋家庄站</cim:Asset.installationPlace><!--设备存放地点--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-DDFW/AutomaticEquipment"/>
+<cim:Asset.factory>广州佳德通讯技术有限公司(OMS)</cim:Asset.factory><!--生产厂家--> 
+ <cim:Asset.manufacturedCountry></cim:Asset.manufacturedCountry><!--制造国家--> 
+ <cim:Asset.utc></cim:Asset.utc><!--出厂编号--> 
+ <cim:Asset.manufacturedDate></cim:Asset.manufacturedDate><!--出厂日期--> 
+ <cim:Asset.installationDate></cim:Asset.installationDate><!--安装日期--> 
+ <cim:Asset.plantTransferDate>2007-12-15 12:00:00</cim:Asset.plantTransferDate><!--投运日期--> 
+ <cim:Asset.currentStatus>未投入</cim:Asset.currentStatus><!--设备状态--> 
+ <cim:Asset.grading>一级</cim:Asset.grading><!--定级--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-ZXDDY/AutomaticEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-SFBF/AutomaticEquipment"/>
+<cim:Asset.endDate></cim:Asset.endDate><!--退运日期--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-DXZQ/AutomaticEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-XXZQ/AutomaticEquipment"/>
+<cim:Asset.voltGrade></cim:Asset.voltGrade><!--电压等级--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-CZDYDJ/AutomaticEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-CZLB/AutomaticEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-SCTDSJ/AutomaticEquipment"/>
+<cim:Asset.projectNo>CBE0509013</cim:Asset.projectNo><!--项目编号--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3SJ193107265D1-BB/AutomaticEquipment"/>
+</cim:Asset>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-XXZQ/AutomaticEquipment"><!--小修周期-->
+        <cim:Naming.name>小修周期</cim:Naming.name>
+        <cim:Property.propertyType>XXZQ</cim:Property.propertyType>
+        <cim:Property.propertyValue>0</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-SFBF/AutomaticEquipment"><!--是否报废-->
+        <cim:Naming.name>是否报废</cim:Naming.name>
+        <cim:Property.propertyType>SFBF</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-BB/AutomaticEquipment"><!--版本-->
+        <cim:Naming.name>版本</cim:Naming.name>
+        <cim:Property.propertyType>BB</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-DXZQ/AutomaticEquipment"><!--大修周期（月）-->
+        <cim:Naming.name>大修周期（月）</cim:Naming.name>
+        <cim:Property.propertyType>DXZQ</cim:Property.propertyType>
+        <cim:Property.propertyValue>0</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-CZDYDJ/AutomaticEquipment"><!--厂站电压等级-->
+        <cim:Naming.name>厂站电压等级</cim:Naming.name>
+        <cim:Property.propertyType>CZDYDJ</cim:Property.propertyType>
+        <cim:Property.propertyValue>110</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-SCTDSJ/AutomaticEquipment"><!--上次停电时间-->
+        <cim:Naming.name>上次停电时间</cim:Naming.name>
+        <cim:Property.propertyType>SCTDSJ</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3SJ193107265D1-DDFW/AutomaticEquipment"><!--调度范围-->
+        <cim:Naming.name>调度范围</cim:Naming.name>
+        <cim:Property.propertyType>DDFW</cim:Property.propertyType>
+        <cim:Property.propertyValue>北京丰台</cim:Property.propertyValue>
+</cim:Property>
+<cim:ElectricalAssetModel rdf:ID="PMS-ElectricalAssetModel@02M3SJ193107265D1/AutomaticEquipment">
+<cim:Naming.name>JAD TECH ES-24</cim:Naming.name><!--设备型号--> 
+ <cim:ElectricalAssetModel.ratedVolts></cim:ElectricalAssetModel.ratedVolts><!--额定电压--> 
+ </cim:ElectricalAssetModel>
+</rdf:RDF>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ 	 xmlns:cim="http://iec.ch/TC57/2003/CIM-schema-cim10#">
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-DDFW/ProtectionEquipment"><!--调度范围-->
+        <cim:Naming.name>调度范围</cim:Naming.name>
+        <cim:Property.propertyType>DDFW</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-CZLB/ProtectionEquipment"><!--厂站类别-->
+        <cim:Naming.name>厂站类别</cim:Naming.name>
+        <cim:Property.propertyType>CZLB</cim:Property.propertyType>
+        <cim:Property.propertyValue>变电站</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-ZXDDY/ProtectionEquipment"><!--中性点电压-->
+        <cim:Naming.name>中性点电压</cim:Naming.name>
+        <cim:Property.propertyType>ZXDDY</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:ProtectionEquipment rdf:ID="PMS-ProtectionEquipment@02M3BD196701195D1/ProtectionEquipment">
+<cim:PowerSystemResource.Documents rdf:resource="#PMS-ElectricalAssetModel@02M3BD196701195D1/ProtectionEquipment"/> 
+<cim:PowerSystemResource.Asset rdf:resource="#PMS-Asset@02M3BD196701195D1/ProtectionEquipment"/> 
+<cim:PowerSystemResource.dispatchNo>调度号s+</cim:PowerSystemResource.dispatchNo> <!--调度号-->
+<cim:PowerSystemResource.PSRType rdf:resource="#OMS-PSRType@0421000J0"/>
+<cim:ProtectionEquipment.equipmentType></cim:ProtectionEquipment.equipmentType> <!--类型-->
+<cim:PowerSystemResource.Organisations rdf:resource="#PMS-Organisation@BJ06"/><!--关联运行单位-->
+<cim:ProtectionEquipment.maintainOrganisation>调度通信中心</cim:ProtectionEquipment.maintainOrganisation> <!--维护单位-->
+<cim:ProtectionEquipment.goodsSource></cim:ProtectionEquipment.goodsSource> <!--购货厂家-->
+<cim:ProtectionEquipment.overhaulCycle>0</cim:ProtectionEquipment.overhaulCycle> <!--修试、试验周期-->
+<cim:ProtectionEquipment.stationType></cim:ProtectionEquipment.stationType> <!--所属厂站类型-->
+<cim:ProtectionEquipment.parentId></cim:ProtectionEquipment.parentId> <!--父设备id-->
+<cim:ProtectionEquipment.parentName></cim:ProtectionEquipment.parentName> <!--父设备名称-->
+<cim:ProtectionEquipment.parSystem></cim:ProtectionEquipment.parSystem> <!--所属组合设备名称-->
+<cim:PowerSystemResource.remarks>bz</cim:PowerSystemResource.remarks> <!--备注-->
+<cim:PowerSystemResource.lastOverhaulDate></cim:PowerSystemResource.lastOverhaulDate> <!--最近检修日期-->
+<cim:Naming.aliasName>02M3BD196701195D1</cim:Naming.aliasName> <!--设备主键值-->
+<cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#PMS-Substation@02M2SJ00010000489/Substation"/><!--关联变电站名称-->
+<cim:PowerSystemResource.locCode>SJ-B-00000107-2006</cim:PowerSystemResource.locCode> <!--功能位置码-->
+<cim:Naming.name>故障录波器</cim:Naming.name> <!--设备名称-->
+<cim:ProtectionEquipment.primEquipType>263苹果园路距离、电流保护</cim:ProtectionEquipment.primEquipType> <!--被保护设备名称(一次设备名称)-->
+<cim:ProtectionEquipment.ycsbid></cim:ProtectionEquipment.ycsbid> <!--关联一次设备ID-->
+<cim:ProtectionEquipment.lastAllCheckDate></cim:ProtectionEquipment.lastAllCheckDate> <!--校验日期(上次全部校验日期)-->
+<cim:ProtectionEquipment.lastPartCheckDate></cim:ProtectionEquipment.lastPartCheckDate> <!--传动日期(上次部分校验日期)-->
+</cim:ProtectionEquipment>
+<cim:Asset rdf:ID="PMS-Asset@02M3BD196701195D1/ProtectionEquipment">
+<cim:Asset.installationPlace></cim:Asset.installationPlace><!--设备存放地点--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-DDFW/ProtectionEquipment"/>
+<cim:Asset.factory>四方(OMS)</cim:Asset.factory><!--生产厂家--> 
+ <cim:Asset.manufacturedCountry></cim:Asset.manufacturedCountry><!--制造国家--> 
+ <cim:Asset.utc></cim:Asset.utc><!--出厂编号--> 
+ <cim:Asset.manufacturedDate>2007-06-20 12:00:00</cim:Asset.manufacturedDate><!--出厂日期--> 
+ <cim:Asset.installationDate></cim:Asset.installationDate><!--安装日期--> 
+ <cim:Asset.plantTransferDate>2007-12-15 12:00:00</cim:Asset.plantTransferDate><!--投运日期--> 
+ <cim:Asset.currentStatus>未投入</cim:Asset.currentStatus><!--设备状态--> 
+ <cim:Asset.grading>二级</cim:Asset.grading><!--定级--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-ZXDDY/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-SFBF/ProtectionEquipment"/>
+<cim:Asset.endDate></cim:Asset.endDate><!--退运日期--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-DXZQ/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-XXZQ/ProtectionEquipment"/>
+<cim:Asset.voltGrade>500kV</cim:Asset.voltGrade><!--电压等级--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-CZDYDJ/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-CZLB/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-SCTDSJ/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-SBWZBM/ProtectionEquipment"/>
+<cim:Asset.currentStatus></cim:Asset.currentStatus><!--是否运行--> 
+ <cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-DDQX/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-MNL/ProtectionEquipment"/>
+<cim:Asset.Properties rdf:resource="#PMS-Property@02M3BD196701195D1-KGL/ProtectionEquipment"/>
+<cim:Asset.factory></cim:Asset.factory><!--保护厂家--> 
+ </cim:Asset>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-KGL/ProtectionEquipment"><!--开关量-->
+        <cim:Naming.name>开关量</cim:Naming.name>
+        <cim:Property.propertyType>KGL</cim:Property.propertyType>
+        <cim:Property.propertyValue>开关量</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-CZDYDJ/ProtectionEquipment"><!--厂站电压等级-->
+        <cim:Naming.name>厂站电压等级</cim:Naming.name>
+        <cim:Property.propertyType>CZDYDJ</cim:Property.propertyType>
+        <cim:Property.propertyValue>110</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-SBWZBM/ProtectionEquipment"><!--设备物资编码-->
+        <cim:Naming.name>设备物资编码</cim:Naming.name>
+        <cim:Property.propertyType>SBWZBM</cim:Property.propertyType>
+        <cim:Property.propertyValue>物资编码设备</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-XXZQ/ProtectionEquipment"><!--小修周期-->
+        <cim:Naming.name>小修周期</cim:Naming.name>
+        <cim:Property.propertyType>XXZQ</cim:Property.propertyType>
+        <cim:Property.propertyValue>0</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-DXZQ/ProtectionEquipment"><!--大修周期（月）-->
+        <cim:Naming.name>大修周期（月）</cim:Naming.name>
+        <cim:Property.propertyType>DXZQ</cim:Property.propertyType>
+        <cim:Property.propertyValue>0</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-SFBF/ProtectionEquipment"><!--是否报废-->
+        <cim:Naming.name>是否报废</cim:Naming.name>
+        <cim:Property.propertyType>SFBF</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-MNL/ProtectionEquipment"><!--模拟量-->
+        <cim:Naming.name>模拟量</cim:Naming.name>
+        <cim:Property.propertyType>MNL</cim:Property.propertyType>
+        <cim:Property.propertyValue>模拟量</cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-SCTDSJ/ProtectionEquipment"><!--上次停电时间-->
+        <cim:Naming.name>上次停电时间</cim:Naming.name>
+        <cim:Property.propertyType>SCTDSJ</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:Property rdf:ID="PMS-Property@02M3BD196701195D1-DDQX/ProtectionEquipment"><!--调度权限-->
+        <cim:Naming.name>调度权限</cim:Naming.name>
+        <cim:Property.propertyType>DDQX</cim:Property.propertyType>
+        <cim:Property.propertyValue></cim:Property.propertyValue>
+</cim:Property>
+<cim:ElectricalAssetModel rdf:ID="PMS-ElectricalAssetModel@02M3BD196701195D1/ProtectionEquipment">
+<cim:Naming.name>CSC211</cim:Naming.name><!--设备型号--> 
+ <cim:ElectricalAssetModel.ratedVolts></cim:ElectricalAssetModel.ratedVolts><!--额定电压--> 
+ <cim:Naming.name></cim:Naming.name><!--保护型号--> 
+ </cim:ElectricalAssetModel>
+</rdf:RDF>

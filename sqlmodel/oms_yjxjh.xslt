@@ -15,7 +15,7 @@
      	      </xsl:for-each>)
      	      values(
      	      '<xsl:value-of select="PM_PRIMARYKEY"/>'
-     	      <xsl:if test="not(string(FSTARTTIME) eq '')">,<xsl:value-of select='concat("to_date(&apos;",FSTARTTIME,"&apos;,&apos;YYYY-MM-DD HH24:Mi:SS&apos;)")'/></xsl:if>
+     	      <xsl:if test="not(string(FSTARTTIME) eq '')">,<xsl:value-of select='concat("to_date(&apos;",FSTARTTIME,"&apos;,&apos;YYYY-MM-DD&#x0020;HH24:Mi:SS&apos;)")'/></xsl:if>
      	      <xsl:if test="not(string(FENDTIME) eq '')">,<xsl:value-of select='concat("to_date(&apos;",FENDTIME,"&apos;,&apos;YYYY-MM-DD HH24:Mi:SS&apos;)")'/></xsl:if>
      	      <xsl:if test="not(string(FAPPLYTIME) eq '')">,<xsl:value-of select='concat("to_date(&apos;",FAPPLYTIME,"&apos;,&apos;YYYY-MM-DD HH24:Mi:SS&apos;)")'/></xsl:if>
      	      <xsl:if test="not(string(UPDATE_TIME) eq '')">,<xsl:value-of select='concat("to_date(&apos;",UPDATE_TIME,"&apos;,&apos;YYYY-MM-DD HH24:Mi:SS&apos;)")'/></xsl:if>

@@ -2,10 +2,10 @@ require 'rexml/document'
 include REXML
 require 'win32ole'
 excel = WIN32OLE::new('excel.Application')
-workbook = excel.Workbooks.Open('D:\datamodel\pms_gis.xls')
+workbook = excel.Workbooks.Open('F:\wpy\Dropbox\github\issGda\datamodel\pms_zdh.xls')
 worksheet = workbook.Worksheets(1)
 worksheet.Select
-file1 = File.new("pms_gis.xslt","w+")
+file1 = File.new("pms_zdh.xslt","w+")
 
 #doc1 = Document.new "<v_breaker/>"
 doc1 = Document.new
@@ -36,8 +36,9 @@ line = 1
 while worksheet.Range("a#{line}").value
 	puts worksheet.Range("a#{line}").value
     row_name = worksheet.Range("a#{line}").value
+    row_name = row_name.delete " "
     row_name_exist = true
-file = File.new('ZHDQ-0321000B0.xml')
+file = File.new('pms_zdh.xml')
 doc = Document.new(file)
 #file = File.new(Dir.pwd+"/BDYCSB/"+entry)
 
@@ -91,7 +92,9 @@ item.elements.each(){ |element|
 	#property = node.add_element "Property", {"name"=>"#{element.name.to_s.index(".")}"}
 	#property = node.add_element "Property", {"name"=>"#{elementName[nameIndex+1,nameLength]}"}
 	
+	
 	if (row_name == elementName[nameIndex+1,nameLength].upcase)
+		
 		puts elementName[nameIndex+1,nameLength].upcase
 		row_name_exist = false
 		node = equip.add_element "ITEM"
